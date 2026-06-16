@@ -1,0 +1,173 @@
+{
+  "id": "rhodos",
+  "name": "Rhodos",
+  "spot": "Prasonisi · Südspitze",
+  "region": "Dodekanes",
+  "country": "Griechenland",
+  "flag": "🇬🇷",
+  "verdict": "warn",
+  "verdictLabel": "Windsicher, aber voll",
+  "tagline": "~90% Wind, oft >25 kn — aber klein und sehr voll, Direktflug RHO.",
+  "scores": {
+    "kite": 4,
+    "family": 3,
+    "infra": 4,
+    "access": 4
+  },
+  "wind": {
+    "min": 15,
+    "max": 30,
+    "type": "side-onshore",
+    "reliability": 93
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 25,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~6 h",
+    "transfers": 1,
+    "note": "via Athen nach Rhodos (RHO)",
+    "hours": 6
+  },
+  "distanceGermany": {
+    "time": "~3,5 h",
+    "transfers": 0,
+    "note": "Direktflug nach RHO",
+    "hours": 3.5
+  },
+  "tags": [
+    "~90% Wind",
+    "zwei Seiten",
+    "klein & voll",
+    "Direktflug"
+  ],
+  "description": "Prasonisi ist die berühmte Landzunge an der Südspitze: Flatwater auf der einen, Welle auf der anderen Seite, ~90% Wind (oft >25 kn). Sehr windsicher, aber klein und im Hochsommer sehr voll, Unterkunft limitiert. Direktflug nach Rhodos.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Sehr voll im Hochsommer · oft Starkwind"
+  },
+  "subspots": [
+    {
+      "name": "Prasonisi Flatside",
+      "dist": "Lagunenseite",
+      "level": "alle",
+      "desc": "Stehtiefes Flatwater zwischen Landzunge und Festland."
+    },
+    {
+      "name": "Prasonisi Waveside",
+      "dist": "Ozeanseite",
+      "level": "Advanced",
+      "desc": "Wellenseite für erfahrene Kiter."
+    }
+  ],
+  "family": [
+    "Altstadt von Rhodos (UNESCO).",
+    "Lindos mit Akropolis.",
+    "Wasserpark bei Faliraki."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Rhodes-Greece.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        33,
+        21,
+        19,
+        12
+      ],
+      "2": [
+        27,
+        23,
+        22,
+        17
+      ],
+      "3": [
+        32,
+        22,
+        21,
+        13
+      ],
+      "4": [
+        28,
+        29,
+        24,
+        6
+      ],
+      "5": [
+        39,
+        29,
+        18,
+        4
+      ],
+      "6": [
+        31,
+        31,
+        22,
+        6
+      ],
+      "7": [
+        27,
+        45,
+        19,
+        6
+      ],
+      "8": [
+        30,
+        41,
+        15,
+        2
+      ],
+      "9": [
+        37,
+        32,
+        17,
+        5
+      ],
+      "10": [
+        37,
+        26,
+        10,
+        3
+      ],
+      "11": [
+        27,
+        23,
+        16,
+        6
+      ],
+      "12": [
+        26,
+        25,
+        13,
+        12
+      ]
+    }
+  }
+}

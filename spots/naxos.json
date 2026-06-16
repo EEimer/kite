@@ -1,0 +1,173 @@
+{
+  "id": "naxos",
+  "name": "Naxos",
+  "spot": "Mikri Vigla · Kykladen",
+  "region": "Kykladen",
+  "country": "Griechenland",
+  "flag": "🇬🇷",
+  "verdict": "go",
+  "verdictLabel": "Flat + Welle",
+  "tagline": "Mikri Vigla teilt Flatwater und Welle an einer Landzunge — zuverlässiger Meltemi, große Insel.",
+  "scores": {
+    "kite": 4,
+    "family": 4,
+    "infra": 4,
+    "access": 4
+  },
+  "wind": {
+    "min": 16,
+    "max": 28,
+    "type": "side-onshore",
+    "reliability": 93
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 24,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Athen (JNX)",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~4 h",
+    "transfers": 1,
+    "note": "via Athen / saisonal direkt",
+    "hours": 4
+  },
+  "tags": [
+    "Meltemi",
+    "Mikri Vigla",
+    "Flat + Welle",
+    "große Insel"
+  ],
+  "description": "Mikri Vigla an der Westküste von Naxos bietet an einer Landzunge beides: flaches Wasser auf der einen, Welle auf der anderen Seite. Verlässlicher Meltemi im Sommer. Naxos ist groß und vielseitig (Berge, Dörfer, Strände) — gute Mischung aus Wind und Urlaub.",
+  "flagNote": {
+    "type": "go",
+    "text": "Flat & Welle an einem Spot · vielseitige Insel"
+  },
+  "subspots": [
+    {
+      "name": "Mikri Vigla Flatside",
+      "dist": "Südseite",
+      "level": "alle",
+      "desc": "Stehtiefes Flatwater, anfängerfreundlich."
+    },
+    {
+      "name": "Mikri Vigla Waveside",
+      "dist": "Nordseite",
+      "level": "Intermediate+",
+      "desc": "Welle & Chop bei kräftigem Meltemi."
+    }
+  ],
+  "family": [
+    "Naxos-Stadt mit Portara & Burg.",
+    "Bergdörfer (Halki, Apiranthos).",
+    "Lange Sandstrände (Plaka, Agios Prokopios)."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Naxos-Greece.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        19,
+        22,
+        22,
+        31
+      ],
+      "2": [
+        14,
+        24,
+        23,
+        33
+      ],
+      "3": [
+        18,
+        26,
+        27,
+        21
+      ],
+      "4": [
+        25,
+        28,
+        21,
+        18
+      ],
+      "5": [
+        28,
+        30,
+        18,
+        7
+      ],
+      "6": [
+        24,
+        29,
+        19,
+        13
+      ],
+      "7": [
+        13,
+        26,
+        25,
+        28
+      ],
+      "8": [
+        21,
+        21,
+        22,
+        28
+      ],
+      "9": [
+        22,
+        28,
+        18,
+        22
+      ],
+      "10": [
+        25,
+        28,
+        22,
+        15
+      ],
+      "11": [
+        19,
+        29,
+        20,
+        18
+      ],
+      "12": [
+        16,
+        27,
+        25,
+        24
+      ]
+    }
+  }
+}

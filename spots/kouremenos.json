@@ -1,0 +1,164 @@
+{
+  "id": "kouremenos",
+  "name": "Kouremenos",
+  "spot": "Kouremenos · Ostkreta",
+  "region": "Kreta",
+  "country": "Griechenland",
+  "flag": "🇬🇷",
+  "verdict": "go",
+  "verdictLabel": "Düseneffekt Ostkreta",
+  "tagline": "Eine Bucht, die den Wind bündelt — sehr windsicher, leer und unkompliziert.",
+  "scores": {
+    "kite": 4,
+    "family": 3,
+    "infra": 3,
+    "access": 4
+  },
+  "wind": {
+    "min": 18,
+    "max": 30,
+    "type": "side-onshore",
+    "reliability": 85
+  },
+  "water": {
+    "type": "choppy",
+    "tempC": 24,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Athen nach Heraklion/Sitia + Fahrt",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~4 h",
+    "transfers": 0,
+    "note": "Direktflug Heraklion + ~2 h Fahrt",
+    "hours": 4
+  },
+  "tags": [
+    "Düseneffekt",
+    "Ostkreta",
+    "windsicher",
+    "leer"
+  ],
+  "description": "Die Bucht von Kouremenos an der Ostspitze Kretas wird durch umliegende Berge zum Düsen-Effekt geformt — der Nordwind wird verstärkt und beschleunigt, dadurch sehr windsicher. Entspannter, selten überfüllter Spot mit ein paar Schulen, abseits des Massentourismus.",
+  "flagNote": {
+    "type": "go",
+    "text": "Sehr windsicher durch Düseneffekt · ruhig"
+  },
+  "subspots": [],
+  "family": [
+    "Palmenstrand Vai.",
+    "Antikes Palekastro & Toplou-Kloster.",
+    "Tavernen in Palekastro."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 35.185,
+    "lon": 26.288,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        22,
+        17,
+        5,
+        1
+      ],
+      "2": [
+        19,
+        15,
+        8,
+        2
+      ],
+      "3": [
+        21,
+        13,
+        10,
+        1
+      ],
+      "4": [
+        18,
+        14,
+        6,
+        0
+      ],
+      "5": [
+        19,
+        12,
+        4,
+        0
+      ],
+      "6": [
+        26,
+        27,
+        3,
+        0
+      ],
+      "7": [
+        23,
+        43,
+        15,
+        0
+      ],
+      "8": [
+        26,
+        34,
+        7,
+        0
+      ],
+      "9": [
+        25,
+        26,
+        9,
+        0
+      ],
+      "10": [
+        21,
+        16,
+        4,
+        0
+      ],
+      "11": [
+        20,
+        9,
+        3,
+        0
+      ],
+      "12": [
+        19,
+        12,
+        2,
+        0
+      ]
+    }
+  }
+}

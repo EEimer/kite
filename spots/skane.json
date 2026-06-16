@@ -1,0 +1,163 @@
+{
+  "id": "skane",
+  "name": "Skåne",
+  "spot": "Südschweden · Ostsee",
+  "region": "Ostsee",
+  "country": "Schweden",
+  "flag": "🇸🇪",
+  "verdict": "no",
+  "verdictLabel": "Falscher Monat",
+  "tagline": "Leer und schön — aber Juli ist der schlechteste Windmonat.",
+  "scores": {
+    "kite": 1,
+    "family": 4,
+    "infra": 4,
+    "access": 4
+  },
+  "wind": {
+    "min": 10,
+    "max": 20,
+    "type": "side-onshore",
+    "reliability": 40
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 18,
+    "wetsuit": "4/3 Neo"
+  },
+  "level": [
+    "beginner",
+    "intermediate"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 2,
+    "10": 3,
+    "11": 2,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~6,5 h + Fahrt",
+    "transfers": 0,
+    "note": "Direktflug Kopenhagen, dann über die Brücke",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~1 h Flug + Fahrt",
+    "transfers": 0,
+    "note": "Direktflug Kopenhagen/Malmö",
+    "hours": 1.5
+  },
+  "tags": [
+    "leer",
+    "Ostsee-Flat",
+    "Sommer schwächster Monat",
+    "Natur"
+  ],
+  "description": "Schöne, leere Ostsee-Spots mit Flatwater — aber der Hochsommer ist der schwächste Windmonat. Frühling und Herbst sind deutlich besser. Als reiner Juli-Wind-Trip: Skip.",
+  "flagNote": {
+    "type": "no",
+    "text": "Juli windschwächster Monat"
+  },
+  "subspots": [],
+  "family": [
+    "Naturstrände & Wälder.",
+    "Kopenhagen / Malmö in der Nähe.",
+    "Ruhige, kinderfreundliche Buchten."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 55.431,
+    "lon": 13.065,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        24,
+        16,
+        4,
+        1
+      ],
+      "2": [
+        27,
+        14,
+        6,
+        1
+      ],
+      "3": [
+        25,
+        9,
+        2,
+        1
+      ],
+      "4": [
+        22,
+        8,
+        2,
+        0
+      ],
+      "5": [
+        21,
+        8,
+        1,
+        0
+      ],
+      "6": [
+        14,
+        3,
+        1,
+        0
+      ],
+      "7": [
+        27,
+        8,
+        2,
+        0
+      ],
+      "8": [
+        13,
+        2,
+        1,
+        0
+      ],
+      "9": [
+        22,
+        8,
+        2,
+        0
+      ],
+      "10": [
+        25,
+        12,
+        4,
+        0
+      ],
+      "11": [
+        24,
+        11,
+        3,
+        0
+      ],
+      "12": [
+        26,
+        9,
+        4,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kite Trip Planner · Recherche 2025/26</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E1B1F;
+  --paper:#F7F4EC;
+  --paper2:#FFFFFF;
+  --sea:#0F6E7D;
+  --sea-dk:#0A4D58;
+  --sea-lt:#3DA5B5;
+  --sea-pale:#E0F0F2;
+  --sun:#E8893A;
+  --sun-pale:#FBEBDC;
+  --sand:#E4D8BC;
+  --line:#D9D0BE;
+  --muted:#5F6B6E;
+  --go:#1C8556;
+  --go-pale:#E0F1E8;
+  --warn:#B5701A;
+  --warn-pale:#FAEDD8;
+  --no:#B23B3B;
+  --no-pale:#FBE6E6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+
+/* ===== HERO ===== */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;padding:0}
+.hero-inner{max-width:1080px;margin:0 auto;padding:64px 28px 56px;position:relative;z-index:2}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(61,165,181,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(61,165,181,.08) 1px,transparent 1px);background-size:42px 42px;z-index:1}
+.hero-glow{position:absolute;top:-120px;right:-80px;width:480px;height:480px;background:radial-gradient(circle,rgba(15,110,125,.55),transparent 65%);z-index:1}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--sea-lt);margin-bottom:22px}
+.hero h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(40px,8vw,86px);line-height:.96;letter-spacing:-.02em;margin-bottom:20px}
+.hero h1 .l2{color:var(--sea-lt)}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.72);max-width:540px;margin-bottom:32px;font-weight:300}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px}
+.hm{font-family:'JetBrains Mono',monospace;font-size:11.5px;border:1px solid rgba(255,255,255,.18);border-radius:2px;padding:6px 12px;color:rgba(255,255,255,.78);background:rgba(255,255,255,.04)}
+.hm b{color:#fff}
+
+/* wind ticker */
+.ticker{border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.25);position:relative;z-index:2;overflow:hidden}
+.ticker-track{display:flex;gap:40px;white-space:nowrap;animation:scroll 38s linear infinite;padding:11px 0;font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(255,255,255,.55)}
+.ticker-track span b{color:var(--sea-lt)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+/* ===== NAV ===== */
+.nav{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:12px 28px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.nav a{font-size:12.5px;font-weight:500;color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:2px;transition:.15s}
+.nav a:hover{color:var(--sea);background:var(--sea-pale)}
+.nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-right:6px;font-weight:600}
+
+/* ===== LAYOUT ===== */
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.section{padding:64px 0 8px}
+.sec-head{margin-bottom:32px;border-bottom:2px solid var(--ink);padding-bottom:16px}
+.sec-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--sun);letter-spacing:.1em;display:block;margin-bottom:8px}
+.sec-head h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(28px,4.5vw,46px);line-height:1;letter-spacing:-.015em}
+.sec-intro{font-size:15.5px;color:var(--muted);max-width:680px;margin-top:14px;font-weight:300}
+.sec-intro strong{color:var(--ink);font-weight:600}
+
+/* ===== VERDICT CARDS ===== */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;margin-bottom:8px}
+.card{background:var(--paper2);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.card-rail{height:4px;width:100%}
+.r-go{background:var(--go)}.r-warn{background:var(--warn)}.r-no{background:var(--no)}
+.card-pad{padding:18px 20px;flex:1;display:flex;flex-direction:column}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:4px}
+.card-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:19px;line-height:1.15}
+.card-loc{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.vtag{font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;padding:3px 8px;border-radius:2px;white-space:nowrap;text-transform:uppercase;letter-spacing:.04em}
+.vt-go{background:var(--go-pale);color:var(--go)}
+.vt-warn{background:var(--warn-pale);color:var(--warn)}
+.vt-no{background:var(--no-pale);color:var(--no)}
+.specs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:13px}
+.spec{font-family:'JetBrains Mono',monospace;font-size:11px;background:var(--paper);border:1px solid var(--line);border-radius:2px;padding:3px 8px;color:var(--ink)}
+.spec b{color:var(--sea)}
+.card-desc{font-size:13px;color:var(--muted);line-height:1.55;flex:1}
+.card-desc strong{color:var(--ink);font-weight:600}
+.flag{margin-top:12px;font-size:11.5px;padding:7px 11px;border-radius:3px;line-height:1.45}
+.flag-go{background:var(--go-pale);color:var(--go)}
+.flag-warn{background:var(--warn-pale);color:var(--warn)}
+.flag-no{background:var(--no-pale);color:var(--no)}
+
+/* ===== DATA TABLE ===== */
+.tbl-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line);font-size:12.5px;vertical-align:top}
+thead th{font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--paper);font-weight:500;position:sticky;top:0}
+tbody th{font-weight:500;color:var(--muted);font-size:11.5px;width:130px}
+.t-win{background:var(--go-pale)}
+.cellgood{color:var(--go);font-weight:500}
+.cellmid{color:var(--warn);font-weight:500}
+.cellbad{color:var(--no);font-weight:500}
+.stars{color:var(--sun);letter-spacing:.5px;font-size:12px}
+tr:last-child td,tr:last-child th{border-bottom:none}
+.tnote{font-size:9.5px;color:var(--muted);display:block;font-family:'JetBrains Mono',monospace}
+
+/* ===== SPOT LIST ===== */
+.spotlist{display:grid;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.spotrow{display:grid;grid-template-columns:150px 1fr;background:var(--paper2)}
+.spotrow:nth-child(even){background:var(--paper)}
+.spotrow-l{padding:14px 16px;border-right:1px solid var(--line)}
+.spotrow-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:15px;margin-bottom:3px}
+.spotrow-dist{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)}
+.spotrow-r{padding:14px 16px}
+.spot-pills{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:7px}
+.sp{font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 7px;border-radius:2px;background:var(--sea-pale);color:var(--sea-dk)}
+.spotrow-desc{font-size:12.5px;color:var(--muted);line-height:1.5}
+
+/* ===== TIMELINE (months) ===== */
+.months{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:8px}
+.month{background:var(--paper2);border:1px solid var(--line);border-radius:6px;padding:16px;position:relative}
+.month-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sun);margin-bottom:8px}
+.month-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:17px;margin-bottom:6px}
+.month-spot{font-size:13px;color:var(--ink);font-weight:500;margin-bottom:4px}
+.month-desc{font-size:12px;color:var(--muted);line-height:1.45}
+
+/* ===== CALLOUT ===== */
+.callout{background:var(--ink);color:#fff;border-radius:8px;padding:28px 30px;margin:8px 0}
+.callout h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:22px;margin-bottom:12px;color:#fff}
+.callout p{color:rgba(255,255,255,.78);font-size:14px;font-weight:300;margin-bottom:10px}
+.callout strong{color:var(--sea-lt);font-weight:600}
+.callout .pick{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid rgba(255,255,255,.12)}
+.callout .pick-rank{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--sun);font-weight:500;flex-shrink:0;width:28px}
+.callout .pick-name{font-weight:600;color:#fff;font-size:14px}
+.callout .pick-why{font-size:12.5px;color:rgba(255,255,255,.6);font-weight:300}
+
+/* ===== FOOTER ===== */
+footer{margin-top:56px;border-top:1px solid var(--line);padding:32px 0 48px}
+.foot-inner{max-width:1080px;margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+.foot-logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px}
+.foot-note{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-bottom:24px}
+.legend span{display:flex;align-items:center;gap:6px}
+.dot{width:9px;height:9px;border-radius:50%}
+.d-go{background:var(--go)}.d-warn{background:var(--warn)}.d-no{background:var(--no)}
+
+@media(max-width:560px){
+  .spotrow{grid-template-columns:1fr}
+  .spotrow-l{border-right:none;border-bottom:1px solid var(--line)}
+  .nav-inner{padding:10px 16px}
+  .wrap{padding:0 16px}
+  .hero-inner{padding:48px 20px 40px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="kicker">Kite Trip Recherche · Mai – August 2026</div>
+    <h1>Wohin der<br><span class="l2">Wind</span> trägt.</h1>
+    <p class="hero-sub">Vollständige Spot-Analyse für die Saison: Familie im Mai bis August, Solo-Fokus im Juli. Wind, Wasser, Crowds, Unterkunft und Infrastruktur — ehrlich bewertet, nichts schöngeredet.</p>
+    <div class="hero-meta">
+      <span class="hm">Profil: <b>Flatwater, 15–25 kn</b></span>
+      <span class="hm">Crew: <b>+ Jasmin & Liam (1,5 J.)</b></span>
+      <span class="hm">Base: <b>Dubai</b></span>
+      <span class="hm">Spots geprüft: <b>30+</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span>FUERTEVENTURA <b>20–28 kn</b></span><span>EL MÉDANO <b>15–25 kn</b></span><span>LIMNOS <b>16–25 kn</b></span><span>URLA <b>15–25 kn</b></span><span>KOS <b>15–30 kn</b></span><span>DAKHLA <b>20–35 kn</b></span><span>KALPITIYA <b>18–27 kn</b></span><span>SANT PERE <b>13–20 kn</b></span><span>LAKE COMO <b>10–20 kn</b></span>
+    <span>FUERTEVENTURA <b>20–28 kn</b></span><span>EL MÉDANO <b>15–25 kn</b></span><span>LIMNOS <b>16–25 kn</b></span><span>URLA <b>15–25 kn</b></span><span>KOS <b>15–30 kn</b></span><span>DAKHLA <b>20–35 kn</b></span><span>KALPITIYA <b>18–27 kn</b></span><span>SANT PERE <b>13–20 kn</b></span><span>LAKE COMO <b>10–20 kn</b></span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-label">Sprung zu</span>
+    <a href="#mai">Mai · Familie</a>
+    <a href="#fuerte">Fuerteventura</a>
+    <a href="#juni">Juni · Lake Como</a>
+    <a href="#sommer">Juli/Aug · Familie</a>
+    <a href="#solo">Juli · Solo</a>
+    <a href="#fazit">Fazit</a>
+  </div>
+</nav>
+
+<!-- ===== SECTION 1: MAI ===== -->
+<section class="section" id="mai">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">01 — MAI · FAMILIENMONAT</span>
+      <h2>Ein Monat Kanaren, Spanien oder Griechenland</h2>
+      <p class="sec-intro">Ausgangsfrage: ein Monat kiten mit Frau und Kind, Unterkunft mit Leben drumrum, maximal 20 Minuten zum Spot. Griechenland fällt im Mai raus — der <strong>Meltemi läuft erst ab Juni</strong>. Übrig bleiben die Kanaren und der spanische Süden.</p>
+    </div>
+
+    <div class="legend">
+      <span><span class="dot d-go"></span> Empfehlung</span>
+      <span><span class="dot d-warn"></span> Mit Abstrichen</span>
+      <span><span class="dot d-no"></span> Eher nein</span>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-rail r-go"></div>
+        <div class="card-pad">
+          <div class="card-top"><div class="card-name">Fuerteventura</div><span class="vtag vt-go">Sieger Mai</span></div>
+          <div class="card-loc">Corralejo · Kanaren</div>
+          <div class="specs"><span class="spec">Wind <b>20–25 kn</b></span><span class="spec">Wasser <b>21°</b></span><span class="spec">Shorty</span></div>
+          <div class="card-desc">Tradewinds laufen ab Mai fast täglich. <strong>Flag Beach 5 Min vom Zentrum</strong>, Schule + Rescue direkt am Spot. Corralejo ist ein echter Küstenort mit Restaurants, Dünen-Nationalpark, Promenade. Beste Gesamtkombi für die Familie.</div>
+          <div class="flag flag-go">Side-onshore, sicher · grosse deutsche Kite-Community</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-rail r-go"></div>
+        <div class="card-pad">
+          <div class="card-top"><div class="card-name">El Médano</div><span class="vtag vt-go">Solide #2</span></div>
+          <div class="card-loc">Teneriffa · Kanaren</div>
+          <div class="specs"><span class="spec">Wind <b>15–25 kn</b></span><span class="spec">Wasser <b>21°</b></span><span class="spec">Shorty</span></div>
+          <div class="card-desc">Spot liegt direkt im Ort — kein Transfer, du läufst aus der Tür aufs Wasser. Kleiner Küstenort mit Promenade. <strong>Ihr kennt Teneriffa aber schon</strong>, das ist der einzige echte Minuspunkt.</div>
+          <div class="flag flag-warn">Weniger Insel-Programm als Fuerte für einen ganzen Monat</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-rail r-warn"></div>
+        <div class="card-pad">
+          <div class="card-top"><div class="card-name">Tarifa</div><span class="vtag vt-warn">Gut, aber</span></div>
+          <div class="card-loc">Andalusien · Spanien</div>
+          <div class="specs"><span class="spec">Wind <b>15–25 kn</b></span><span class="spec">Wasser <b>18°</b></span><span class="spec">3/2 Neo</span></div>
+          <div class="card-desc">Tolles Flair, arabische Altstadt, ~5 Windtage/Woche. Aber: <strong>Levante ist offshore</strong> (Rescue-Boot nötig) und das Wasser ist spürbar kühler als Kanaren.</div>
+          <div class="flag flag-warn">Levante offshore — immer Rescue-Ticket lösen</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-rail r-warn"></div>
+        <div class="card-pad">
+          <div class="card-top"><div class="card-name">Sardinien</div><span class="vtag vt-warn">Logistik</span></div>
+          <div class="card-loc">Punta Trettu · Italien</div>
+          <div class="specs"><span class="spec">Wind <b>15–25 kn</b></span><span class="spec">90% Windtage</span><span class="spec">3/2 Neo</span></div>
+          <div class="card-desc">Eines der besten Flatwater-Reviere Europas. Aber <strong>der Spot liegt im Nichts</strong> — Base in Cagliari (40 Min) nötig, dann täglich rausfahren. Als All-in-One-Familienbase umständlich.</div>
+          <div class="flag flag-warn">Nur mit Auto + bewusster Logistikplanung sinnvoll</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-rail r-no"></div>
+        <div class="card-pad">
+          <div class="card-top"><div class="card-name">Gran Canaria</div><span class="vtag vt-no">Skip</span></div>
+          <div class="card-loc">Vargas / Pozo · Kanaren</div>
+          <div class="specs"><span class="spec">Wind <b>25–45 kn</b></span><span class="spec">Kiesel</span></div>
+          <div class="card-desc">Wind im Überfluss durch den Guardrail-Effekt — aber zu extrem. <strong>Vargas: schwarzer Kiesel, kein Schwimmen.</strong> Der Süden (Maspalomas) liegt im Windschatten. Familie + Kiten beißt sich hier.</div>
+          <div class="flag flag-no">Profi-Territory · nicht familienfreundlich</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-rail r-no"></div>
+        <div class="card-pad">
+          <div class="card-top"><div class="card-name">Griechenland</div><span class="vtag vt-no">Falscher Monat</span></div>
+          <div class="card-loc">Kykladen / Dodekanes</div>
+          <div class="specs"><span class="spec">Wind <b>10–20 kn</b></span><span class="spec">unzuverlässig</span></div>
+          <div class="card-desc">Im Mai läuft der Meltemi noch nicht. Nur 2–3 Windtage/Woche. <strong>Top ab Juni</strong>, aber als Mai-Monatstrip mit Wind-Fokus zu riskant.</div>
+          <div class="flag flag-no">Meltemi-Saison startet erst Juni</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Gran Canaria Detail + Madeira/Kapverde -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">01b — GEPRÜFT & VERWORFEN</span>
+      <h2>Was sonst noch auf dem Tisch lag</h2>
+      <p class="sec-intro">Gran Canaria im Detail, plus die Atlantik-Inseln die für Mai nicht passen.</p>
+    </div>
+
+    <div class="spotlist">
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Salinas de Arinaga</div><div class="spotrow-dist">Gran Canaria · ~20 min v. Maspalomas</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">20–30 kn</span><span class="sp">brauchbar</span></div><div class="spotrow-desc">Ruhigere Ostküsten-Alternative zu Vargas. Wenn Gran Canaria, dann hier — aber steiniger Strand, kein Familienflair, täglich 20 Min Fahrt.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Bahía Feliz / Playa del Inglés</div><div class="spotrow-dist">Gran Canaria · Südküste</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">9–14 kn</span><span class="sp">Windschatten</span></div><div class="spotrow-desc">Im Sommer im Windschatten der Berge — zu wenig Wind. Kiten in Playa del Inglés ist Mai–Aug ohnehin verboten.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Madeira</div><div class="spotrow-dist">Atlantik · Portugal</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">40% offshore</span><span class="sp">Felsen</span></div><div class="spotrow-desc">Kein Flatwater, viel offshore-Wind, kaum Sandstrände. Wunderschön für Familie, aber als Kite-Ziel ungeeignet.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Kap Verde</div><div class="spotrow-dist">Boa Vista / Sal</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">Saison Nov–Mai</span></div><div class="spotrow-desc">Wäre perfekt — aber Mai ist Saisonende, Wind lässt nach. Top im Winter, falsche Wahl für Frühsommer.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: FUERTEVENTURA DETAIL ===== -->
+<section class="section" id="fuerte">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02 — FUERTEVENTURA IM DETAIL</span>
+      <h2>Spots, Bases & das Kleinkind-Programm</h2>
+      <p class="sec-intro">Von Corralejo aus hast du ein komplettes Kite-Universum in 30 Minuten. Dazu drei mögliche Wohnorte — und ein ehrlicher Blick darauf, was Jasmin und Liam abseits des Wassers machen.</p>
+    </div>
+
+    <h3 style="font-family:'Bricolage Grotesque';font-weight:600;font-size:18px;margin-bottom:14px">Kitespots im 30-Minuten-Radius</h3>
+    <div class="spotlist" style="margin-bottom:32px">
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Flag Beach</div><div class="spotrow-dist">5 min · Alltagsspot</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">alle Level</span><span class="sp">Schule + Rescue</span><span class="sp">side-onshore</span></div><div class="spotrow-desc">7 km Sandstrand, Kitezone getrennt von Badezone. Dein täglicher Spot. Familienstrand direkt daneben.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">El Cotillo</div><div class="spotrow-dist">25 min · Westküste</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">Wellen + Lagune</span><span class="sp">Intermediate+</span></div><div class="spotrow-desc">Wellenseite zum Kiten, türkise Lagunen für Liam zum Plantschen. Perfekter Kombi-Tag. Felsen beim Einstieg beachten.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Majanicho</div><div class="spotrow-dist">20 min · Nordküste</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">Wave-Spot</span><span class="sp">Expert</span></div><div class="spotrow-desc">Weltklasse Point-Break, vulkanischer Felsuntergrund. Für erfahrene Wellen-Kiter, nichts für entspannte Sessions.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Sotavento</div><div class="spotrow-dist">55 min · Süden</div></div><div class="spotrow-r"><div class="spot-pills"><span class="sp">Flatwater-Lagune</span><span class="sp">Weltklasse</span></div><div class="spotrow-desc">GKA World-Cup-Lagune. Zu weit für täglich, aber als Tagesausflug bei Hochwasser ein Traum-Flatwater.</div></div></div>
+    </div>
+
+    <h3 style="font-family:'Bricolage Grotesque';font-weight:600;font-size:18px;margin-bottom:14px">Drei Bases im Vergleich</h3>
+    <div class="tbl-scroll" style="margin-bottom:32px">
+      <table>
+        <thead><tr><th></th><th>Corralejo</th><th>Lajares</th><th>Costa Calma</th></tr></thead>
+        <tbody>
+          <tr><th>Charakter</th><td>Lebhafter Küstenort</td><td>Ruhiges Künstlerdorf</td><td>Ruhiger Süden</td></tr>
+          <tr><th>Flag Beach</th><td class="cellgood">5 min</td><td class="cellgood">15 min</td><td class="cellbad">55 min</td></tr>
+          <tr><th>El Cotillo Lagune</th><td>25 min</td><td class="cellgood">10 min</td><td>50 min</td></tr>
+          <tr><th>Restaurants/Gym</th><td class="cellgood">★★★★☆ alles zu Fuss</td><td class="cellmid">★★★☆☆ + Yoga</td><td class="cellmid">★★★☆☆</td></tr>
+          <tr><th>Villa-Auswahl</th><td class="cellmid">teurer</td><td class="cellgood">schöne Fincas, günstiger</td><td class="cellgood">gut</td></tr>
+          <tr><th>Für dein Kiteprofil</th><td>Flag Beach top</td><td class="cellgood">flexibel, mehrere Spots</td><td class="cellgood">Sotavento vor der Tür</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-family:'Bricolage Grotesque';font-weight:600;font-size:18px;margin-bottom:14px">Programm für Liam (18 Monate)</h3>
+    <div class="spotlist">
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">El Cotillo Lagunen</div><div class="spotrow-dist">10–25 min</div></div><div class="spotrow-r"><div class="spotrow-desc">Flaches warmes Wasser ohne Wellen — das Baby-Highlight der Insel. Zieht euch täglich 2–3 Stunden.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Oasis Park (Zoo)</div><div class="spotrow-dist">55 min · Fr–So</div></div><div class="spotrow-r"><div class="spotrow-desc">Giraffen füttern, Lemuren, botanischer Garten. Mit 1,5 Jahren das perfekte Alter. Nur Fr–So offen.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Dünen-Nationalpark</div><div class="spotrow-dist">5 min</div></div><div class="spotrow-r"><div class="spotrow-desc">Riesige Sanddünen direkt am Ort. Sandparadies für Kleinkinder. Früh morgens wegen Wind & Sonne.</div></div></div>
+      <div class="spotrow"><div class="spotrow-l"><div class="spotrow-name">Isla de Lobos</div><div class="spotrow-dist">20 min + Boot</div></div><div class="spotrow-r"><div class="spotrow-desc">Unbewohnte Vulkaninsel, max. 400 Besucher/Tag (Permit kostenlos). Traumhafte ruhige Buchten.</div></div></div>
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-top:14px;font-style:italic">Ehrlich: Fuerteventura ist eine Wüsteninsel. Nach einem Monat ist die Insel gesehen — Zoo, Strand, Dünen, ein paar Ausflüge. Für einen ersten Monat top, als Wiederholung „etwas langweilig".</p>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: JUNI ===== -->
+<section class="section" id="juni">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">03 — JUNI · LAKE COMO</span>
+      <h2>Das überraschende Zwischenspiel</h2>
+      <p class="sec-intro">Erste Junihälfte Fuerteventura, letzte zwei Wochen Lake Como. Como ist ein echtes — und unterschätztes — Kite-Ziel.</p>
+    </div>
+    <div class="cards">
+      <div class="card" style="grid-column:1/-1">
+        <div class="card-rail r-go"></div>
+        <div class="card-pad">
+          <div class="card-top"><div class="card-name">Lago di Como — Breva-Wind</div><span class="vtag vt-go">Hidden Gem</span></div>
+          <div class="card-loc">Gera Lario / Colico · Nordteil des Sees</div>
+          <div class="specs"><span class="spec">Wind <b>10–20 kn</b></span><span class="spec">thermisch</span><span class="spec">13–18 Uhr</span><span class="spec">3/2 Neo (Juni)</span></div>
+          <div class="card-desc">Der <strong>Breva</strong> (thermischer Südwind) läuft im Sommer 6 von 7 Tagen, nachmittags 14–18 Uhr. Flatwater, kein Wellengang. In einem guten Juni nur wenige windlose Tage. <strong>Wichtig:</strong> enge Startplätze → Sessions laufen vom Schulboot; und Windy/Windguru funktionieren nicht für den See — lokale Tools (Breva Guru) nutzen.</div>
+          <div class="flag flag-go">Nachmittags 2–3h kiten, während die Familie den See geniesst</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: SOMMER FAMILIE ===== -->
+<section class="section" id="sommer">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">04 — JULI / AUGUST · FAMILIE</span>
+      <h2>Hochsaison: das Crowd- & Preis-Dilemma</h2>
+      <p class="sec-intro">Juli/August sind Haupttouristenzeit — voll und teuer am Mittelmeer. Die Suche: <strong>Wind sicher (60–70%), Lebensstandard, nicht überlaufen, Villa spontan buchbar</strong>. Der Nordeuropa-Gedanke ist clever, scheitert aber am Wind.</p>
+    </div>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Ziel</th><th>Wind Juli</th><th>Hitze</th><th>Crowd</th><th>Villa</th><th>Urteil</th></tr></thead>
+        <tbody>
+          <tr class="t-win"><th>Kos · Mastichari</th><td class="cellgood">75–85% Meltemi</td><td class="cellgood">25–30°</td><td class="cellgood">moderat</td><td class="cellmid">teuer</td><td><span class="stars">★★★★★</span></td></tr>
+          <tr><th>Lo Stagnone · Sizilien</th><td class="cellgood">15–20 kn</td><td class="cellmid">heiss</td><td class="cellgood">nie voll</td><td class="cellgood">stabil</td><td>★★★★ <span class="tnote">aber „nichts drumrum"</span></td></tr>
+          <tr><th>Sant Pere · Costa Brava</th><td class="cellmid">13–20 kn therm.</td><td class="cellgood">26–29°</td><td class="cellbad">Juli voll</td><td class="cellbad">teuer</td><td>★★★ <span class="tnote">5× Preis, voller Spot</span></td></tr>
+          <tr><th>Dänemark · Rømø/Fjord</th><td class="cellbad">~50%, schwach</td><td class="cellgood">22–24°</td><td class="cellgood">leer</td><td class="cellgood">★★★★★ spontan</td><td>★★★ <span class="tnote">windschwächster Monat</span></td></tr>
+          <tr><th>Schweden</th><td class="cellbad">schlechtester Monat</td><td class="cellgood">mild</td><td class="cellgood">leer</td><td class="cellgood">gut</td><td class="cellbad">Skip</td></tr>
+          <tr><th>Noordwijk · NL</th><td class="cellbad">Sommer schwach</td><td class="cellgood">mild</td><td class="cellmid">mittel</td><td class="cellmid">ok</td><td class="cellbad">Wellen, kein Flat</td></tr>
+          <tr><th>Conil · Andalusien</th><td class="cellmid">Poniente ab 14h</td><td class="cellmid">heiss</td><td class="cellmid">Surf-lastig</td><td class="cellgood">gut</td><td>★★★ <span class="tnote">primär Surfspot</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout" style="margin-top:28px">
+      <h3>Erkenntnis: Im Hochsommer gibt es kein Ziel das alles kann</h3>
+      <p>Windsichere Sommerspots sind entweder <strong>heiss & mediterran</strong> (Meltemi 70–85%) oder <strong>windig-aber-kalt-und-unsicher</strong> (Skandinavien ~50%). Nordeuropa ist reizvoll für Komfort und Villa-Verfügbarkeit, aber das Windrisiko passt nicht zum Anspruch.</p>
+      <p>Für die Familie bleibt <strong>Kos</strong> der beste Kompromiss: Meltemi-Sicherheit, echtes Stadtleben, Wasserpark am Spot, Direktflug. Höherer Villa-Preis — dafür kitest du 8 von 10 Tagen statt 5.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Kos detail -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">04b — KOS IM DETAIL</span>
+      <h2>Warum Kos die Familie schlägt</h2>
+    </div>
+    <div class="months">
+      <div class="month"><div class="month-tag">Kiten</div><div class="month-name">Mastichari</div><div class="month-desc">Meltemi fast täglich, Flatwater, Rescue. Tigaki/Marmari als ruhigere Familienbuchten daneben.</div></div>
+      <div class="month"><div class="month-tag">Wasserpark</div><div class="month-name">Lido Mastichari</div><div class="month-desc">Direkt am Spot, eigener Kleinkindbereich. Du kitest, Familie ist 5 Min weg.</div></div>
+      <div class="month"><div class="month-tag">Tiere</div><div class="month-name">Salzsee + Reiterhof</div><div class="month-desc">Flamingos, Familien-Reiterhöfe, Ponys. Mit 1,5 Jahren perfekt.</div></div>
+      <div class="month"><div class="month-tag">Stadt</div><div class="month-name">Kos Town</div><div class="month-desc">Lebendige Altstadt, Burg, Restaurants, Promenade. 20 Min — genau das, was Fuerte fehlte.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: SOLO ===== -->
+<section class="section" id="solo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">05 — JULI · SOLO-FOKUS</span>
+      <h2>2–3 Wochen, nur Wind</h2>
+      <p class="sec-intro">Wenn Jasmin & Liam nach Dubai gehen: maximaler Kite-Fokus. Kriterien — <strong>konstant 15–25 kn, nicht zu heiss, viel Platz oder grosser Spot, spontan buchbar.</strong> Komfort egal. Von Mailand aus erreichbar.</p>
+    </div>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Spot</th><th>Wind Juli</th><th>Ausbeute</th><th>Hitze</th><th>Platz</th><th>Unterkunft</th><th>Anreise</th></tr></thead>
+        <tbody>
+          <tr class="t-win"><th>Urla · Izmir TR</th><td class="cellgood">15–25 kn</td><td class="cellgood">~80% im Bereich</td><td class="cellmid">29–33°</td><td class="cellgood">leer + Secret Spot</td><td class="cellgood">✓ Surf House</td><td class="cellgood">direkt ADB</td></tr>
+          <tr><th>Limnos · Keros GR</th><td class="cellgood">16–25 kn</td><td class="cellgood">~75% im Bereich</td><td class="cellgood">25–30°</td><td class="cellgood">3km, ~50 Kiter</td><td class="cellbad">✗ 94% ausgebucht</td><td class="cellmid">via Athen</td></tr>
+          <tr><th>Sri Lanka · Kalpitiya</th><td class="cellgood">18–27 kn</td><td class="cellgood">~90%</td><td class="cellmid">28–31° feucht</td><td class="cellgood">14 Lagunen</td><td class="cellgood">✓ Camps</td><td class="cellbad">Langstrecke</td></tr>
+          <tr><th>Dakhla · MAR</th><td class="cellmid">20–35 kn</td><td class="cellgood">~90%, oft >30</td><td class="cellgood">26° (Flaute 38°)</td><td class="cellmid">45km, Juli leer</td><td class="cellgood">Habitas/Camps</td><td class="cellbad">2× Umstieg</td></tr>
+          <tr><th>Rhodos · Prasonisi</th><td class="cellgood">15–30 kn</td><td class="cellgood">~90%, oft >25</td><td class="cellmid">30–34°</td><td class="cellbad">klein, sehr voll</td><td class="cellbad">limitiert</td><td>direkt RHO</td></tr>
+          <tr><th>Zanzibar · Paje</th><td class="cellgood">15–25 kn</td><td class="cellmid">~75% tideabh.</td><td class="cellmid">28–30°</td><td class="cellmid">Ebbe weit</td><td class="cellgood">✓ viel</td><td class="cellbad">Langstr. + Malaria</td></tr>
+          <tr><th>Sant Pere · ES</th><td class="cellmid">13–20 kn</td><td class="cellmid">~50%</td><td class="cellgood">26–29°</td><td class="cellmid">Juli voll</td><td class="cellmid">teuer</td><td class="cellgood">1,5h direkt</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-family:'Bricolage Grotesque';font-weight:600;font-size:18px;margin:32px 0 14px">Infrastruktur der Finalisten</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th></th><th>Fuerte (Ref.)</th><th>Urla</th><th>Dakhla</th><th>Sri Lanka</th></tr></thead>
+        <tbody>
+          <tr><th>Supermärkte</th><td class="cellgood">★★★★★</td><td class="cellgood">★★★★★</td><td class="cellmid">★★★☆☆</td><td class="cellbad">★★☆☆☆</td></tr>
+          <tr><th>Krankenhaus</th><td class="cellgood">★★★★☆</td><td class="cellgood">★★★★★ <span class="tnote">Izmir</span></td><td class="cellmid">★★★☆☆</td><td class="cellbad">★★☆☆☆</td></tr>
+          <tr><th>Restaurants</th><td class="cellgood">★★★★☆</td><td class="cellgood">★★★★★ <span class="tnote">Foodie-Hotspot</span></td><td class="cellmid">★★★☆☆</td><td class="cellmid">★★★☆☆</td></tr>
+          <tr><th>Lifestyle</th><td class="cellgood">★★★★☆</td><td class="cellgood">★★★★★</td><td class="cellmid">★★★☆☆</td><td class="cellmid">★★★☆☆</td></tr>
+          <tr><th>Anreise v. Mailand</th><td class="cellgood">direkt</td><td class="cellgood">direkt</td><td class="cellbad">2× Umstieg</td><td class="cellbad">Langstrecke</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAZIT ===== -->
+<section class="section" id="fazit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">06 — FAZIT</span>
+      <h2>Die Empfehlungen, sortiert</h2>
+    </div>
+
+    <div class="callout">
+      <h3>🪁 Solo-Fokus-Trip · Juli</h3>
+      <div class="pick"><span class="pick-rank">01</span><div><span class="pick-name">Urla, Türkei</span> — <span class="pick-why">bester Allrounder: 15–25 kn genau im Bereich, leerer Spot + Secret Spot, Top-Infrastruktur via Izmir, bestes Essen, Direktflug. Unterkunft am Spot gelöst.</span></div></div>
+      <div class="pick"><span class="pick-rank">02</span><div><span class="pick-name">Dakhla, Marokko</span> — <span class="pick-why">das „einmal-hin"-Wind-Abenteuer. Leere Riesenlagune im Juli, überraschend mild & gute Stadt. Aber: gustiger Wind oft >30 und mühsame Anreise.</span></div></div>
+      <div class="pick"><span class="pick-rank">03</span><div><span class="pick-name">Sri Lanka, Kalpitiya</span> — <span class="pick-why">~90% Wind, das exotischste. Rustikal & weit, aber von Dubai aus ähnlich gut erreichbar wie Fuerte. Bewusst Komfort gegen Abenteuer getauscht.</span></div></div>
+    </div>
+
+    <div class="callout" style="background:var(--sea-dk)">
+      <h3 style="color:#fff">👨‍👩‍👦 Familienmonat</h3>
+      <div class="pick" style="border-color:rgba(255,255,255,.18)"><span class="pick-rank">Mai</span><div><span class="pick-name">Fuerteventura / Corralejo</span> — <span class="pick-why">unschlagbare Gesamtkombi. Flag Beach 5 Min, Familie hat Programm, Preis stimmt.</span></div></div>
+      <div class="pick"><span class="pick-rank">Juni</span><div><span class="pick-name">½ Fuerte + ½ Lake Como</span> — <span class="pick-why">Breva-Wind am See, Italien-Flair für die Familie.</span></div></div>
+      <div class="pick"><span class="pick-rank">Jul/Aug</span><div><span class="pick-name">Kos, Griechenland</span> — <span class="pick-why">Meltemi-Sicherheit + echtes Stadtleben + Wasserpark am Spot. Teurer, aber liefert.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="foot-logo">Kite Trip Planner</div>
+      <div class="foot-note" style="margin-top:4px">Saison 2026 · Recherche-Zusammenfassung</div>
+    </div>
+    <div class="foot-note">Alle Wind-/Crowd-Angaben aus Spot-Recherche · ohne Gewähr · vor Buchung lokal prüfen</div>
+  </div>
+</footer>
+
+</body>
+</html>

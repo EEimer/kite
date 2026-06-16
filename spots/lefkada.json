@@ -1,0 +1,159 @@
+{
+  "id": "lefkada",
+  "name": "Lefkada",
+  "spot": "Agios Ioannis / Milos Beach · Ionisches Meer",
+  "region": "Ionische Inseln",
+  "country": "Griechenland",
+  "flag": "🇬🇷",
+  "verdict": "warn",
+  "verdictLabel": "Thermisch, grün",
+  "tagline": "Thermischer Nachmittagswind im grünen Ionischen Meer — sanfter als der Meltemi.",
+  "scores": {
+    "kite": 3,
+    "family": 4,
+    "infra": 4,
+    "access": 4
+  },
+  "wind": {
+    "min": 12,
+    "max": 22,
+    "type": "thermisch",
+    "reliability": 95
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 25,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Athen nach Preveza (PVK)",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~3 h",
+    "transfers": 0,
+    "note": "saisonale Direktflüge nach PVK",
+    "hours": 3
+  },
+  "tags": [
+    "thermisch",
+    "Agios Ioannis",
+    "grün",
+    "Ionisches Meer"
+  ],
+  "description": "Lefkada ist grün, hügelig und mit der Brücke vom Festland erreichbar. Bei Agios Ioannis/Milos Beach weht im Sommer ein thermischer Nachmittagswind — sanfter und weniger zuverlässig als der Meltemi der Ägäis, dafür landschaftlich traumhaft und sehr familientauglich.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Thermisch & moderat · windschwächer als Ägäis"
+  },
+  "subspots": [],
+  "family": [
+    "Traumstrände (Porto Katsiki, Egremni).",
+    "Inselhopping nach Meganisi.",
+    "Bergdörfer & Wasserfälle (Nydri)."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Levkada-Greece.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        31,
+        25,
+        15,
+        8
+      ],
+      "2": [
+        31,
+        28,
+        17,
+        8
+      ],
+      "3": [
+        38,
+        29,
+        10,
+        6
+      ],
+      "4": [
+        52,
+        26,
+        9,
+        1
+      ],
+      "5": [
+        60,
+        23,
+        3,
+        2
+      ],
+      "6": [
+        60,
+        30,
+        3,
+        0
+      ],
+      "7": [
+        54,
+        36,
+        6,
+        1
+      ],
+      "8": [
+        57,
+        32,
+        5,
+        0
+      ],
+      "9": [
+        52,
+        25,
+        5,
+        1
+      ],
+      "10": [
+        37,
+        22,
+        8,
+        2
+      ],
+      "11": [
+        27,
+        25,
+        15,
+        5
+      ],
+      "12": [
+        26,
+        29,
+        15,
+        11
+      ]
+    }
+  }
+}

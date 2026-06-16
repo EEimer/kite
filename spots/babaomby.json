@@ -1,0 +1,161 @@
+{
+  "id": "babaomby",
+  "name": "Babaomby",
+  "spot": "Babaomby · Nord-Madagaskar",
+  "region": "Indischer Ozean",
+  "country": "Madagaskar",
+  "flag": "🇲🇬",
+  "verdict": "go",
+  "verdictLabel": "Windstärkster der Welt (Juli)",
+  "tagline": "Praktisch garantierter Wind im Südwinter — eine der windsichersten Lagunen überhaupt.",
+  "scores": {
+    "kite": 5,
+    "family": 2,
+    "infra": 2,
+    "access": 2
+  },
+  "wind": {
+    "min": 20,
+    "max": 35,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "lagoon",
+    "tempC": 26,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "intermediate",
+    "advanced",
+    "expert"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~14 h",
+    "transfers": 2,
+    "note": "via Nairobi/Addis nach Diego Suarez",
+    "hours": 14
+  },
+  "distanceGermany": {
+    "time": "~16 h",
+    "transfers": 2,
+    "note": "via Addis/Nairobi + Inlandstransfer",
+    "hours": 16
+  },
+  "tags": [
+    "~95% Wind",
+    "Lagune",
+    "abgelegen",
+    "Eco-Camp",
+    "Downwinder"
+  ],
+  "description": "Im Südwinter (Mai–Okt) läuft der Passat fast ununterbrochen — Babaomby an der Nordspitze Madagaskars zählt zu den windsichersten Spots der Welt. Riesige flache Lagune, traumhafte Downwinder. Nur per Eco-Camp erreichbar, lange Anreise, kaum Infrastruktur — das pure Wind-Abenteuer.",
+  "flagNote": {
+    "type": "go",
+    "text": "Globaler Wind-Spitzenreiter im Juli · sehr abgelegen"
+  },
+  "subspots": [],
+  "family": [
+    "Kein Familienziel — reines Kite-Camp.",
+    "Lemuren & Baobabs auf Ausflügen.",
+    "Schnorcheln in unberührten Riffen."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Babaomby-North-Madagascar.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        36,
+        36,
+        1,
+        0
+      ],
+      "2": [
+        39,
+        33,
+        9,
+        3
+      ],
+      "3": [
+        37,
+        32,
+        3,
+        0
+      ],
+      "4": [
+        15,
+        55,
+        27,
+        1
+      ],
+      "5": [
+        14,
+        38,
+        42,
+        2
+      ],
+      "6": [
+        5,
+        27,
+        46,
+        20
+      ],
+      "7": [
+        1,
+        18,
+        56,
+        24
+      ],
+      "8": [
+        2,
+        11,
+        62,
+        25
+      ],
+      "9": [
+        4,
+        20,
+        53,
+        23
+      ],
+      "10": [
+        3,
+        27,
+        65,
+        3
+      ],
+      "11": [
+        22,
+        41,
+        26,
+        2
+      ],
+      "12": [
+        37,
+        40,
+        2,
+        0
+      ]
+    }
+  }
+}

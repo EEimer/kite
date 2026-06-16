@@ -1,0 +1,161 @@
+{
+  "id": "el-medano",
+  "name": "El Médano",
+  "spot": "El Médano · Teneriffa",
+  "region": "Kanaren",
+  "country": "Spanien",
+  "flag": "🇪🇸",
+  "verdict": "go",
+  "verdictLabel": "Solide #2",
+  "tagline": "Spot direkt im Ort — du läufst aus der Tür aufs Wasser, kein Transfer.",
+  "scores": {
+    "kite": 4,
+    "family": 4,
+    "infra": 4,
+    "access": 5
+  },
+  "wind": {
+    "min": 15,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 94
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 21,
+    "wetsuit": "Shorty"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~9 h",
+    "transfers": 1,
+    "note": "1× Umstieg über Europa (TFS)",
+    "hours": 9
+  },
+  "distanceGermany": {
+    "time": "~4,5 h",
+    "transfers": 0,
+    "note": "Direktflug nach TFS",
+    "hours": 4.5
+  },
+  "tags": [
+    "kein Transfer",
+    "Promenade",
+    "Flatwater",
+    "Küstenort"
+  ],
+  "description": "Der Spot liegt direkt im Ort — kein Transfer, du läufst aus der Tür aufs Wasser. Kleiner Küstenort mit Promenade. Einziger echter Minuspunkt: weniger Insel-Programm als Fuerte für einen ganzen Monat.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Weniger Insel-Programm als Fuerte für einen ganzen Monat"
+  },
+  "subspots": [],
+  "family": [
+    "Flacher Stadtstrand Playa Chica direkt an der Promenade.",
+    "Vulkan Montaña Roja zum Wandern.",
+    "Siam Park / Loro Parque im Norden als Tagesausflug."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Tenerife-Canary-Islands-Spain.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        25,
+        36,
+        18,
+        3
+      ],
+      "2": [
+        26,
+        31,
+        19,
+        6
+      ],
+      "3": [
+        27,
+        35,
+        16,
+        5
+      ],
+      "4": [
+        24,
+        38,
+        19,
+        3
+      ],
+      "5": [
+        27,
+        31,
+        25,
+        2
+      ],
+      "6": [
+        31,
+        42,
+        10,
+        0
+      ],
+      "7": [
+        13,
+        50,
+        29,
+        6
+      ],
+      "8": [
+        29,
+        44,
+        21,
+        2
+      ],
+      "9": [
+        37,
+        38,
+        13,
+        0
+      ],
+      "10": [
+        36,
+        30,
+        8,
+        1
+      ],
+      "11": [
+        30,
+        37,
+        17,
+        3
+      ],
+      "12": [
+        24,
+        36,
+        23,
+        6
+      ]
+    },
+    "proxy": "Tenerife (WWK hat keinen eigenen El-Médano-Eintrag)"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "dakhla",
+  "name": "Dakhla",
+  "spot": "Dakhla-Lagune · Westsahara",
+  "region": "Atlantik",
+  "country": "Marokko",
+  "flag": "🇲🇦",
+  "verdict": "go",
+  "verdictLabel": "Wind-Abenteuer #2",
+  "tagline": "Das „einmal-hin“-Abenteuer: leere Riesenlagune, ~90% Wind — aber mühsame Anreise.",
+  "scores": {
+    "kite": 5,
+    "family": 2,
+    "infra": 3,
+    "access": 2
+  },
+  "wind": {
+    "min": 20,
+    "max": 35,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 22,
+    "wetsuit": "3/2 Neo"
+  },
+  "level": [
+    "intermediate",
+    "advanced",
+    "expert"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 2,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~14 h",
+    "transfers": 2,
+    "note": "lange Anreise, 2× Umstieg",
+    "hours": 14
+  },
+  "distanceGermany": {
+    "time": "~8 h",
+    "transfers": 2,
+    "note": "via Casablanca/Agadir, 1–2× Umstieg",
+    "hours": 8
+  },
+  "tags": [
+    "~90% Wind",
+    "Riesenlagune",
+    "Camps",
+    "oft >30 kn"
+  ],
+  "description": "Das „einmal-hin“-Wind-Abenteuer: leere 45-km-Riesenlagune, im Juli fast leer, überraschend mild (26°, Flaute außerhalb der Lagune bis 38°) und mit überraschend guter Stadt. Aber: gustiger Wind oft >30 kn und mühsame Anreise mit 2× Umstieg.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Oft >30 kn & böig · Anreise mit 2× Umstieg"
+  },
+  "subspots": [
+    {
+      "name": "Hauptlagune",
+      "dist": "vor den Camps",
+      "level": "alle",
+      "desc": "Stehtiefes, riesiges Flatwater, ideal für Freestyle."
+    },
+    {
+      "name": "Speed Spot / Ozean",
+      "dist": "kurz",
+      "level": "Advanced+",
+      "desc": "Speedstrecke und Wellen außerhalb der Lagune."
+    }
+  ],
+  "family": [
+    "Eher kein Familienziel.",
+    "Stadt Dakhla mit Märkten.",
+    "Austernfarmen & Wüstenausflüge."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Dakhla-Morocco.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        31,
+        56,
+        11,
+        0
+      ],
+      "2": [
+        25,
+        54,
+        17,
+        1
+      ],
+      "3": [
+        13,
+        61,
+        26,
+        0
+      ],
+      "4": [
+        5,
+        46,
+        48,
+        0
+      ],
+      "5": [
+        2,
+        33,
+        63,
+        2
+      ],
+      "6": [
+        1,
+        34,
+        62,
+        3
+      ],
+      "7": [
+        3,
+        21,
+        70,
+        6
+      ],
+      "8": [
+        4,
+        30,
+        65,
+        1
+      ],
+      "9": [
+        11,
+        47,
+        41,
+        0
+      ],
+      "10": [
+        21,
+        65,
+        11,
+        0
+      ],
+      "11": [
+        38,
+        54,
+        6,
+        0
+      ],
+      "12": [
+        35,
+        45,
+        13,
+        1
+      ]
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "id": "limnos",
+  "name": "Limnos",
+  "spot": "Keros Bay · Nordägäis",
+  "region": "Nordägäis",
+  "country": "Griechenland",
+  "flag": "🇬🇷",
+  "verdict": "warn",
+  "verdictLabel": "Top-Spot, schwer buchbar",
+  "tagline": "3 km Bucht, ~50 Kiter, ~75% Meltemi — aber im Juli oft ausgebucht.",
+  "scores": {
+    "kite": 4,
+    "family": 3,
+    "infra": 3,
+    "access": 3
+  },
+  "wind": {
+    "min": 16,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 75
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 25,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Athen nach Limnos (LXS)",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~5 h",
+    "transfers": 1,
+    "note": "meist via Athen",
+    "hours": 5
+  },
+  "tags": [
+    "~75% Meltemi",
+    "3 km Bucht",
+    "Juli ausgebucht",
+    "ruhige Insel"
+  ],
+  "description": "Weite Keros-Bucht (3 km, ~50 Kiter), ~75% Meltemi im Juli, angenehme 25–30°. Schöne, ruhige Insel — aber die Unterkünfte sind im Juli zu ~94% ausgebucht, Anreise via Athen.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Im Juli ~94% ausgebucht · früh buchen"
+  },
+  "subspots": [],
+  "family": [
+    "Ruhige Inseldörfer & Tavernen.",
+    "Lange leere Strände.",
+    "Sanddünen von Gomati."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 39.824,
+    "lon": 25.32,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        19,
+        16,
+        11,
+        5
+      ],
+      "2": [
+        18,
+        15,
+        12,
+        6
+      ],
+      "3": [
+        19,
+        13,
+        13,
+        2
+      ],
+      "4": [
+        18,
+        11,
+        6,
+        3
+      ],
+      "5": [
+        16,
+        9,
+        1,
+        0
+      ],
+      "6": [
+        20,
+        6,
+        1,
+        0
+      ],
+      "7": [
+        31,
+        12,
+        2,
+        0
+      ],
+      "8": [
+        29,
+        15,
+        3,
+        0
+      ],
+      "9": [
+        21,
+        20,
+        7,
+        0
+      ],
+      "10": [
+        23,
+        15,
+        4,
+        0
+      ],
+      "11": [
+        26,
+        13,
+        10,
+        1
+      ],
+      "12": [
+        18,
+        15,
+        11,
+        2
+      ]
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "id": "masirah",
+  "name": "Masirah Island",
+  "spot": "Masirah · Arabisches Meer",
+  "region": "Naher Osten",
+  "country": "Oman",
+  "flag": "🇴🇲",
+  "verdict": "go",
+  "verdictLabel": "Top von UAE aus (Juli)",
+  "tagline": "Khareef-Monsun bringt extrem sicheren Wind — und liegt fast vor der Haustür von Dubai.",
+  "scores": {
+    "kite": 5,
+    "family": 2,
+    "infra": 2,
+    "access": 5
+  },
+  "wind": {
+    "min": 18,
+    "max": 30,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 27,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 0,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~6 h",
+    "transfers": 1,
+    "note": "Flug Muscat + Fahrt + Fähre",
+    "hours": 6
+  },
+  "distanceGermany": {
+    "time": "~10 h",
+    "transfers": 1,
+    "note": "via Muscat",
+    "hours": 10
+  },
+  "tags": [
+    "Khareef-Monsun",
+    "~90% Wind",
+    "nah an UAE",
+    "einsam",
+    "Flatwater"
+  ],
+  "description": "Während des Sommermonsuns (Khareef, Juni–Sep) bläst auf Masirah extrem zuverlässig kräftiger Wind. Lange leere Strände, kaum Crowds — und für Kiter aus den Emiraten der wohl beste windsichere Sommerspot in Reichweite. Infrastruktur einfach, dafür wenig Anfahrt aus UAE.",
+  "flagNote": {
+    "type": "go",
+    "text": "Windsicher im Juli · kürzeste Anreise aus UAE"
+  },
+  "subspots": [],
+  "family": [
+    "Eher Abenteuer- als Familienziel.",
+    "Schildkrötenstrände (Loggerhead).",
+    "Wracks & Schnorcheln."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Masirah-Island-Oman.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        52,
+        24,
+        2,
+        0
+      ],
+      "2": [
+        51,
+        34,
+        6,
+        0
+      ],
+      "3": [
+        49,
+        38,
+        3,
+        1
+      ],
+      "4": [
+        15,
+        58,
+        15,
+        0
+      ],
+      "5": [
+        6,
+        46,
+        45,
+        3
+      ],
+      "6": [
+        13,
+        36,
+        38,
+        12
+      ],
+      "7": [
+        4,
+        20,
+        55,
+        21
+      ],
+      "8": [
+        5,
+        38,
+        45,
+        12
+      ],
+      "9": [
+        15,
+        65,
+        20,
+        0
+      ],
+      "10": [
+        46,
+        43,
+        3,
+        1
+      ],
+      "11": [
+        61,
+        15,
+        9,
+        0
+      ],
+      "12": [
+        47,
+        25,
+        6,
+        1
+      ]
+    }
+  }
+}

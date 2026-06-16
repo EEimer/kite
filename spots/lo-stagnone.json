@@ -1,0 +1,160 @@
+{
+  "id": "lo-stagnone",
+  "name": "Lo Stagnone",
+  "spot": "Marsala · Sizilien",
+  "region": "Sizilien",
+  "country": "Italien",
+  "flag": "🇮🇹",
+  "verdict": "warn",
+  "verdictLabel": "Top-Flat, wenig drumrum",
+  "tagline": "Stehtiefe Riesenlagune, nie überfüllt — aber „nichts drumrum“.",
+  "scores": {
+    "kite": 4,
+    "family": 3,
+    "infra": 3,
+    "access": 4
+  },
+  "wind": {
+    "min": 15,
+    "max": 20,
+    "type": "thermisch",
+    "reliability": 69
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 26,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Italien nach Trapani/Palermo",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~2,5 h",
+    "transfers": 0,
+    "note": "Direktflug Palermo/Trapani",
+    "hours": 2.5
+  },
+  "tags": [
+    "stehtiefe Lagune",
+    "nie voll",
+    "Anfängerparadies",
+    "heiß"
+  ],
+  "description": "Eine der größten stehtiefen Flatwater-Lagunen Europas, thermischer Wind im Sommer fast täglich, nie wirklich voll. Sehr heiß im Hochsommer. Solides Familien-Flatwater, aber „nichts drumrum“ — die Base Marsala ist eher funktional.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Traum-Flat, aber Umgebung mau"
+  },
+  "subspots": [],
+  "family": [
+    "Saline & Windmühlen von Marsala.",
+    "Insel Mozia per Boot.",
+    "Erice (mittelalterliches Bergstädtchen)."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Lo-stagnone-Marsala-Sicily-Italy.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        28,
+        21,
+        13,
+        6
+      ],
+      "2": [
+        29,
+        20,
+        16,
+        6
+      ],
+      "3": [
+        31,
+        20,
+        12,
+        6
+      ],
+      "4": [
+        31,
+        16,
+        6,
+        3
+      ],
+      "5": [
+        36,
+        12,
+        6,
+        1
+      ],
+      "6": [
+        42,
+        7,
+        3,
+        0
+      ],
+      "7": [
+        38,
+        8,
+        1,
+        0
+      ],
+      "8": [
+        41,
+        6,
+        0,
+        0
+      ],
+      "9": [
+        29,
+        14,
+        3,
+        1
+      ],
+      "10": [
+        30,
+        14,
+        7,
+        2
+      ],
+      "11": [
+        24,
+        21,
+        12,
+        3
+      ],
+      "12": [
+        23,
+        22,
+        14,
+        4
+      ]
+    }
+  }
+}

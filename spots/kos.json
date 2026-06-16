@@ -1,0 +1,177 @@
+{
+  "id": "kos",
+  "name": "Kos",
+  "spot": "Mastichari · Dodekanes",
+  "region": "Dodekanes",
+  "country": "Griechenland",
+  "flag": "🇬🇷",
+  "verdict": "go",
+  "verdictLabel": "Familien-Sieger Hochsommer",
+  "tagline": "Meltemi-Sicherheit + echtes Stadtleben + Wasserpark direkt am Spot.",
+  "scores": {
+    "kite": 4,
+    "family": 5,
+    "infra": 5,
+    "access": 5
+  },
+  "wind": {
+    "min": 15,
+    "max": 30,
+    "type": "side-onshore",
+    "reliability": 80
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 25,
+    "wetsuit": "Shorty / Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~6 h",
+    "transfers": 1,
+    "note": "via Athen (KGS)",
+    "hours": 6
+  },
+  "distanceGermany": {
+    "time": "~3 h",
+    "transfers": 0,
+    "note": "Direktflug nach KGS (saisonal)",
+    "hours": 3
+  },
+  "tags": [
+    "Meltemi 75–85%",
+    "Wasserpark am Spot",
+    "Stadtleben",
+    "Direktflug"
+  ],
+  "description": "Meltemi fast täglich in Mastichari, Flatwater, Rescue. Tigaki/Marmari als ruhigere Familienbuchten daneben. Der beste Familien-Kompromiss im Hochsommer: Meltemi-Sicherheit, echtes Stadtleben, Wasserpark am Spot, Direktflug. Höherer Villa-Preis, dafür kitest du 8 von 10 Tagen statt 5.",
+  "flagNote": {
+    "type": "go",
+    "text": "8 von 10 Tagen Wind · Familienprogramm direkt am Spot"
+  },
+  "subspots": [
+    {
+      "name": "Mastichari",
+      "dist": "Hauptspot",
+      "level": "alle",
+      "desc": "Meltemi fast täglich, Flatwater, Schule & Rescue."
+    },
+    {
+      "name": "Tigaki / Marmari",
+      "dist": "ruhigere Buchten",
+      "level": "Familie",
+      "desc": "Flachere, ruhigere Familienbuchten direkt daneben."
+    }
+  ],
+  "family": [
+    "Lido Mastichari Wasserpark — direkt am Spot, eigener Kleinkindbereich.",
+    "Salzsee mit Flamingos + Familien-Reiterhöfe mit Ponys.",
+    "Kos Town — lebendige Altstadt, Burg, Restaurants, Promenade (20 Min)."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 36.801,
+    "lon": 27.083,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        21,
+        15,
+        8,
+        1
+      ],
+      "2": [
+        18,
+        12,
+        9,
+        3
+      ],
+      "3": [
+        21,
+        13,
+        6,
+        0
+      ],
+      "4": [
+        18,
+        11,
+        6,
+        0
+      ],
+      "5": [
+        14,
+        7,
+        1,
+        0
+      ],
+      "6": [
+        29,
+        8,
+        0,
+        0
+      ],
+      "7": [
+        37,
+        18,
+        6,
+        0
+      ],
+      "8": [
+        28,
+        9,
+        1,
+        0
+      ],
+      "9": [
+        28,
+        12,
+        2,
+        0
+      ],
+      "10": [
+        17,
+        6,
+        2,
+        0
+      ],
+      "11": [
+        12,
+        10,
+        5,
+        1
+      ],
+      "12": [
+        22,
+        14,
+        3,
+        0
+      ]
+    }
+  }
+}

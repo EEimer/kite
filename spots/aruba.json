@@ -1,0 +1,174 @@
+{
+  "id": "aruba",
+  "name": "Aruba",
+  "spot": "Fisherman's Huts · Karibik",
+  "region": "Karibik",
+  "country": "Aruba",
+  "flag": "🇦🇼",
+  "verdict": "go",
+  "verdictLabel": "Zuverlässig + Komfort",
+  "tagline": "Konstante Passatwinde, warmes Flatwater und volle Resort-Infrastruktur — aber weit weg.",
+  "scores": {
+    "kite": 5,
+    "family": 5,
+    "infra": 5,
+    "access": 2
+  },
+  "wind": {
+    "min": 18,
+    "max": 28,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 28,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 2,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~20 h",
+    "transfers": 2,
+    "note": "sehr lange Anreise, 2× Umstieg",
+    "hours": 20
+  },
+  "distanceGermany": {
+    "time": "~11 h",
+    "transfers": 1,
+    "note": "via Amsterdam (AUA)",
+    "hours": 11
+  },
+  "tags": [
+    "Passatwind",
+    "Flatwater",
+    "Resorts",
+    "warm",
+    "außerhalb Hurrikan-Gürtel"
+  ],
+  "description": "Aruba liefert fast ganzjährig konstante Passatwinde, im Frühsommer am stärksten. Fisherman's Huts ist flach und anfängerfreundlich, das Wasser badewannenwarm. Top-Infrastruktur, sehr familientauglich — der Haken ist allein die lange Anreise.",
+  "flagNote": {
+    "type": "go",
+    "text": "Wind + Wärme + Komfort · nur die Distanz schmerzt"
+  },
+  "subspots": [
+    {
+      "name": "Fisherman's Huts (Hadicurari)",
+      "dist": "Hauptspot",
+      "level": "alle",
+      "desc": "Flaches, türkises Wasser, anfängerfreundlich, Schulen."
+    },
+    {
+      "name": "Boca Grandi",
+      "dist": "Südostspitze",
+      "level": "Advanced",
+      "desc": "Welle & Bump-and-Jump für Fortgeschrittene."
+    }
+  ],
+  "family": [
+    "Palm Beach mit Resorts & Restaurants.",
+    "Arikok Nationalpark.",
+    "Schnorcheln & Katamaran-Touren."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Aruba-Caribbean-The-Netherlands.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        4,
+        32,
+        59,
+        5
+      ],
+      "2": [
+        2,
+        27,
+        60,
+        11
+      ],
+      "3": [
+        2,
+        29,
+        59,
+        10
+      ],
+      "4": [
+        7,
+        32,
+        55,
+        4
+      ],
+      "5": [
+        4,
+        22,
+        56,
+        13
+      ],
+      "6": [
+        2,
+        16,
+        61,
+        20
+      ],
+      "7": [
+        3,
+        20,
+        59,
+        17
+      ],
+      "8": [
+        6,
+        38,
+        49,
+        5
+      ],
+      "9": [
+        16,
+        45,
+        27,
+        5
+      ],
+      "10": [
+        28,
+        42,
+        19,
+        2
+      ],
+      "11": [
+        16,
+        55,
+        21,
+        4
+      ],
+      "12": [
+        9,
+        42,
+        45,
+        3
+      ]
+    }
+  }
+}

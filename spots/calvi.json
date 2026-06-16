@@ -1,0 +1,159 @@
+{
+  "id": "calvi",
+  "name": "Calvi",
+  "spot": "Bucht von Calvi · Korsika",
+  "region": "Mittelmeer",
+  "country": "Frankreich",
+  "flag": "🇫🇷",
+  "verdict": "warn",
+  "verdictLabel": "Thermisch, traumhaft",
+  "tagline": "Thermische Brise und Libeccio in einer Postkartenbucht zwischen Bergen und Meer.",
+  "scores": {
+    "kite": 3,
+    "family": 4,
+    "infra": 3,
+    "access": 4
+  },
+  "wind": {
+    "min": 12,
+    "max": 25,
+    "type": "thermisch",
+    "reliability": 48
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 24,
+    "wetsuit": "Shorty"
+  },
+  "level": [
+    "beginner",
+    "intermediate"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 3,
+    "8": 2,
+    "9": 2,
+    "10": 1,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~8 h",
+    "transfers": 1,
+    "note": "via Festland-Frankreich/Italien (CLY)",
+    "hours": 8
+  },
+  "distanceGermany": {
+    "time": "~2,5 h",
+    "transfers": 0,
+    "note": "saisonale Direktflüge nach CLY",
+    "hours": 2.5
+  },
+  "tags": [
+    "thermisch",
+    "Libeccio",
+    "Bergkulisse",
+    "Bucht"
+  ],
+  "description": "Calvi an Korsikas Nordwestküste bietet im Sommer thermische Brisen, ergänzt durch Libeccio/Mistral. Die weite Bucht mit Zitadelle und Bergpanorama ist landschaftlich grandios und familientauglich; der Wind ist moderat und nicht jeden Tag verlässlich.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Wind thermisch & moderat · Landschaft Weltklasse"
+  },
+  "subspots": [],
+  "family": [
+    "Zitadelle & Hafen von Calvi.",
+    "Strände & Buchten (Lumio, Algajola).",
+    "Wanderungen in den Bergen."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Calvi-Corsica-France.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        26,
+        11,
+        7,
+        3
+      ],
+      "2": [
+        30,
+        13,
+        4,
+        1
+      ],
+      "3": [
+        29,
+        13,
+        6,
+        2
+      ],
+      "4": [
+        22,
+        6,
+        3,
+        1
+      ],
+      "5": [
+        18,
+        6,
+        2,
+        0
+      ],
+      "6": [
+        16,
+        4,
+        1,
+        0
+      ],
+      "7": [
+        15,
+        5,
+        2,
+        0
+      ],
+      "8": [
+        15,
+        4,
+        2,
+        0
+      ],
+      "9": [
+        19,
+        6,
+        2,
+        0
+      ],
+      "10": [
+        20,
+        6,
+        4,
+        1
+      ],
+      "11": [
+        25,
+        11,
+        5,
+        0
+      ],
+      "12": [
+        23,
+        15,
+        7,
+        2
+      ]
+    }
+  }
+}

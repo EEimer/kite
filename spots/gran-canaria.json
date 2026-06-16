@@ -1,0 +1,174 @@
+{
+  "id": "gran-canaria",
+  "name": "Gran Canaria",
+  "spot": "Vargas / Pozo · Salinas de Arinaga",
+  "region": "Kanaren",
+  "country": "Spanien",
+  "flag": "🇪🇸",
+  "verdict": "no",
+  "verdictLabel": "Profi-Territory",
+  "tagline": "Wind im Überfluss durch den Düsen-Effekt — aber zu extrem und nicht familienfreundlich.",
+  "scores": {
+    "kite": 5,
+    "family": 1,
+    "infra": 3,
+    "access": 5
+  },
+  "wind": {
+    "min": 25,
+    "max": 45,
+    "type": "side-shore",
+    "reliability": 88
+  },
+  "water": {
+    "type": "wave",
+    "tempC": 21,
+    "wetsuit": "Shorty"
+  },
+  "level": [
+    "advanced",
+    "expert"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~8,5 h",
+    "transfers": 1,
+    "note": "1× Umstieg über Europa (LPA)",
+    "hours": 8.5
+  },
+  "distanceGermany": {
+    "time": "~4,5 h",
+    "transfers": 0,
+    "note": "Direktflug nach LPA",
+    "hours": 4.5
+  },
+  "tags": [
+    "Starkwind",
+    "Kiesel",
+    "kein Schwimmen",
+    "Wettkampfspot"
+  ],
+  "description": "Wind im Überfluss durch den Düsen-Effekt — aber zu extrem. Vargas: schwarzer Kiesel, kein Schwimmen. Der Süden (Maspalomas) liegt im Windschatten. Familie + Kiten beißt sich hier. Wenn überhaupt, dann Salinas de Arinaga als ruhigere Ostküsten-Alternative (20–30 kn, steiniger Strand).",
+  "flagNote": {
+    "type": "no",
+    "text": "Profi-Territory · nicht familienfreundlich"
+  },
+  "subspots": [
+    {
+      "name": "Pozo Izquierdo",
+      "dist": "Wettkampfspot",
+      "level": "Expert",
+      "desc": "PWA-Spot, brutaler Wind, Wellen, nur für Profis."
+    },
+    {
+      "name": "Salinas de Arinaga",
+      "dist": "~20 min v. Maspalomas",
+      "level": "Advanced",
+      "desc": "Ruhigere Ostküsten-Alternative, 20–30 kn, steiniger Strand, kein Familienflair."
+    },
+    {
+      "name": "Bahía Feliz / Playa del Inglés",
+      "dist": "Südküste",
+      "level": "—",
+      "desc": "Im Sommer im Windschatten (9–14 kn). Kiten in Playa del Inglés Mai–Aug verboten."
+    }
+  ],
+  "family": [],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Vargas-Grande-Canarie-Canary-Islands-Spain.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        34,
+        24,
+        6,
+        1
+      ],
+      "2": [
+        31,
+        25,
+        8,
+        3
+      ],
+      "3": [
+        36,
+        26,
+        6,
+        0
+      ],
+      "4": [
+        34,
+        28,
+        5,
+        0
+      ],
+      "5": [
+        38,
+        26,
+        4,
+        0
+      ],
+      "6": [
+        42,
+        32,
+        3,
+        0
+      ],
+      "7": [
+        40,
+        47,
+        10,
+        0
+      ],
+      "8": [
+        44,
+        42,
+        5,
+        0
+      ],
+      "9": [
+        42,
+        17,
+        1,
+        0
+      ],
+      "10": [
+        30,
+        10,
+        2,
+        0
+      ],
+      "11": [
+        37,
+        18,
+        5,
+        0
+      ],
+      "12": [
+        37,
+        22,
+        7,
+        0
+      ]
+    }
+  }
+}

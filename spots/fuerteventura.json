@@ -1,0 +1,187 @@
+{
+  "id": "fuerteventura",
+  "name": "Fuerteventura",
+  "spot": "Corralejo · Flag Beach",
+  "region": "Kanaren",
+  "country": "Spanien",
+  "flag": "🇪🇸",
+  "verdict": "go",
+  "verdictLabel": "Familien-Sieger",
+  "tagline": "Tradewinds fast täglich, Spot 5 Min vom Ort, Schule + Rescue direkt am Strand.",
+  "scores": {
+    "kite": 5,
+    "family": 5,
+    "infra": 4,
+    "access": 5
+  },
+  "wind": {
+    "min": 20,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 98
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 21,
+    "wetsuit": "Shorty"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~9 h",
+    "transfers": 1,
+    "note": "1× Umstieg über Europa",
+    "hours": 9
+  },
+  "distanceGermany": {
+    "time": "~4,5 h",
+    "transfers": 0,
+    "note": "Direktflug nach FUE",
+    "hours": 4.5
+  },
+  "tags": [
+    "Schule",
+    "Rescue",
+    "Flatwater",
+    "große DE-Community",
+    "Küstenort"
+  ],
+  "description": "Tradewinds laufen ab Mai fast täglich. Flag Beach liegt 5 Min vom Zentrum, Schule und Rescue direkt am Spot. Corralejo ist ein echter Küstenort mit Restaurants, Dünen-Nationalpark und Promenade. Beste Gesamtkombi für die Familie — als Wüsteninsel nach einem Monat aber „durchgespielt“.",
+  "flagNote": {
+    "type": "go",
+    "text": "Side-onshore, sicher · große deutsche Kite-Community"
+  },
+  "subspots": [
+    {
+      "name": "Flag Beach",
+      "dist": "5 min",
+      "level": "alle Level",
+      "desc": "7 km Sandstrand, Kitezone von Badezone getrennt. Dein täglicher Spot, Familienstrand daneben."
+    },
+    {
+      "name": "El Cotillo",
+      "dist": "25 min",
+      "level": "Intermediate+",
+      "desc": "Wellenseite zum Kiten, türkise Lagunen zum Plantschen. Felsen beim Einstieg beachten."
+    },
+    {
+      "name": "Majanicho",
+      "dist": "20 min",
+      "level": "Expert",
+      "desc": "Weltklasse Point-Break, vulkanischer Felsuntergrund. Nur für erfahrene Wellen-Kiter."
+    },
+    {
+      "name": "Sotavento",
+      "dist": "55 min",
+      "level": "Weltklasse",
+      "desc": "GKA World-Cup-Lagune. Zu weit für täglich, als Tagesausflug bei Hochwasser ein Traum-Flatwater."
+    }
+  ],
+  "family": [
+    "El Cotillo Lagunen (10–25 min) — flaches, warmes Wasser ohne Wellen, das Baby-Highlight der Insel.",
+    "Oasis Park / Zoo (55 min, Fr–So) — Giraffen füttern, Lemuren, botanischer Garten.",
+    "Dünen-Nationalpark (5 min) — riesige Sanddünen direkt am Ort, früh morgens wegen Wind & Sonne.",
+    "Isla de Lobos (20 min + Boot) — unbewohnte Vulkaninsel, max. 400 Besucher/Tag (Permit kostenlos)."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Fuerteventura-Canary-Islands-Spain.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        21,
+        38,
+        25,
+        6
+      ],
+      "2": [
+        22,
+        33,
+        24,
+        10
+      ],
+      "3": [
+        21,
+        37,
+        26,
+        7
+      ],
+      "4": [
+        18,
+        34,
+        36,
+        5
+      ],
+      "5": [
+        17,
+        44,
+        29,
+        6
+      ],
+      "6": [
+        16,
+        53,
+        23,
+        2
+      ],
+      "7": [
+        2,
+        30,
+        61,
+        6
+      ],
+      "8": [
+        9,
+        52,
+        37,
+        1
+      ],
+      "9": [
+        23,
+        44,
+        20,
+        3
+      ],
+      "10": [
+        28,
+        38,
+        14,
+        1
+      ],
+      "11": [
+        21,
+        41,
+        20,
+        7
+      ],
+      "12": [
+        23,
+        32,
+        30,
+        9
+      ]
+    }
+  }
+}

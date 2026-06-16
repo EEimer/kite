@@ -1,0 +1,164 @@
+{
+  "id": "roemo",
+  "name": "Rømø",
+  "spot": "Rømø / Fjord · Nordsee",
+  "region": "Nordsee",
+  "country": "Dänemark",
+  "flag": "🇩🇰",
+  "verdict": "warn",
+  "verdictLabel": "Spontan & leer, aber schwach im Juli",
+  "tagline": "Riesiger Sandstrand, spontan buchbar — aber Juli ist der windschwächste Monat.",
+  "scores": {
+    "kite": 2,
+    "family": 4,
+    "infra": 4,
+    "access": 3
+  },
+  "wind": {
+    "min": 12,
+    "max": 22,
+    "type": "side-onshore",
+    "reliability": 50
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 18,
+    "wetsuit": "4/3 Neo"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 2,
+    "10": 3,
+    "11": 2,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~6,5 h + Fahrt",
+    "transfers": 0,
+    "note": "Direktflug Hamburg, dann ~2 h",
+    "hours": 8.5
+  },
+  "distanceGermany": {
+    "time": "~2–4 h Auto",
+    "transfers": 0,
+    "note": "Mit dem Auto bis auf die Insel",
+    "hours": 3
+  },
+  "tags": [
+    "Riesenstrand",
+    "Auto bis Wasser",
+    "spontan buchbar",
+    "Sommer schwach"
+  ],
+  "description": "Endloser, autobefahrbarer Sandstrand, ideal für entspanntes Flat- und Freestyle-Kiten. Im Juli aber der windschwächste Monat (~50%). Top für Familie und spontane Buchung (Ferienhäuser), Wasser kühl.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Windschwächster Monat Juli · Neo nötig"
+  },
+  "subspots": [],
+  "family": [
+    "Auto direkt an den Strand fahren.",
+    "Ferienhäuser spontan buchbar.",
+    "Wattenmeer & Robben-Safari."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 55.149,
+    "lon": 8.46,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        21,
+        25,
+        16,
+        16
+      ],
+      "2": [
+        20,
+        20,
+        17,
+        21
+      ],
+      "3": [
+        20,
+        19,
+        14,
+        12
+      ],
+      "4": [
+        24,
+        17,
+        11,
+        7
+      ],
+      "5": [
+        20,
+        20,
+        17,
+        7
+      ],
+      "6": [
+        27,
+        11,
+        7,
+        2
+      ],
+      "7": [
+        21,
+        23,
+        14,
+        10
+      ],
+      "8": [
+        23,
+        16,
+        7,
+        5
+      ],
+      "9": [
+        20,
+        18,
+        12,
+        9
+      ],
+      "10": [
+        21,
+        26,
+        15,
+        14
+      ],
+      "11": [
+        20,
+        21,
+        19,
+        12
+      ],
+      "12": [
+        22,
+        27,
+        19,
+        10
+      ]
+    }
+  }
+}

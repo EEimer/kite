@@ -1,0 +1,173 @@
+{
+  "id": "leucate",
+  "name": "Leucate",
+  "spot": "Leucate / La Franqui · Südfrankreich",
+  "region": "Mittelmeer",
+  "country": "Frankreich",
+  "flag": "🇫🇷",
+  "verdict": "go",
+  "verdictLabel": "Tramontane-Maschine",
+  "tagline": "Die Tramontane macht Leucate zu einem der windsichersten Spots am Mittelmeer — Lagune + Meer.",
+  "scores": {
+    "kite": 4,
+    "family": 4,
+    "infra": 4,
+    "access": 4
+  },
+  "wind": {
+    "min": 15,
+    "max": 30,
+    "type": "side-shore",
+    "reliability": 82
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 24,
+    "wetsuit": "Shorty"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 3,
+    "5": 2,
+    "6": 2,
+    "7": 2,
+    "8": 2,
+    "9": 3,
+    "10": 2,
+    "11": 2,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~9 h",
+    "transfers": 1,
+    "note": "via Paris nach Perpignan/Montpellier",
+    "hours": 9
+  },
+  "distanceGermany": {
+    "time": "~3 h",
+    "transfers": 0,
+    "note": "Flug Perpignan/Montpellier + Fahrt",
+    "hours": 3
+  },
+  "tags": [
+    "Tramontane",
+    "Lagune + Meer",
+    "Mondial du Vent",
+    "Südfrankreich"
+  ],
+  "description": "Leucate ist das Windzentrum des französischen Mittelmeers — die Tramontane bläst kräftig und häufig, im Frühjahr/Herbst am stärksten. Stehtiefe Lagune (Anfänger) plus Meerseite (Welle/Freestyle). Heimat des Mondial du Vent. Gut erreichbar aus Mitteleuropa.",
+  "flagNote": {
+    "type": "go",
+    "text": "Sehr windsicher · Lagune zum Lernen, Meer für Action"
+  },
+  "subspots": [
+    {
+      "name": "Étang (Lagune)",
+      "dist": "Hauptspot",
+      "level": "Anfänger+",
+      "desc": "Stehtiefes Flatwater, ideal zum Lernen."
+    },
+    {
+      "name": "La Franqui",
+      "dist": "5 min",
+      "level": "alle",
+      "desc": "Berühmte Meeresbucht, Wellen bei Tramontane."
+    }
+  ],
+  "family": [
+    "Strände & Lagunen für Kinder.",
+    "Hafenstädtchen Port-Leucate.",
+    "Carcassonne / Narbonne als Ausflug."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Leucate-Aude-France.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        25,
+        26,
+        14,
+        10
+      ],
+      "2": [
+        22,
+        27,
+        16,
+        11
+      ],
+      "3": [
+        29,
+        25,
+        14,
+        12
+      ],
+      "4": [
+        32,
+        29,
+        15,
+        3
+      ],
+      "5": [
+        40,
+        27,
+        15,
+        2
+      ],
+      "6": [
+        40,
+        28,
+        6,
+        1
+      ],
+      "7": [
+        42,
+        31,
+        8,
+        0
+      ],
+      "8": [
+        37,
+        28,
+        7,
+        2
+      ],
+      "9": [
+        35,
+        23,
+        11,
+        3
+      ],
+      "10": [
+        33,
+        29,
+        13,
+        5
+      ],
+      "11": [
+        28,
+        26,
+        18,
+        8
+      ],
+      "12": [
+        29,
+        23,
+        15,
+        10
+      ]
+    }
+  }
+}

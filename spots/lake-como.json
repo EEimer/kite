@@ -1,0 +1,176 @@
+{
+  "id": "lake-como",
+  "name": "Lago di Como",
+  "spot": "Gera Lario / Colico · Nordteil",
+  "region": "Lombardei",
+  "country": "Italien",
+  "flag": "🇮🇹",
+  "verdict": "go",
+  "verdictLabel": "Hidden Gem",
+  "tagline": "Der thermische Breva läuft im Sommer 6 von 7 Tagen — Flatwater am See.",
+  "scores": {
+    "kite": 3,
+    "family": 5,
+    "infra": 5,
+    "access": 5
+  },
+  "wind": {
+    "min": 10,
+    "max": 20,
+    "type": "thermisch",
+    "reliability": 80
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 22,
+    "wetsuit": "3/2 Neo (Juni)"
+  },
+  "level": [
+    "beginner",
+    "intermediate"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~6 h + 1 h",
+    "transfers": 0,
+    "note": "Direktflug Mailand, dann ~1 h an den See",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~1 h Flug / Auto",
+    "transfers": 0,
+    "note": "Direktflug Mailand/Bergamo oder Auto über die Alpen",
+    "hours": 1
+  },
+  "tags": [
+    "thermischer Breva",
+    "Schulboot",
+    "Süßwasser",
+    "Italien-Flair"
+  ],
+  "description": "Der Breva (thermischer Südwind) läuft im Sommer 6 von 7 Tagen, nachmittags 13–18 Uhr. Flatwater, kein Wellengang. Wichtig: enge Startplätze → Sessions laufen vom Schulboot; und Windy/Windguru funktionieren nicht für den See — lokale Tools (Breva Guru) nutzen. Nachmittags 2–3 h kiten, während die Familie den See genießt.",
+  "flagNote": {
+    "type": "go",
+    "text": "Nachmittags 2–3 h kiten, Rest des Tages Italien-Urlaub"
+  },
+  "subspots": [
+    {
+      "name": "Gera Lario",
+      "dist": "Nordspitze",
+      "level": "alle",
+      "desc": "Haupt-Kitespot, flaches Wasser, Schulen & Schulboot."
+    },
+    {
+      "name": "Colico",
+      "dist": "Nordostufer",
+      "level": "alle",
+      "desc": "Weite Wiese, beliebt bei Windsurfern und Kitern."
+    }
+  ],
+  "family": [
+    "Seepromenaden & Fähren (Bellagio, Varenna).",
+    "Pizzoccheri & Gelato am Ufer.",
+    "Bergbahnen und Wanderungen rund um den See."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 46.151,
+    "lon": 9.315,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "10": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "11": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "12": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "lanzarote",
+  "name": "Lanzarote",
+  "spot": "Costa Teguise / Famara · Kanaren",
+  "region": "Kanaren",
+  "country": "Spanien",
+  "flag": "🇪🇸",
+  "verdict": "go",
+  "verdictLabel": "Tradewind-Insel",
+  "tagline": "Tradewinds wie auf Fuerte, dazu die Famara-Welle — windsicher und gut erschlossen.",
+  "scores": {
+    "kite": 4,
+    "family": 4,
+    "infra": 4,
+    "access": 5
+  },
+  "wind": {
+    "min": 18,
+    "max": 28,
+    "type": "side-onshore",
+    "reliability": 98
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 21,
+    "wetsuit": "Shorty"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~8,5 h",
+    "transfers": 1,
+    "note": "1× Umstieg über Europa (ACE)",
+    "hours": 8.5
+  },
+  "distanceGermany": {
+    "time": "~4,5 h",
+    "transfers": 0,
+    "note": "Direktflug nach ACE",
+    "hours": 4.5
+  },
+  "tags": [
+    "Tradewinds",
+    "Costa Teguise",
+    "Famara-Welle",
+    "Vulkaninsel"
+  ],
+  "description": "Lanzarote bekommt dieselben verlässlichen Tradewinds wie Fuerteventura. Costa Teguise (Las Cucharas) ist der Flatwater-/Allround-Spot, Famara die berühmte Wellenbucht. Gute Infrastruktur, Direktflüge, vulkanische Landschaft — solide Familien- und Kite-Kombi.",
+  "flagNote": {
+    "type": "go",
+    "text": "Windsicher Mai–Sep · Direktflug ab DE"
+  },
+  "subspots": [
+    {
+      "name": "Las Cucharas (Costa Teguise)",
+      "dist": "Hauptspot",
+      "level": "alle",
+      "desc": "Bucht mit Flat & Chop, Schulen, side-onshore."
+    },
+    {
+      "name": "Famara",
+      "dist": "20 min",
+      "level": "Intermediate+",
+      "desc": "Weite Wellenbucht unter Klippen, bei Wind anspruchsvoll."
+    }
+  ],
+  "family": [
+    "Timanfaya Vulkan-Nationalpark.",
+    "Jameos del Agua / César-Manrique-Kunst.",
+    "Aquapark Costa Teguise."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Lanzarote-Canary-Islands-Spain.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        21,
+        35,
+        25,
+        11
+      ],
+      "2": [
+        20,
+        33,
+        26,
+        12
+      ],
+      "3": [
+        18,
+        36,
+        26,
+        10
+      ],
+      "4": [
+        20,
+        31,
+        33,
+        13
+      ],
+      "5": [
+        19,
+        33,
+        33,
+        10
+      ],
+      "6": [
+        15,
+        49,
+        26,
+        3
+      ],
+      "7": [
+        4,
+        25,
+        59,
+        11
+      ],
+      "8": [
+        13,
+        43,
+        38,
+        4
+      ],
+      "9": [
+        27,
+        52,
+        16,
+        1
+      ],
+      "10": [
+        22,
+        40,
+        16,
+        5
+      ],
+      "11": [
+        23,
+        37,
+        21,
+        11
+      ],
+      "12": [
+        20,
+        35,
+        28,
+        13
+      ]
+    }
+  }
+}

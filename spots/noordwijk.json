@@ -1,0 +1,159 @@
+{
+  "id": "noordwijk",
+  "name": "Noordwijk",
+  "spot": "Noordwijk · Nordsee",
+  "region": "Nordsee",
+  "country": "Niederlande",
+  "flag": "🇳🇱",
+  "verdict": "no",
+  "verdictLabel": "Sommer zu schwach",
+  "tagline": "Im Sommer windschwach und wellig — kein Flatwater.",
+  "scores": {
+    "kite": 2,
+    "family": 4,
+    "infra": 5,
+    "access": 4
+  },
+  "wind": {
+    "min": 12,
+    "max": 22,
+    "type": "onshore",
+    "reliability": 93
+  },
+  "water": {
+    "type": "wave",
+    "tempC": 18,
+    "wetsuit": "4/3 Neo"
+  },
+  "level": [
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 2,
+    "10": 3,
+    "11": 3,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~7 h + 40 min",
+    "transfers": 0,
+    "note": "Direktflug Amsterdam, dann ~40 min",
+    "hours": 7.5
+  },
+  "distanceGermany": {
+    "time": "~1 h Flug / Auto",
+    "transfers": 0,
+    "note": "Direktflug Amsterdam oder Auto",
+    "hours": 1.5
+  },
+  "tags": [
+    "Brandung",
+    "kein Flat",
+    "Sommer schwach",
+    "Top-Infrastruktur"
+  ],
+  "description": "Breiter Strand, sehr gute Infrastruktur — aber im Sommer windschwach und wellig (kein Flatwater). Stärker im Herbst/Winter. Als Hochsommer-Kiteziel mit Wind-Fokus ungeeignet.",
+  "flagNote": {
+    "type": "no",
+    "text": "Wellen statt Flat · Sommer windschwach"
+  },
+  "subspots": [],
+  "family": [
+    "Promenade, Strandbäder und Spielplätze.",
+    "Keukenhof (saisonal) & Den Haag in der Nähe.",
+    "Familienfreundliche Strandpavillons."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Noordwijk-aan-Zee-The-Netherlands.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        19,
+        26,
+        27,
+        24
+      ],
+      "2": [
+        21,
+        29,
+        25,
+        13
+      ],
+      "3": [
+        26,
+        33,
+        20,
+        11
+      ],
+      "4": [
+        34,
+        37,
+        11,
+        3
+      ],
+      "5": [
+        32,
+        33,
+        18,
+        2
+      ],
+      "6": [
+        37,
+        35,
+        4,
+        2
+      ],
+      "7": [
+        34,
+        34,
+        10,
+        2
+      ],
+      "8": [
+        37,
+        37,
+        9,
+        4
+      ],
+      "9": [
+        32,
+        30,
+        15,
+        5
+      ],
+      "10": [
+        26,
+        34,
+        22,
+        9
+      ],
+      "11": [
+        16,
+        33,
+        25,
+        18
+      ],
+      "12": [
+        23,
+        28,
+        17,
+        21
+      ]
+    }
+  }
+}

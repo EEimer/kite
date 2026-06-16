@@ -1,0 +1,173 @@
+{
+  "id": "paros",
+  "name": "Paros",
+  "spot": "Pounda / New Golden Beach · Kykladen",
+  "region": "Kykladen",
+  "country": "Griechenland",
+  "flag": "🇬🇷",
+  "verdict": "go",
+  "verdictLabel": "Meltemi-Klassiker",
+  "tagline": "Kräftiger Meltemi an zwei Top-Spots, dazu echtes Kykladen-Inselleben.",
+  "scores": {
+    "kite": 4,
+    "family": 4,
+    "infra": 4,
+    "access": 4
+  },
+  "wind": {
+    "min": 18,
+    "max": 30,
+    "type": "side-onshore",
+    "reliability": 93
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 24,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Athen (PAS)",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~4 h",
+    "transfers": 1,
+    "note": "via Athen / saisonal direkt",
+    "hours": 4
+  },
+  "tags": [
+    "Meltemi",
+    "Pounda",
+    "New Golden Beach",
+    "Inselleben"
+  ],
+  "description": "Paros liefert im Hochsommer kräftigen Meltemi. Pounda ist der windsichere Flatwater-/Freestyle-Spot, New Golden Beach (Tserdakia) der bekannte PWA-Wellen-/Bump-Spot. Lebendige Kykladen-Insel mit Tavernen, Stränden und gutem Inselleben.",
+  "flagNote": {
+    "type": "go",
+    "text": "Windsicher Jul–Aug · lebendiges Inselleben"
+  },
+  "subspots": [
+    {
+      "name": "Pounda",
+      "dist": "Westküste",
+      "level": "alle",
+      "desc": "Stehtiefes Flatwater gegenüber Antiparos, side-onshore."
+    },
+    {
+      "name": "New Golden Beach",
+      "dist": "Ostküste",
+      "level": "Intermediate+",
+      "desc": "PWA-Spot, Bump-and-Jump & Welle bei starkem Meltemi."
+    }
+  ],
+  "family": [
+    "Naoussa & Parikia (Hafenstädtchen).",
+    "Strände wie Kolymbithres.",
+    "Fährhopping nach Antiparos/Naxos."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Paros-Greece.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        19,
+        22,
+        22,
+        31
+      ],
+      "2": [
+        14,
+        24,
+        23,
+        33
+      ],
+      "3": [
+        18,
+        26,
+        27,
+        21
+      ],
+      "4": [
+        25,
+        28,
+        21,
+        18
+      ],
+      "5": [
+        28,
+        30,
+        18,
+        7
+      ],
+      "6": [
+        24,
+        29,
+        19,
+        13
+      ],
+      "7": [
+        13,
+        26,
+        25,
+        28
+      ],
+      "8": [
+        21,
+        21,
+        22,
+        28
+      ],
+      "9": [
+        22,
+        28,
+        18,
+        22
+      ],
+      "10": [
+        25,
+        28,
+        22,
+        15
+      ],
+      "11": [
+        19,
+        29,
+        20,
+        18
+      ],
+      "12": [
+        16,
+        27,
+        25,
+        24
+      ]
+    }
+  }
+}

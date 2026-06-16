@@ -1,0 +1,173 @@
+{
+  "id": "kalpitiya",
+  "name": "Kalpitiya",
+  "spot": "Kalpitiya · Sri Lanka",
+  "region": "Indischer Ozean",
+  "country": "Sri Lanka",
+  "flag": "🇱🇰",
+  "verdict": "go",
+  "verdictLabel": "Wind-Abenteuer #3",
+  "tagline": "~90% Wind, das exotischste Ziel — rustikal & weit, aber von UAE gut erreichbar.",
+  "scores": {
+    "kite": 5,
+    "family": 2,
+    "infra": 2,
+    "access": 3
+  },
+  "wind": {
+    "min": 18,
+    "max": 27,
+    "type": "side-onshore",
+    "reliability": 98
+  },
+  "water": {
+    "type": "lagoon",
+    "tempC": 29,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 1,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~4,5 h + 3 h",
+    "transfers": 0,
+    "note": "Direktflug Colombo (CMB), dann ~3 h Fahrt",
+    "hours": 7.5
+  },
+  "distanceGermany": {
+    "time": "~11 h",
+    "transfers": 1,
+    "note": "via Golf/Doha nach CMB, dann Fahrt",
+    "hours": 11
+  },
+  "tags": [
+    "~90% Wind",
+    "14 Lagunen",
+    "Camps",
+    "feucht-warm"
+  ],
+  "description": "~90% Wind in der Südwest-Monsunsaison, das exotischste Ziel mit 14 Lagunen. Rustikal & weit, aber von den Emiraten aus ähnlich gut erreichbar wie Fuerteventura aus Europa. Bewusst Komfort gegen Abenteuer getauscht. Feucht-warm (28–31°).",
+  "flagNote": {
+    "type": "go",
+    "text": "~90% Wind · von UAE per Direktflug gut erreichbar"
+  },
+  "subspots": [
+    {
+      "name": "Kappalady Lagune",
+      "dist": "Hauptlagune",
+      "level": "alle",
+      "desc": "Stehtiefes Flatwater, Schulen & Camps."
+    },
+    {
+      "name": "Vella Island / Donut",
+      "dist": "Bootstour",
+      "level": "Intermediate+",
+      "desc": "Downwinder und Lagunen-Hopping zu leeren Spots."
+    }
+  ],
+  "family": [
+    "Eher Abenteuer- als Familienziel.",
+    "Delfin- & Walbeobachtung.",
+    "Wilpattu-Nationalpark (Safari)."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Kalpitiya-Sri-Lanka.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        66,
+        22,
+        1,
+        0
+      ],
+      "2": [
+        57,
+        23,
+        0,
+        0
+      ],
+      "3": [
+        49,
+        8,
+        0,
+        0
+      ],
+      "4": [
+        41,
+        5,
+        0,
+        0
+      ],
+      "5": [
+        29,
+        48,
+        11,
+        1
+      ],
+      "6": [
+        9,
+        53,
+        38,
+        0
+      ],
+      "7": [
+        19,
+        53,
+        26,
+        0
+      ],
+      "8": [
+        26,
+        50,
+        19,
+        0
+      ],
+      "9": [
+        29,
+        52,
+        13,
+        0
+      ],
+      "10": [
+        39,
+        24,
+        3,
+        0
+      ],
+      "11": [
+        42,
+        13,
+        1,
+        0
+      ],
+      "12": [
+        50,
+        25,
+        1,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "id": "urla",
+  "name": "Urla",
+  "spot": "Urla · Izmir",
+  "region": "Ägäis",
+  "country": "Türkei",
+  "flag": "🇹🇷",
+  "verdict": "go",
+  "verdictLabel": "Solo-Sieger Juli",
+  "tagline": "Bester Allrounder: 15–25 kn genau im Bereich, leerer Spot + Secret Spot, Top-Infra via Izmir.",
+  "scores": {
+    "kite": 5,
+    "family": 3,
+    "infra": 5,
+    "access": 4
+  },
+  "wind": {
+    "min": 15,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 95
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 25,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 0,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~5 h",
+    "transfers": 1,
+    "note": "via Istanbul nach Izmir (ADB)",
+    "hours": 5
+  },
+  "distanceGermany": {
+    "time": "~3,5 h",
+    "transfers": 0,
+    "note": "Direktflug nach Izmir (ADB)",
+    "hours": 3.5
+  },
+  "tags": [
+    "~80% im Bereich",
+    "leer + Secret Spot",
+    "Foodie-Hotspot",
+    "Surf House"
+  ],
+  "description": "Bester Allrounder für den Solo-Fokus: 15–25 kn genau im Bereich (~80%), leerer Spot plus Secret Spot, Top-Infrastruktur via Izmir, bestes Essen der Finalisten, Direktflug, Unterkunft am Spot (Surf House) gelöst.",
+  "flagNote": {
+    "type": "go",
+    "text": "Wind im Zielbereich · beste Gesamtpakete für Solo"
+  },
+  "subspots": [
+    {
+      "name": "Urla Hauptspot",
+      "dist": "am Surf House",
+      "level": "alle",
+      "desc": "Stehtiefes Flatwater, selten voll."
+    },
+    {
+      "name": "Secret Spot",
+      "dist": "kurz",
+      "level": "Intermediate+",
+      "desc": "Zusätzliche leere Lagune für windige Tage."
+    }
+  ],
+  "family": [
+    "Izmir mit Krankenhaus & Lifestyle (~45 min).",
+    "Foodie-Szene in Urla (Weingüter, Restaurants).",
+    "Çeşme & Alaçatı als Ausflug."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Pirlanta-Turkey.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        19,
+        25,
+        25,
+        21
+      ],
+      "2": [
+        15,
+        28,
+        22,
+        27
+      ],
+      "3": [
+        22,
+        26,
+        24,
+        18
+      ],
+      "4": [
+        25,
+        33,
+        24,
+        8
+      ],
+      "5": [
+        31,
+        38,
+        17,
+        2
+      ],
+      "6": [
+        21,
+        35,
+        32,
+        7
+      ],
+      "7": [
+        9,
+        22,
+        49,
+        16
+      ],
+      "8": [
+        17,
+        20,
+        44,
+        12
+      ],
+      "9": [
+        22,
+        34,
+        29,
+        8
+      ],
+      "10": [
+        24,
+        33,
+        21,
+        9
+      ],
+      "11": [
+        25,
+        27,
+        15,
+        18
+      ],
+      "12": [
+        19,
+        23,
+        21,
+        25
+      ]
+    },
+    "proxy": "Pırlanta/Çeşme (WWK hat keinen eigenen Urla-Eintrag)"
+  }
+}

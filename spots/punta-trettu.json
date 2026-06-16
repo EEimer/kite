@@ -1,0 +1,163 @@
+{
+  "id": "punta-trettu",
+  "name": "Punta Trettu",
+  "spot": "Punta Trettu · Sardinien",
+  "region": "Sardinien",
+  "country": "Italien",
+  "flag": "🇮🇹",
+  "verdict": "warn",
+  "verdictLabel": "Top-Flat, Logistik",
+  "tagline": "Eines der besten Flatwater-Reviere Europas — aber der Spot liegt im Nichts.",
+  "scores": {
+    "kite": 5,
+    "family": 2,
+    "infra": 2,
+    "access": 4
+  },
+  "wind": {
+    "min": 15,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 90
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 20,
+    "wetsuit": "3/2 Neo"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 1,
+    "8": 1,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 0
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Italien nach Cagliari (CAG)",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~2 h",
+    "transfers": 0,
+    "note": "Saisonale Direktflüge nach CAG",
+    "hours": 2
+  },
+  "tags": [
+    "stehtiefes Flatwater",
+    "90% Windtage",
+    "Anfängerparadies",
+    "abgelegen"
+  ],
+  "description": "Eines der besten Flatwater-Reviere Europas: stehtiefe, spiegelglatte Lagune, ~90% Windtage in der Saison. Aber der Spot liegt im Nichts — Base in Cagliari (40 Min) nötig, dann täglich rausfahren. Als All-in-One-Familienbase umständlich, nur mit Auto + bewusster Logistikplanung sinnvoll.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Nur mit Auto + bewusster Logistikplanung sinnvoll"
+  },
+  "subspots": [],
+  "family": [
+    "Strände der Südwestküste (Porto Pino, Chia) als Ausflug.",
+    "Cagliari als lebendige Base mit Stadtleben."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 39.051,
+    "lon": 8.395,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        16,
+        14,
+        8,
+        6
+      ],
+      "2": [
+        22,
+        9,
+        8,
+        1
+      ],
+      "3": [
+        20,
+        13,
+        9,
+        1
+      ],
+      "4": [
+        24,
+        12,
+        5,
+        1
+      ],
+      "5": [
+        21,
+        11,
+        3,
+        1
+      ],
+      "6": [
+        27,
+        10,
+        1,
+        0
+      ],
+      "7": [
+        25,
+        12,
+        0,
+        0
+      ],
+      "8": [
+        24,
+        9,
+        3,
+        0
+      ],
+      "9": [
+        24,
+        9,
+        1,
+        1
+      ],
+      "10": [
+        25,
+        6,
+        2,
+        1
+      ],
+      "11": [
+        22,
+        10,
+        6,
+        2
+      ],
+      "12": [
+        17,
+        16,
+        6,
+        3
+      ]
+    }
+  }
+}

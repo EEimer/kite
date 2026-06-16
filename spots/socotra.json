@@ -1,0 +1,159 @@
+{
+  "id": "socotra",
+  "name": "Socotra",
+  "spot": "Ghubbah · Sokotra",
+  "region": "Naher Osten",
+  "country": "Jemen",
+  "flag": "🇾🇪",
+  "verdict": "no",
+  "verdictLabel": "Reisewarnung",
+  "tagline": "Bizarre UNESCO-Insel mit brachialem Monsun — wegen Reisewarnung nur mit Sondertouren.",
+  "scores": {
+    "kite": 4,
+    "family": 1,
+    "infra": 1,
+    "access": 1
+  },
+  "wind": {
+    "min": 20,
+    "max": 40,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 27,
+    "wetsuit": "Lycra"
+  },
+  "level": [
+    "advanced",
+    "expert"
+  ],
+  "season": {
+    "1": 2,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 1,
+    "10": 2,
+    "11": 2,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~3 h",
+    "transfers": 1,
+    "note": "Charter ab Abu Dhabi (saisonal)",
+    "hours": 3
+  },
+  "distanceGermany": {
+    "time": "~14 h",
+    "transfers": 2,
+    "note": "nur via UAE-Charter",
+    "hours": 14
+  },
+  "tags": [
+    "Reisewarnung",
+    "UNESCO-Natur",
+    "Monsun zu stark",
+    "abgelegen"
+  ],
+  "description": "Sokotra ist landschaftlich einzigartig (Drachenblutbäume) und im SW-Monsun extrem windig — oft jedoch zu stark zum Kiten (>40 kn). Die windbaren Schultermonate sind besser. Wegen der Reisewarnung für den Jemen nur über organisierte Sondertouren ab UAE erreichbar.",
+  "flagNote": {
+    "type": "no",
+    "text": "Reisewarnung Jemen · Monsun Jun–Aug oft unkitebar"
+  },
+  "subspots": [],
+  "family": [
+    "Kein Familienziel.",
+    "Drachenblutbaum-Wälder.",
+    "Unberührte Strände & Höhlen."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Socotra-Yemen.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        27,
+        49,
+        17,
+        1
+      ],
+      "2": [
+        45,
+        24,
+        11,
+        0
+      ],
+      "3": [
+        40,
+        18,
+        0,
+        0
+      ],
+      "4": [
+        14,
+        48,
+        0,
+        0
+      ],
+      "5": [
+        0,
+        78,
+        18,
+        4
+      ],
+      "6": [
+        0,
+        11,
+        31,
+        58
+      ],
+      "7": [
+        0,
+        0,
+        4,
+        96
+      ],
+      "8": [
+        0,
+        0,
+        14,
+        86
+      ],
+      "9": [
+        7,
+        28,
+        45,
+        17
+      ],
+      "10": [
+        44,
+        19,
+        4,
+        0
+      ],
+      "11": [
+        31,
+        53,
+        12,
+        0
+      ],
+      "12": [
+        15,
+        50,
+        30,
+        3
+      ]
+    }
+  }
+}

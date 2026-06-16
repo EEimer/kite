@@ -1,0 +1,172 @@
+{
+  "id": "tarifa",
+  "name": "Tarifa",
+  "spot": "Tarifa · Los Lances / Valdevaqueros",
+  "region": "Andalusien",
+  "country": "Spanien",
+  "flag": "🇪🇸",
+  "verdict": "warn",
+  "verdictLabel": "Gut, aber",
+  "tagline": "Tolles Flair, arabische Altstadt, ~5 Windtage/Woche — aber Levante ist offshore.",
+  "scores": {
+    "kite": 4,
+    "family": 3,
+    "infra": 4,
+    "access": 4
+  },
+  "wind": {
+    "min": 15,
+    "max": 25,
+    "type": "offshore/onshore",
+    "reliability": 87
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 18,
+    "wetsuit": "3/2 Neo"
+  },
+  "level": [
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 2,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~8 h",
+    "transfers": 1,
+    "note": "via Málaga (AGP) + ~1,5 h Fahrt",
+    "hours": 8
+  },
+  "distanceGermany": {
+    "time": "~3 h + 1,5 h",
+    "transfers": 0,
+    "note": "Direktflug Málaga, dann Auto",
+    "hours": 4.5
+  },
+  "tags": [
+    "Levante offshore",
+    "Altstadt",
+    "Windkapitale",
+    "Rescue nötig"
+  ],
+  "description": "Tolles Flair, arabische Altstadt, ~5 Windtage/Woche. Aber: der Levante ist offshore (Rescue-Boot nötig) und das Wasser ist spürbar kühler als auf den Kanaren. Poniente weht onshore und ist familienfreundlicher.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Levante offshore — immer Rescue-Ticket lösen"
+  },
+  "subspots": [
+    {
+      "name": "Los Lances",
+      "dist": "Stadtstrand",
+      "level": "alle",
+      "desc": "Breiter Sandstrand, Poniente onshore, Schulen-Zone."
+    },
+    {
+      "name": "Valdevaqueros",
+      "dist": "10 min",
+      "level": "alle",
+      "desc": "Berühmte Bucht mit Düne, kann sehr voll werden."
+    }
+  ],
+  "family": [
+    "Altstadt von Tarifa mit Gassen und Cafés.",
+    "Whale-Watching in der Straße von Gibraltar.",
+    "Bolonia mit römischen Ruinen und Riesendüne."
+  ],
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Tarifa-Spain.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        27,
+        27,
+        16,
+        7
+      ],
+      "2": [
+        26,
+        26,
+        18,
+        15
+      ],
+      "3": [
+        25,
+        36,
+        15,
+        11
+      ],
+      "4": [
+        24,
+        38,
+        18,
+        8
+      ],
+      "5": [
+        21,
+        39,
+        15,
+        8
+      ],
+      "6": [
+        26,
+        41,
+        13,
+        5
+      ],
+      "7": [
+        21,
+        37,
+        15,
+        4
+      ],
+      "8": [
+        22,
+        39,
+        13,
+        4
+      ],
+      "9": [
+        25,
+        33,
+        14,
+        5
+      ],
+      "10": [
+        29,
+        27,
+        13,
+        6
+      ],
+      "11": [
+        23,
+        27,
+        22,
+        6
+      ],
+      "12": [
+        19,
+        37,
+        18,
+        11
+      ]
+    }
+  }
+}
