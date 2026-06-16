@@ -1,0 +1,35 @@
+name: Build & push Docker image (GHCR)
+
+# Baut das nginx-Image aus dem Dockerfile und pusht es nach
+# ghcr.io/eeimer/kite:latest — damit Dokploy nur ein fertiges Image ziehen muss
+# (umgeht den fehlerhaften Clone-/Build-Schritt auf dem Dokploy-Server).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/eeimer/kite:latest
+            ghcr.io/eeimer/kite:${{ github.sha }}
