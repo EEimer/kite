@@ -12,7 +12,9 @@
     "kite": 4,
     "family": 4,
     "infra": 4,
-    "access": 4
+    "access": 3,
+    "toddler": 4,
+    "city": 4
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 24,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 17,
+      "2": 16,
+      "3": 17,
+      "4": 17,
+      "5": 19,
+      "6": 23,
+      "7": 24,
+      "8": 26,
+      "9": 25,
+      "10": 23,
+      "11": 20,
+      "12": 18
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -169,5 +186,33 @@
         24
       ]
     }
+  },
+  "coords": {
+    "lat": 37.07,
+    "lon": 25.22
+  },
+  "airportSpot": {
+    "airport": "PAS",
+    "airportName": "Paros (PAS)",
+    "km": 10,
+    "min": 15,
+    "note": "Pounda/Golden Beach; Meltemi kräftig, Orte charmant"
+  },
+  "air": {
+    "byMonth": {
+      "1": 14,
+      "2": 15,
+      "3": 16,
+      "4": 19,
+      "5": 23,
+      "6": 27,
+      "7": 30,
+      "8": 29,
+      "9": 27,
+      "10": 23,
+      "11": 20,
+      "12": 17
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

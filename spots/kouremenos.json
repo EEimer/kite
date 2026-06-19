@@ -12,7 +12,9 @@
     "kite": 4,
     "family": 3,
     "infra": 3,
-    "access": 4
+    "access": 3,
+    "toddler": 3,
+    "city": 2
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "choppy",
     "tempC": 24,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 19,
+      "2": 17,
+      "3": 17,
+      "4": 18,
+      "5": 19,
+      "6": 24,
+      "7": 26,
+      "8": 28,
+      "9": 27,
+      "10": 25,
+      "11": 22,
+      "12": 19
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -160,5 +177,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 35.2,
+    "lon": 26.27
+  },
+  "airportSpot": {
+    "airport": "JSH",
+    "airportName": "Sitia (JSH)",
+    "km": 20,
+    "min": 25,
+    "note": "Ost-Kreta, ruhig; alternativ Heraklion (HER) ~2 h"
+  },
+  "air": {
+    "byMonth": {
+      "1": 15,
+      "2": 15,
+      "3": 16,
+      "4": 21,
+      "5": 23,
+      "6": 28,
+      "7": 30,
+      "8": 30,
+      "9": 28,
+      "10": 24,
+      "11": 21,
+      "12": 18
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

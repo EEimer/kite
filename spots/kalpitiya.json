@@ -5,14 +5,16 @@
   "region": "Indischer Ozean",
   "country": "Sri Lanka",
   "flag": "🇱🇰",
-  "verdict": "go",
-  "verdictLabel": "Wind-Abenteuer #3",
-  "tagline": "~90% Wind, das exotischste Ziel — rustikal & weit, aber von UAE gut erreichbar.",
+  "verdict": "warn",
+  "verdictLabel": "Eher nein: böig + weit",
+  "tagline": "Sehr zuverlässiger SW-Monsun (Mai–Okt) — aber im Sommer oft böig, tropisch-schwül und weit weg; glatter Wind eher Dez–März.",
   "scores": {
-    "kite": 5,
+    "kite": 4,
     "family": 2,
     "infra": 2,
-    "access": 3
+    "access": 4,
+    "toddler": 2,
+    "city": 1
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "lagoon",
     "tempC": 29,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 28,
+      "2": 28,
+      "3": 29,
+      "4": 31,
+      "5": 31,
+      "6": 29,
+      "7": 29,
+      "8": 29,
+      "9": 29,
+      "10": 29,
+      "11": 29,
+      "12": 28
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -62,10 +79,10 @@
     "Camps",
     "feucht-warm"
   ],
-  "description": "~90% Wind in der Südwest-Monsunsaison, das exotischste Ziel mit 14 Lagunen. Rustikal & weit, aber von den Emiraten aus ähnlich gut erreichbar wie Fuerteventura aus Europa. Bewusst Komfort gegen Abenteuer getauscht. Feucht-warm (28–31°).",
+  "description": "Kalpitiya liefert im Sommermonsun (Mai–Okt) sehr verlässlichen, kräftigen SW-Wind (oft 18–30 kn, fast den ganzen Tag) über großen Lagunen mit viel Platz. Haken für dieses Profil: der Sommerwind ist häufig böig/gusty, es ist tropisch heiß und schwül (Luft ~30 °C, Wasser ~27 °C), und an guten Tagen wird es mit 40+ Ridern schnell voll (mit Boot zu Inseln wie Vella gibt es mehr Ruhe und flacheres Wasser). Glatterer Wind herrscht eher in der Wintersaison (Dez–März). Dazu lange, teure Anreise mit Umstieg. Fazit: guter Wind, aber böig + heiß/feucht + weit — für dich eher keine gute Wahl.",
   "flagNote": {
-    "type": "go",
-    "text": "~90% Wind · von UAE per Direktflug gut erreichbar"
+    "type": "warn",
+    "text": "Sommer böig & schwül · glatter Dez–März · weite Anreise"
   },
   "subspots": [
     {
@@ -169,5 +186,34 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 8.23,
+    "lon": 79.72
+  },
+  "airportSpot": {
+    "airport": "CMB",
+    "airportName": "Colombo (CMB)",
+    "km": 130,
+    "min": 165,
+    "note": "~2,5–3 h Fahrt nach Norden, ländliche Lagune"
+  },
+  "video3asylife": "https://youtu.be/H0IIaVQgKEc",
+  "air": {
+    "byMonth": {
+      "1": 30,
+      "2": 31,
+      "3": 32,
+      "4": 32,
+      "5": 31,
+      "6": 30,
+      "7": 30,
+      "8": 30,
+      "9": 29,
+      "10": 29,
+      "11": 29,
+      "12": 29
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

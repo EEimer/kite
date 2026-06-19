@@ -12,7 +12,9 @@
     "kite": 4,
     "family": 3,
     "infra": 3,
-    "access": 3
+    "access": 5,
+    "toddler": 3,
+    "city": 3
   },
   "wind": {
     "min": 15,
@@ -23,7 +25,22 @@
   "water": {
     "type": "lagoon",
     "tempC": 28,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 29,
+      "2": 29,
+      "3": 30,
+      "4": 29,
+      "5": 29,
+      "6": 28,
+      "7": 27,
+      "8": 26,
+      "9": 26,
+      "10": 27,
+      "11": 28,
+      "12": 29
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -156,5 +173,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": -6.27,
+    "lon": 39.53
+  },
+  "airportSpot": {
+    "airport": "ZNZ",
+    "airportName": "Sansibar (ZNZ)",
+    "km": 50,
+    "min": 60,
+    "note": "Paje: flache Lagune, aber tidenabhängig & abgelegen"
+  },
+  "air": {
+    "byMonth": {
+      "1": 30,
+      "2": 31,
+      "3": 30,
+      "4": 28,
+      "5": 28,
+      "6": 28,
+      "7": 27,
+      "8": 28,
+      "9": 28,
+      "10": 29,
+      "11": 29,
+      "12": 30
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

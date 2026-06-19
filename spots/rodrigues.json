@@ -1,0 +1,200 @@
+{
+  "id": "rodrigues",
+  "name": "Rodrigues",
+  "spot": "Rodrigues · Mourouk / Pointe Coton",
+  "region": "Indischer Ozean",
+  "country": "Mauritius",
+  "flag": "🇲🇺",
+  "verdict": "go",
+  "verdictLabel": "Lagunen-Traum",
+  "tagline": "Riesige türkise Flachwasser-Lagune, Passatwind fast täglich — abgelegen, aber ein echtes Kite-Paradies.",
+  "scores": {
+    "kite": 5,
+    "family": 3,
+    "infra": 2,
+    "access": 3,
+    "toddler": 3,
+    "city": 1
+  },
+  "wind": {
+    "min": 15,
+    "max": 28,
+    "type": "side-onshore",
+    "reliability": 99
+  },
+  "water": {
+    "type": "lagoon",
+    "tempC": 26,
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 28,
+      "2": 28,
+      "3": 28,
+      "4": 28,
+      "5": 27,
+      "6": 26,
+      "7": 25,
+      "8": 24,
+      "9": 24,
+      "10": 25,
+      "11": 26,
+      "12": 27
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 3,
+    "11": 2,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~9 h",
+    "transfers": 1,
+    "note": "Direktflug Mauritius (MRU) + Inlandsflug Rodrigues (RRG)",
+    "hours": 9
+  },
+  "distanceGermany": {
+    "time": "~14 h",
+    "transfers": 1,
+    "note": "via Mauritius (MRU → RRG)",
+    "hours": 14
+  },
+  "tags": [
+    "Riesenlagune",
+    "Passatwind",
+    "Flatwater",
+    "abgelegen",
+    "Mourouk"
+  ],
+  "description": "Rodrigues, die kleine Schwesterinsel von Mauritius, ist ein Flachwasser-Mekka: die Lagune bei Mourouk im Süden ist riesig, türkis und knietief, der Südost-Passat läuft besonders im Südwinter (Mai–Okt) fast täglich. Dafür ist die Insel klein und einfach — Anreise über Mauritius mit Inlandsflug, kaum Shopping, dafür Ruhe und Top-Bedingungen.",
+  "flagNote": {
+    "type": "go",
+    "text": "Flachwasser-Lagune · sehr windsicher · abgelegen"
+  },
+  "airportSpot": {
+    "airport": "RRG",
+    "airportName": "Rodrigues Plaine Corail (RRG)",
+    "km": 18,
+    "min": 30,
+    "note": "ab Mauritius (MRU) ~1,5 h Inlandsflug; Mourouk-Lagune im Süden"
+  },
+  "coords": {
+    "lat": -19.755,
+    "lon": 63.41
+  },
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Rodrigues-Mauritius.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        14,
+        48,
+        31,
+        3
+      ],
+      "2": [
+        14,
+        37,
+        31,
+        11
+      ],
+      "3": [
+        17,
+        37,
+        35,
+        8
+      ],
+      "4": [
+        8,
+        40,
+        41,
+        9
+      ],
+      "5": [
+        12,
+        37,
+        36,
+        12
+      ],
+      "6": [
+        8,
+        21,
+        45,
+        25
+      ],
+      "7": [
+        4,
+        17,
+        43,
+        34
+      ],
+      "8": [
+        6,
+        19,
+        43,
+        32
+      ],
+      "9": [
+        6,
+        20,
+        49,
+        23
+      ],
+      "10": [
+        8,
+        32,
+        48,
+        10
+      ],
+      "11": [
+        12,
+        45,
+        34,
+        6
+      ],
+      "12": [
+        11,
+        53,
+        29,
+        4
+      ]
+    }
+  },
+  "air": {
+    "byMonth": {
+      "1": 28,
+      "2": 27,
+      "3": 27,
+      "4": 27,
+      "5": 26,
+      "6": 24,
+      "7": 23,
+      "8": 23,
+      "9": 23,
+      "10": 24,
+      "11": 25,
+      "12": 26
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
+  }
+}

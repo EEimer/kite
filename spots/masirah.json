@@ -12,7 +12,9 @@
     "kite": 5,
     "family": 2,
     "infra": 2,
-    "access": 5
+    "access": 4,
+    "toddler": 2,
+    "city": 1
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 27,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 25,
+      "2": 25,
+      "3": 26,
+      "4": 28,
+      "5": 30,
+      "6": 29,
+      "7": 27,
+      "8": 26,
+      "9": 28,
+      "10": 28,
+      "11": 28,
+      "12": 26
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "intermediate",
@@ -156,5 +173,33 @@
         1
       ]
     }
+  },
+  "coords": {
+    "lat": 20.67,
+    "lon": 58.9
+  },
+  "airportSpot": {
+    "airport": "MSH",
+    "airportName": "Masirah (via Muscat MCT)",
+    "km": 30,
+    "min": 120,
+    "note": "Flug/Fahrt ab Muscat + Fähre Shannah → Masirah"
+  },
+  "air": {
+    "byMonth": {
+      "1": 24,
+      "2": 25,
+      "3": 27,
+      "4": 30,
+      "5": 31,
+      "6": 30,
+      "7": 28,
+      "8": 27,
+      "9": 28,
+      "10": 28,
+      "11": 28,
+      "12": 25
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

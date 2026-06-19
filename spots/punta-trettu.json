@@ -5,25 +5,42 @@
   "region": "Sardinien",
   "country": "Italien",
   "flag": "🇮🇹",
-  "verdict": "warn",
-  "verdictLabel": "Top-Flat, Logistik",
-  "tagline": "Eines der besten Flatwater-Reviere Europas — aber der Spot liegt im Nichts.",
+  "verdict": "go",
+  "verdictLabel": "Flachwasser-Klassiker",
+  "tagline": "Knietiefe Lagune, fast nie böiger Wind — der Lern- und Familien-Flachwasserspot Sardiniens, Hauptsaison Juni–August.",
   "scores": {
     "kite": 5,
-    "family": 2,
+    "family": 3,
     "infra": 2,
-    "access": 4
+    "access": 3,
+    "toddler": 4,
+    "city": 2
   },
   "wind": {
-    "min": 15,
+    "min": 14,
     "max": 25,
     "type": "side-onshore",
-    "reliability": 90
+    "reliability": 88
   },
   "water": {
     "type": "flat",
     "tempC": 20,
-    "wetsuit": "3/2 Neo"
+    "wetsuit": "3/2 Neo",
+    "byMonth": {
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 16,
+      "5": 19,
+      "6": 22,
+      "7": 24,
+      "8": 26,
+      "9": 24,
+      "10": 23,
+      "11": 20,
+      "12": 17
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -37,8 +54,8 @@
     "4": 2,
     "5": 3,
     "6": 3,
-    "7": 1,
-    "8": 1,
+    "7": 3,
+    "8": 3,
     "9": 3,
     "10": 2,
     "11": 1,
@@ -57,15 +74,17 @@
     "hours": 2
   },
   "tags": [
-    "stehtiefes Flatwater",
-    "90% Windtage",
-    "Anfängerparadies",
-    "abgelegen"
+    "Flachwasser",
+    "stehtief",
+    "Mistral",
+    "kaum böig",
+    "Lernspot",
+    "Familie"
   ],
-  "description": "Eines der besten Flatwater-Reviere Europas: stehtiefe, spiegelglatte Lagune, ~90% Windtage in der Saison. Aber der Spot liegt im Nichts — Base in Cagliari (40 Min) nötig, dann täglich rausfahren. Als All-in-One-Familienbase umständlich, nur mit Auto + bewusster Logistikplanung sinnvoll.",
+  "description": "Punta Trettu im Südwesten Sardiniens ist DER Flachwasser-Klassiker zum Lernen und Freestylen: stehtiefe, knietiefe Lagune und ein bemerkenswert stetiger, fast nie böiger Wind. Der Mistral (NW) läuft von April bis September und wird nachmittags thermisch verstärkt — oft 5–10 kn mehr als vorhergesagt. Hauptsaison Juni–August mit 85–90 % kitebaren Tagen. Ländlich und einfach (nächste größere Stadt Cagliari ~1 h), dafür ideale, sichere Bedingungen für Anfänger und Familie.",
   "flagNote": {
-    "type": "warn",
-    "text": "Nur mit Auto + bewusster Logistikplanung sinnvoll"
+    "type": "go",
+    "text": "Flachwasser, stetiger Wind (kaum böig) · top zum Lernen"
   },
   "subspots": [],
   "family": [
@@ -73,91 +92,116 @@
     "Cagliari als lebendige Base mit Stadtleben."
   ],
   "windChart": {
-    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
-    "period": "2019–2023",
-    "hours": "10–18 h lokal",
-    "lat": 39.051,
-    "lon": 8.395,
-    "note": "Reanalyse ~25 km — unterschätzt lokale Düsen-/Thermikeffekte; reale Spot-Stärke meist höher",
+    "source": "Punta Trettu Kite Center (Statistik seit 2011)",
+    "url": "https://puntatrettukitecenter.com/punta-trettu-wind-statistics/",
     "bins": [
       "12–16",
-      "16–20",
-      "20–25",
-      "25+"
+      "16–22",
+      "22–28",
+      ">28"
     ],
     "pct": {
       "1": [
-        16,
+        18,
         14,
-        8,
-        6
+        3,
+        0
       ],
       "2": [
-        22,
-        9,
-        8,
-        1
+        18,
+        14,
+        3,
+        0
       ],
       "3": [
-        20,
-        13,
-        9,
-        1
+        24,
+        21,
+        5,
+        0
       ],
       "4": [
-        24,
-        12,
-        5,
+        30,
+        33,
+        11,
         1
       ],
       "5": [
-        21,
+        28,
+        35,
         11,
-        3,
         1
       ],
       "6": [
-        27,
-        10,
-        1,
-        0
+        25,
+        41,
+        17,
+        2
       ],
       "7": [
-        25,
-        12,
-        0,
-        0
+        22,
+        45,
+        21,
+        2
       ],
       "8": [
-        24,
-        9,
-        3,
-        0
+        22,
+        45,
+        21,
+        2
       ],
       "9": [
-        24,
-        9,
-        1,
+        26,
+        33,
+        10,
         1
       ],
       "10": [
-        25,
-        6,
-        2,
+        30,
+        31,
+        8,
         1
       ],
       "11": [
-        22,
-        10,
-        6,
-        2
+        26,
+        20,
+        4,
+        0
       ],
       "12": [
-        17,
-        16,
-        6,
-        3
+        26,
+        20,
+        4,
+        0
       ]
-    }
+    },
+    "note": "Monatssumme = kitebare Tage laut Kite Center; Bin-Verteilung geschätzt."
+  },
+  "coords": {
+    "lat": 39.05,
+    "lon": 8.45
+  },
+  "airportSpot": {
+    "airport": "CAG",
+    "airportName": "Cagliari (CAG)",
+    "km": 75,
+    "min": 60,
+    "note": "flache knietiefe Lagune, aber ländlich"
+  },
+  "air": {
+    "byMonth": {
+      "1": 14,
+      "2": 15,
+      "3": 16,
+      "4": 18,
+      "5": 21,
+      "6": 27,
+      "7": 31,
+      "8": 30,
+      "9": 27,
+      "10": 25,
+      "11": 20,
+      "12": 17
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

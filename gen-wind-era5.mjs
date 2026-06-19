@@ -29,6 +29,9 @@ const COORDS = {
   aruba:[12.58,-70.05], eilat:[29.55,34.95], socotra:[12.61,53.93], leucate:[42.95,3.03],
   lanzarote:[29.05,-13.50], paros:[37.07,25.22], naxos:[37.02,25.36], lefkada:[38.72,20.65],
   kouremenos:[35.20,26.27], guincho:[38.73,-9.47], calvi:[42.57,8.76],
+  nyali:[-4.04,39.73], kunduchi:[-6.665,39.21], rodrigues:[-19.755,63.41], 'cape-town':[-33.81,18.46],
+  'el-gouna':[27.40,33.68], 'soma-bay':[26.84,33.99], 'ponta-preta':[16.60,-22.95], 'le-morne':[-20.46,57.31],
+  mazotos:[34.745,33.49],
 };
 
 const binOf = v => v < 12 ? -1 : v < 16 ? 0 : v < 20 ? 1 : v < 25 ? 2 : 3;

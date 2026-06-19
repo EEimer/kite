@@ -43,6 +43,15 @@ const SLUGS = {
   guincho: 'Guincho-Portugal',
   calvi: 'Calvi-Corsica-France',
   urla: ['Pirlanta-Turkey', 'Pırlanta/Çeşme (WWK hat keinen eigenen Urla-Eintrag)'],
+  nyali: 'Nyali-Kenya',
+  kunduchi: 'Kunduchi-Tanzania',
+  rodrigues: 'Rodrigues-Mauritius',
+  'cape-town': ['Cape-Town-South-Africa', 'Cape Town (Bloubergstrand hat keinen eigenen WWK-Eintrag)'],
+  'el-gouna': 'El-Gouna-Egypte',
+  'soma-bay': 'Soma-Bay-Egypt',
+  'ponta-preta': 'Ponta-Preta-Sal-Cabo-Verde',
+  'le-morne': 'Le-Morne-Mauritius',
+  mazotos: ['Episkopi-Cyprus', 'Episkopi (WWK hat keinen eigenen Mazotos-Eintrag)'],
 };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));

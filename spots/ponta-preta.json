@@ -1,29 +1,29 @@
 {
-  "id": "kap-verde",
-  "name": "Kap Verde",
-  "spot": "Sal / Boa Vista",
+  "id": "ponta-preta",
+  "name": "Ponta Preta",
+  "spot": "Sal · Ponta Preta",
   "region": "Atlantik",
   "country": "Kap Verde",
   "flag": "🇨🇻",
   "verdict": "warn",
-  "verdictLabel": "Falsche Saison (Frühsommer)",
-  "tagline": "Wäre perfekt — aber die Saison endet im Mai. Top im Winter.",
+  "verdictLabel": "Wellen-Klassiker",
+  "tagline": "Berühmte Down-the-line-Welle auf Sal — kräftiger Passat, aber ein Spot für erfahrene Wellen-Kiter.",
   "scores": {
-    "kite": 4,
-    "family": 3,
+    "kite": 5,
+    "family": 2,
     "infra": 3,
     "access": 2,
-    "toddler": 3,
+    "toddler": 2,
     "city": 3
   },
   "wind": {
     "min": 18,
-    "max": 28,
-    "type": "side-onshore",
+    "max": 30,
+    "type": "side-offshore",
     "reliability": 100
   },
   "water": {
-    "type": "flat",
+    "type": "wave",
     "tempC": 24,
     "wetsuit": "Shorty",
     "byMonth": {
@@ -44,18 +44,19 @@
   },
   "level": [
     "intermediate",
-    "advanced"
+    "advanced",
+    "expert"
   ],
   "season": {
     "1": 3,
     "2": 3,
     "3": 3,
     "4": 2,
-    "5": 1,
-    "6": 0,
-    "7": 0,
-    "8": 0,
-    "9": 0,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
     "10": 1,
     "11": 2,
     "12": 3
@@ -63,35 +64,41 @@
   "distanceUAE": {
     "time": "~12 h",
     "transfers": 2,
-    "note": "lange Anreise, 1–2× Umstieg",
+    "note": "lange Anreise, 1–2× Umstieg (SID)",
     "hours": 12
   },
   "distanceGermany": {
     "time": "~6 h",
     "transfers": 0,
-    "note": "Direktflüge nach SID/BVC",
+    "note": "Direktflug Sal (SID)",
     "hours": 6
   },
   "tags": [
-    "Saison Nov–Mai",
-    "Winterspot",
-    "Ponta Preta",
-    "warmes Wasser"
+    "Welle",
+    "Down-the-line",
+    "Passatwind",
+    "Experten",
+    "GKA-Spot"
   ],
-  "description": "Wäre perfekt — aber Mai ist Saisonende, der Wind lässt nach. Top im Winter (Nov–März), falsche Wahl für den Frühsommer. Ponta Preta (Sal) ist ein Weltklasse-Wave-Spot.",
+  "description": "Ponta Preta bei Santa Maria auf Sal ist die ikonische rechtsbrechende Welle der Kapverden — lange, saubere Walls bei kräftigem Nordost-Passat (Winter am besten). Klarer Spot für erfahrene Wellen-Kiter; nichts fürs Flachwasser-Plantschen. Santa Maria mit Hotels und Restaurants liegt nebenan.",
   "flagNote": {
     "type": "warn",
-    "text": "Prime Nov–März · Frühsommer Saisonende"
+    "text": "Wellenspot für Erfahrene · kräftiger Passat · Winter am besten"
   },
-  "subspots": [],
-  "family": [
-    "Schildkröten-Watching auf Boa Vista (Sommer).",
-    "Weite, flache Sandstrände.",
-    "Salinen von Pedra de Lume auf Sal."
-  ],
+  "airportSpot": {
+    "airport": "SID",
+    "airportName": "Sal (SID)",
+    "km": 18,
+    "min": 20,
+    "note": "Ponta Preta bei Santa Maria"
+  },
+  "coords": {
+    "lat": 16.6,
+    "lon": -22.95
+  },
   "windChart": {
     "source": "WhenWhereKite (Kiter-Feedback)",
-    "url": "https://whenwherekite.com/Santa-Maria-Sal-Cabo-Verde.html",
+    "url": "https://whenwherekite.com/Ponta-Preta-Sal-Cabo-Verde.html",
     "bins": [
       "12–16",
       "16–22",
@@ -173,31 +180,20 @@
       ]
     }
   },
-  "coords": {
-    "lat": 16.59,
-    "lon": -22.93
-  },
-  "airportSpot": {
-    "airport": "SID",
-    "airportName": "Sal (SID)",
-    "km": 18,
-    "min": 20,
-    "note": "Santa Maria, Resort-Strand mit Shore-Break"
-  },
   "air": {
     "byMonth": {
-      "1": 25,
-      "2": 24,
-      "3": 24,
-      "4": 25,
-      "5": 25,
-      "6": 26,
-      "7": 27,
-      "8": 29,
-      "9": 29,
-      "10": 29,
-      "11": 28,
-      "12": 26
+      "1": 26,
+      "2": 26,
+      "3": 26,
+      "4": 27,
+      "5": 27,
+      "6": 28,
+      "7": 29,
+      "8": 30,
+      "9": 30,
+      "10": 31,
+      "11": 30,
+      "12": 28
     },
     "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }

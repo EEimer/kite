@@ -12,7 +12,9 @@
     "kite": 3,
     "family": 4,
     "infra": 4,
-    "access": 4
+    "access": 3,
+    "toddler": 4,
+    "city": 3
   },
   "wind": {
     "min": 12,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 25,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 17,
+      "2": 16,
+      "3": 16,
+      "4": 17,
+      "5": 20,
+      "6": 24,
+      "7": 27,
+      "8": 28,
+      "9": 26,
+      "10": 24,
+      "11": 21,
+      "12": 19
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -155,5 +172,34 @@
         11
       ]
     }
+  },
+  "coords": {
+    "lat": 38.72,
+    "lon": 20.65
+  },
+  "airportSpot": {
+    "airport": "PVK",
+    "airportName": "Preveza/Aktion (PVK)",
+    "km": 30,
+    "min": 40,
+    "note": "Milos Beach; Insel über Brücke erreichbar"
+  },
+  "video3asylife": "https://youtu.be/uzXWypDgEMA",
+  "air": {
+    "byMonth": {
+      "1": 9,
+      "2": 10,
+      "3": 11,
+      "4": 15,
+      "5": 20,
+      "6": 26,
+      "7": 30,
+      "8": 28,
+      "9": 23,
+      "10": 20,
+      "11": 14,
+      "12": 11
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

@@ -12,7 +12,9 @@
     "kite": 3,
     "family": 4,
     "infra": 4,
-    "access": 4
+    "access": 3,
+    "toddler": 4,
+    "city": 3
   },
   "wind": {
     "min": 12,
@@ -23,7 +25,22 @@
   "water": {
     "type": "mixed",
     "tempC": 21,
-    "wetsuit": "3/2 Neo"
+    "wetsuit": "3/2 Neo",
+    "byMonth": {
+      "1": 16,
+      "2": 16,
+      "3": 16,
+      "4": 17,
+      "5": 19,
+      "6": 21,
+      "7": 22,
+      "8": 22,
+      "9": 21,
+      "10": 20,
+      "11": 18,
+      "12": 16
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "intermediate",
@@ -159,5 +176,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 36.27,
+    "lon": -6.1
+  },
+  "airportSpot": {
+    "airport": "XRY",
+    "airportName": "Jerez (XRY)",
+    "km": 60,
+    "min": 60,
+    "note": "familienfreundlicher Andalusien-Strandort; Cádiz nah"
+  },
+  "air": {
+    "byMonth": {
+      "1": 17,
+      "2": 18,
+      "3": 18,
+      "4": 21,
+      "5": 24,
+      "6": 26,
+      "7": 30,
+      "8": 30,
+      "9": 26,
+      "10": 24,
+      "11": 21,
+      "12": 18
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

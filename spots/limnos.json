@@ -12,7 +12,9 @@
     "kite": 4,
     "family": 3,
     "infra": 3,
-    "access": 3
+    "access": 3,
+    "toddler": 3,
+    "city": 2
   },
   "wind": {
     "min": 16,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 25,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 15,
+      "2": 13,
+      "3": 14,
+      "4": 16,
+      "5": 18,
+      "6": 23,
+      "7": 26,
+      "8": 26,
+      "9": 24,
+      "10": 21,
+      "11": 18,
+      "12": 16
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -160,5 +177,33 @@
         2
       ]
     }
+  },
+  "coords": {
+    "lat": 39.85,
+    "lon": 25.35
+  },
+  "airportSpot": {
+    "airport": "LXS",
+    "airportName": "Limnos (LXS)",
+    "km": 30,
+    "min": 35,
+    "note": "Keros Bay, ruhige Insel, wenig Infrastruktur"
+  },
+  "air": {
+    "byMonth": {
+      "1": 12,
+      "2": 13,
+      "3": 14,
+      "4": 18,
+      "5": 22,
+      "6": 28,
+      "7": 32,
+      "8": 31,
+      "9": 27,
+      "10": 22,
+      "11": 18,
+      "12": 15
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

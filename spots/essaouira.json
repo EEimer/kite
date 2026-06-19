@@ -12,7 +12,9 @@
     "kite": 5,
     "family": 4,
     "infra": 4,
-    "access": 3
+    "access": 2,
+    "toddler": 3,
+    "city": 4
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "choppy",
     "tempC": 19,
-    "wetsuit": "3/2 Neo"
+    "wetsuit": "3/2 Neo",
+    "byMonth": {
+      "1": 17,
+      "2": 17,
+      "3": 17,
+      "4": 18,
+      "5": 18,
+      "6": 20,
+      "7": 19,
+      "8": 20,
+      "9": 20,
+      "10": 20,
+      "11": 19,
+      "12": 18
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -157,5 +174,33 @@
         10
       ]
     }
+  },
+  "coords": {
+    "lat": 31.49,
+    "lon": -9.78
+  },
+  "airportSpot": {
+    "airport": "ESU",
+    "airportName": "Essaouira (ESU)",
+    "km": 15,
+    "min": 20,
+    "note": "geschützte Bucht; Medina, Souks, Riads (UNESCO)"
+  },
+  "air": {
+    "byMonth": {
+      "1": 21,
+      "2": 21,
+      "3": 20,
+      "4": 22,
+      "5": 22,
+      "6": 24,
+      "7": 26,
+      "8": 26,
+      "9": 25,
+      "10": 25,
+      "11": 24,
+      "12": 22
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

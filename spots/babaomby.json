@@ -12,7 +12,9 @@
     "kite": 5,
     "family": 2,
     "infra": 2,
-    "access": 2
+    "access": 2,
+    "toddler": 1,
+    "city": 1
   },
   "wind": {
     "min": 20,
@@ -23,7 +25,22 @@
   "water": {
     "type": "lagoon",
     "tempC": 26,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 29,
+      "2": 29,
+      "3": 29,
+      "4": 29,
+      "5": 28,
+      "6": 27,
+      "7": 26,
+      "8": 26,
+      "9": 26,
+      "10": 26,
+      "11": 27,
+      "12": 28
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "intermediate",
@@ -157,5 +174,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": -11.96,
+    "lon": 49.27
+  },
+  "airportSpot": {
+    "airport": "DIE",
+    "airportName": "Diego Suarez (DIE)",
+    "km": 60,
+    "min": 180,
+    "note": "4x4 + Boot ab Diego; Eco-Camp, nichts für Kleinkinder"
+  },
+  "air": {
+    "byMonth": {
+      "1": 29,
+      "2": 29,
+      "3": 29,
+      "4": 29,
+      "5": 28,
+      "6": 27,
+      "7": 26,
+      "8": 26,
+      "9": 27,
+      "10": 28,
+      "11": 29,
+      "12": 30
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

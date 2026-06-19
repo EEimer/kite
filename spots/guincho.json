@@ -12,7 +12,9 @@
     "kite": 3,
     "family": 3,
     "infra": 4,
-    "access": 4
+    "access": 3,
+    "toddler": 2,
+    "city": 5
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "wave",
     "tempC": 18,
-    "wetsuit": "4/3 Neo"
+    "wetsuit": "4/3 Neo",
+    "byMonth": {
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 16,
+      "5": 16,
+      "6": 18,
+      "7": 17,
+      "8": 16,
+      "9": 17,
+      "10": 19,
+      "11": 18,
+      "12": 16
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "advanced",
@@ -155,5 +172,33 @@
         14
       ]
     }
+  },
+  "coords": {
+    "lat": 38.73,
+    "lon": -9.47
+  },
+  "airportSpot": {
+    "airport": "LIS",
+    "airportName": "Lissabon (LIS)",
+    "km": 35,
+    "min": 40,
+    "note": "Guincho: Welle & starker Wind; Cascais/Lissabon Top-Shopping"
+  },
+  "air": {
+    "byMonth": {
+      "1": 16,
+      "2": 16,
+      "3": 17,
+      "4": 18,
+      "5": 20,
+      "6": 21,
+      "7": 23,
+      "8": 23,
+      "9": 22,
+      "10": 21,
+      "11": 19,
+      "12": 16
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

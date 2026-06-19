@@ -1,0 +1,206 @@
+{
+  "id": "el-gouna",
+  "name": "El Gouna",
+  "spot": "El Gouna · Mangroovy Beach",
+  "region": "Rotes Meer",
+  "country": "Ägypten",
+  "flag": "🇪🇬",
+  "verdict": "go",
+  "verdictLabel": "Familien-Sieger Rotes Meer",
+  "tagline": "Flachwasser-Lagune, volle Resort-Stadt, Direktflug ab Dubai in ~3 h — das familienfreundlichste Windrevier in Reichweite.",
+  "scores": {
+    "kite": 4,
+    "family": 5,
+    "infra": 5,
+    "access": 5,
+    "toddler": 5,
+    "city": 4
+  },
+  "wind": {
+    "min": 14,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 86
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 26,
+    "wetsuit": "Shorty",
+    "byMonth": {
+      "1": 20,
+      "2": 19,
+      "3": 21,
+      "4": 23,
+      "5": 24,
+      "6": 27,
+      "7": 28,
+      "8": 29,
+      "9": 28,
+      "10": 25,
+      "11": 23,
+      "12": 21
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 2,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~3 h",
+    "transfers": 0,
+    "note": "Direktflug Hurghada (HRG)",
+    "hours": 3
+  },
+  "distanceGermany": {
+    "time": "~4,5 h",
+    "transfers": 0,
+    "note": "Direktflug Hurghada (HRG)",
+    "hours": 4.5
+  },
+  "tags": [
+    "Flatwater",
+    "Lagune",
+    "Resort-Stadt",
+    "Direktflug",
+    "Schule + Rescue"
+  ],
+  "description": "El Gouna ist die wohl familienfreundlichste Windbasis in Dubai-Reichweite: stehtiefe Flachwasser-Lagune an der Mangroovy Beach, Schulen und Rescue direkt am Spot, dazu eine komplette Resort-Stadt mit Marina, Restaurants, Pools und Lagunen. Direktflug nach Hurghada in ~3 h. Wind läuft am stärksten von Frühjahr bis Herbst (Etesien). Warmes, sicheres Wasser — top für Anfänger und Kind.",
+  "flagNote": {
+    "type": "go",
+    "text": "Flachwasser + volle Infrastruktur · Direktflug ab Dubai"
+  },
+  "family": [
+    "Lagunen & Pools in El Gouna — flaches warmes Wasser überall.",
+    "Marina & Promenade — Restaurants, Eis, Tuk-Tuk-Fahrten.",
+    "Schnorcheln/Hausriff & Delfin-Touren.",
+    "Zoo/Aquarium Hurghada (~30 min)."
+  ],
+  "airportSpot": {
+    "airport": "HRG",
+    "airportName": "Hurghada (HRG)",
+    "km": 25,
+    "min": 30,
+    "note": "Mangroovy Beach in El Gouna, ~30 min vom Flughafen"
+  },
+  "coords": {
+    "lat": 27.4,
+    "lon": 33.68
+  },
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/El-Gouna-Egypte.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        31,
+        24,
+        2,
+        1
+      ],
+      "2": [
+        31,
+        23,
+        5,
+        0
+      ],
+      "3": [
+        30,
+        32,
+        9,
+        1
+      ],
+      "4": [
+        33,
+        34,
+        7,
+        1
+      ],
+      "5": [
+        37,
+        31,
+        9,
+        0
+      ],
+      "6": [
+        27,
+        47,
+        14,
+        0
+      ],
+      "7": [
+        38,
+        33,
+        5,
+        0
+      ],
+      "8": [
+        34,
+        42,
+        5,
+        0
+      ],
+      "9": [
+        28,
+        50,
+        10,
+        0
+      ],
+      "10": [
+        48,
+        17,
+        2,
+        0
+      ],
+      "11": [
+        32,
+        21,
+        1,
+        0
+      ],
+      "12": [
+        34,
+        21,
+        3,
+        0
+      ]
+    }
+  },
+  "air": {
+    "byMonth": {
+      "1": 21,
+      "2": 22,
+      "3": 25,
+      "4": 29,
+      "5": 32,
+      "6": 36,
+      "7": 37,
+      "8": 37,
+      "9": 35,
+      "10": 31,
+      "11": 27,
+      "12": 24
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
+  }
+}

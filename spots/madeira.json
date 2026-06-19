@@ -12,7 +12,9 @@
     "kite": 2,
     "family": 4,
     "infra": 4,
-    "access": 4
+    "access": 3,
+    "toddler": 3,
+    "city": 4
   },
   "wind": {
     "min": 12,
@@ -23,7 +25,22 @@
   "water": {
     "type": "wave",
     "tempC": 21,
-    "wetsuit": "3/2 Neo"
+    "wetsuit": "3/2 Neo",
+    "byMonth": {
+      "1": 20,
+      "2": 19,
+      "3": 19,
+      "4": 20,
+      "5": 20,
+      "6": 21,
+      "7": 23,
+      "8": 24,
+      "9": 24,
+      "10": 24,
+      "11": 23,
+      "12": 21
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "advanced"
@@ -158,5 +175,33 @@
         3
       ]
     }
+  },
+  "coords": {
+    "lat": 33.055,
+    "lon": -16.34
+  },
+  "airportSpot": {
+    "airport": "FNC",
+    "airportName": "Funchal (FNC)",
+    "km": 25,
+    "min": 30,
+    "note": "Kiten marginal; Insel felsig, Funchal schön"
+  },
+  "air": {
+    "byMonth": {
+      "1": 19,
+      "2": 19,
+      "3": 19,
+      "4": 20,
+      "5": 21,
+      "6": 22,
+      "7": 23,
+      "8": 24,
+      "9": 24,
+      "10": 23,
+      "11": 22,
+      "12": 20
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

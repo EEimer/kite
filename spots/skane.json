@@ -12,7 +12,9 @@
     "kite": 1,
     "family": 4,
     "infra": 4,
-    "access": 4
+    "access": 4,
+    "toddler": 4,
+    "city": 4
   },
   "wind": {
     "min": 10,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 18,
-    "wetsuit": "4/3 Neo"
+    "wetsuit": "4/3 Neo",
+    "byMonth": {
+      "1": 3,
+      "2": 2,
+      "3": 3,
+      "4": 6,
+      "5": 11,
+      "6": 16,
+      "7": 18,
+      "8": 18,
+      "9": 17,
+      "10": 13,
+      "11": 9,
+      "12": 5
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -159,5 +176,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 55.42,
+    "lon": 12.83
+  },
+  "airportSpot": {
+    "airport": "CPH",
+    "airportName": "Kopenhagen (CPH)",
+    "km": 45,
+    "min": 45,
+    "note": "über die Öresundbrücke; Ostsee ruhig aber wenig Wind"
+  },
+  "air": {
+    "byMonth": {
+      "1": 4,
+      "2": 6,
+      "3": 7,
+      "4": 10,
+      "5": 16,
+      "6": 19,
+      "7": 20,
+      "8": 21,
+      "9": 19,
+      "10": 13,
+      "11": 8,
+      "12": 5
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

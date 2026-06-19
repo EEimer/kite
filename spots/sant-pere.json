@@ -12,7 +12,9 @@
     "kite": 3,
     "family": 3,
     "infra": 4,
-    "access": 5
+    "access": 4,
+    "toddler": 4,
+    "city": 4
   },
   "wind": {
     "min": 13,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 27,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 14,
+      "2": 13,
+      "3": 14,
+      "4": 15,
+      "5": 17,
+      "6": 21,
+      "7": 24,
+      "8": 25,
+      "9": 22,
+      "10": 20,
+      "11": 18,
+      "12": 15
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -160,5 +177,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 42.18,
+    "lon": 3.1
+  },
+  "airportSpot": {
+    "airport": "GRO",
+    "airportName": "Girona (GRO)",
+    "km": 45,
+    "min": 40,
+    "note": "langer Sandstrand, Campingplätze; Barcelona ~1,5 h"
+  },
+  "air": {
+    "byMonth": {
+      "1": 14,
+      "2": 16,
+      "3": 18,
+      "4": 21,
+      "5": 24,
+      "6": 29,
+      "7": 33,
+      "8": 32,
+      "9": 27,
+      "10": 24,
+      "11": 19,
+      "12": 15
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

@@ -1,0 +1,201 @@
+{
+  "id": "le-morne",
+  "name": "Le Morne",
+  "spot": "Le Morne · One Eye",
+  "region": "Indischer Ozean",
+  "country": "Mauritius",
+  "flag": "🇲🇺",
+  "verdict": "go",
+  "verdictLabel": "Lagune + Welle",
+  "tagline": "Türkise Flachwasser-Lagune plus die legendäre Welle One Eye — Passatwind im Südwinter, Luxus-Resorts am Strand.",
+  "scores": {
+    "kite": 5,
+    "family": 4,
+    "infra": 4,
+    "access": 4,
+    "toddler": 3,
+    "city": 2
+  },
+  "wind": {
+    "min": 15,
+    "max": 28,
+    "type": "side-onshore",
+    "reliability": 93
+  },
+  "water": {
+    "type": "lagoon",
+    "tempC": 25,
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 28,
+      "2": 28,
+      "3": 28,
+      "4": 28,
+      "5": 27,
+      "6": 26,
+      "7": 25,
+      "8": 25,
+      "9": 24,
+      "10": 25,
+      "11": 26,
+      "12": 27
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced",
+    "expert"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 3,
+    "11": 2,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 0,
+    "note": "Direktflug Mauritius (MRU) + ~50 min Transfer",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~12 h",
+    "transfers": 1,
+    "note": "via Paris/Dubai (MRU)",
+    "hours": 12
+  },
+  "tags": [
+    "Lagune",
+    "One Eye",
+    "Welle",
+    "Passatwind",
+    "Luxus-Resorts"
+  ],
+  "description": "Le Morne im Südwesten von Mauritius ist ein Postkarten-Spot: große, flache türkise Lagune zum Üben und Freestylen, davor die weltberühmte Welle „One Eye\" am Riff für Profis. Der Südost-Passat läuft besonders im Südwinter (Mai–Okt). Luxus-Resorts direkt am Strand; Direktflug ab Dubai nach Mauritius, dann ~50 min Transfer.",
+  "flagNote": {
+    "type": "go",
+    "text": "Lagune für Familie/Anfänger + One Eye für Profis · Passat Mai–Okt"
+  },
+  "airportSpot": {
+    "airport": "MRU",
+    "airportName": "Mauritius (MRU)",
+    "km": 45,
+    "min": 50,
+    "note": "Le Morne im Südwesten, ~50 min vom Flughafen"
+  },
+  "coords": {
+    "lat": -20.46,
+    "lon": 57.31
+  },
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Le-Morne-Mauritius.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        33,
+        40,
+        6,
+        0
+      ],
+      "2": [
+        36,
+        30,
+        14,
+        4
+      ],
+      "3": [
+        36,
+        30,
+        15,
+        4
+      ],
+      "4": [
+        36,
+        40,
+        13,
+        0
+      ],
+      "5": [
+        34,
+        27,
+        18,
+        6
+      ],
+      "6": [
+        22,
+        43,
+        23,
+        5
+      ],
+      "7": [
+        17,
+        41,
+        29,
+        7
+      ],
+      "8": [
+        19,
+        37,
+        34,
+        2
+      ],
+      "9": [
+        28,
+        39,
+        23,
+        3
+      ],
+      "10": [
+        34,
+        47,
+        11,
+        0
+      ],
+      "11": [
+        38,
+        33,
+        7,
+        0
+      ],
+      "12": [
+        41,
+        36,
+        7,
+        0
+      ]
+    }
+  },
+  "air": {
+    "byMonth": {
+      "1": 29,
+      "2": 29,
+      "3": 29,
+      "4": 28,
+      "5": 27,
+      "6": 25,
+      "7": 25,
+      "8": 25,
+      "9": 26,
+      "10": 27,
+      "11": 28,
+      "12": 29
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
+  }
+}

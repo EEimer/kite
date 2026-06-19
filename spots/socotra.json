@@ -12,7 +12,9 @@
     "kite": 4,
     "family": 1,
     "infra": 1,
-    "access": 1
+    "access": 4,
+    "toddler": 1,
+    "city": 1
   },
   "wind": {
     "min": 20,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 27,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 26,
+      "2": 26,
+      "3": 28,
+      "4": 30,
+      "5": 31,
+      "6": 29,
+      "7": 25,
+      "8": 25,
+      "9": 26,
+      "10": 28,
+      "11": 27,
+      "12": 26
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "advanced",
@@ -155,5 +172,33 @@
         3
       ]
     }
+  },
+  "coords": {
+    "lat": 12.61,
+    "lon": 53.93
+  },
+  "airportSpot": {
+    "airport": "SCT",
+    "airportName": "Socotra (SCT, Charter)",
+    "km": 25,
+    "min": 30,
+    "note": "Charterflug, dann Geländefahrt; Wildnis, keine Infrastruktur"
+  },
+  "air": {
+    "byMonth": {
+      "1": 27,
+      "2": 28,
+      "3": 30,
+      "4": 32,
+      "5": 33,
+      "6": 33,
+      "7": 30,
+      "8": 31,
+      "9": 32,
+      "10": 30,
+      "11": 29,
+      "12": 27
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

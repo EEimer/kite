@@ -12,7 +12,9 @@
     "kite": 4,
     "family": 5,
     "infra": 5,
-    "access": 5
+    "access": 4,
+    "toddler": 5,
+    "city": 4
   },
   "wind": {
     "min": 15,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 25,
-    "wetsuit": "Shorty / Lycra"
+    "wetsuit": "Shorty / Lycra",
+    "byMonth": {
+      "1": 19,
+      "2": 18,
+      "3": 17,
+      "4": 18,
+      "5": 19,
+      "6": 22,
+      "7": 24,
+      "8": 25,
+      "9": 25,
+      "10": 24,
+      "11": 22,
+      "12": 20
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -173,5 +190,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 36.86,
+    "lon": 27.08
+  },
+  "airportSpot": {
+    "airport": "KGS",
+    "airportName": "Kos (KGS)",
+    "km": 20,
+    "min": 20,
+    "note": "Mastichari, sehr familienfreundliche Insel"
+  },
+  "air": {
+    "byMonth": {
+      "1": 15,
+      "2": 15,
+      "3": 16,
+      "4": 20,
+      "5": 23,
+      "6": 28,
+      "7": 31,
+      "8": 30,
+      "9": 28,
+      "10": 24,
+      "11": 20,
+      "12": 18
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

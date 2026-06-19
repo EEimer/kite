@@ -12,7 +12,9 @@
     "kite": 3,
     "family": 5,
     "infra": 5,
-    "access": 5
+    "access": 4,
+    "toddler": 5,
+    "city": 5
   },
   "wind": {
     "min": 10,
@@ -172,5 +174,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 46.13,
+    "lon": 9.39
+  },
+  "airportSpot": {
+    "airport": "BGY",
+    "airportName": "Mailand-Bergamo (BGY/MXP)",
+    "km": 115,
+    "min": 80,
+    "note": "~1–1,5 h an den Nordteil des Sees"
+  },
+  "air": {
+    "byMonth": {
+      "1": 10,
+      "2": 13,
+      "3": 14,
+      "4": 17,
+      "5": 21,
+      "6": 26,
+      "7": 28,
+      "8": 29,
+      "9": 23,
+      "10": 20,
+      "11": 14,
+      "12": 10
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

@@ -1,0 +1,200 @@
+{
+  "id": "nyali",
+  "name": "Nyali",
+  "spot": "Mombasa · Nyali Beach",
+  "region": "Küste",
+  "country": "Kenia",
+  "flag": "🇰🇪",
+  "verdict": "warn",
+  "verdictLabel": "Warm & windsicher",
+  "tagline": "Riffgeschützte Lagune vor Mombasa, Monsunwind fast garantiert — warmes Wasser, aber Tropen-Anreise.",
+  "scores": {
+    "kite": 4,
+    "family": 4,
+    "infra": 4,
+    "access": 3,
+    "toddler": 4,
+    "city": 4
+  },
+  "wind": {
+    "min": 14,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "lagoon",
+    "tempC": 28,
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 29,
+      "2": 29,
+      "3": 30,
+      "4": 29,
+      "5": 28,
+      "6": 27,
+      "7": 27,
+      "8": 26,
+      "9": 27,
+      "10": 27,
+      "11": 28,
+      "12": 29
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 3,
+    "2": 3,
+    "3": 2,
+    "4": 1,
+    "5": 0,
+    "6": 2,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1,
+    "11": 1,
+    "12": 3
+  },
+  "distanceUAE": {
+    "time": "~7 h",
+    "transfers": 1,
+    "note": "via Nairobi nach Mombasa (MBA)",
+    "hours": 7
+  },
+  "distanceGermany": {
+    "time": "~11 h",
+    "transfers": 1,
+    "note": "via Nairobi/Addis (MBA)",
+    "hours": 11
+  },
+  "tags": [
+    "Monsunwind",
+    "Riff-Lagune",
+    "warm",
+    "Mombasa-Stadt",
+    "Kaskazi/Kusi"
+  ],
+  "description": "Nyali Beach liegt direkt nördlich von Mombasa, riffgeschützt mit Flachwasser bei Hochwasser. Der Monsun bringt im kenianischen Sommer (Kaskazi, Dez–Mär) und Winter (Kusi, Jun–Sep) zuverlässig Wind. Warmes Wasser, Resorts, Malls und Stadtleben in Mombasa direkt nebenan — als Tropenziel mit Malaria-Prophylaxe und etwas Anreise.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Tidenabhängig (Riff) · Malariagebiet · warmes Wasser"
+  },
+  "airportSpot": {
+    "airport": "MBA",
+    "airportName": "Mombasa (MBA)",
+    "km": 12,
+    "min": 25,
+    "note": "Nyali liegt direkt nördlich der Stadt"
+  },
+  "coords": {
+    "lat": -4.04,
+    "lon": 39.73
+  },
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Nyali-Kenya.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        44,
+        56,
+        0,
+        0
+      ],
+      "2": [
+        57,
+        43,
+        0,
+        0
+      ],
+      "3": [
+        65,
+        30,
+        0,
+        0
+      ],
+      "4": [
+        63,
+        37,
+        0,
+        0
+      ],
+      "5": [
+        16,
+        74,
+        10,
+        0
+      ],
+      "6": [
+        3,
+        47,
+        50,
+        0
+      ],
+      "7": [
+        0,
+        52,
+        47,
+        1
+      ],
+      "8": [
+        0,
+        77,
+        23,
+        0
+      ],
+      "9": [
+        3,
+        90,
+        7,
+        0
+      ],
+      "10": [
+        31,
+        69,
+        0,
+        0
+      ],
+      "11": [
+        73,
+        15,
+        0,
+        0
+      ],
+      "12": [
+        77,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  "air": {
+    "byMonth": {
+      "1": 30,
+      "2": 31,
+      "3": 31,
+      "4": 29,
+      "5": 28,
+      "6": 27,
+      "7": 26,
+      "8": 27,
+      "9": 27,
+      "10": 28,
+      "11": 29,
+      "12": 30
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
+  }
+}

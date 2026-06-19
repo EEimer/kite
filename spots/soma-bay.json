@@ -1,0 +1,199 @@
+{
+  "id": "soma-bay",
+  "name": "Soma Bay",
+  "spot": "Soma Bay · Rotes Meer",
+  "region": "Rotes Meer",
+  "country": "Ägypten",
+  "flag": "🇪🇬",
+  "verdict": "go",
+  "verdictLabel": "Windsicher + Resort",
+  "tagline": "Halbinsel im Roten Meer mit extrem konstantem Wind und riesiger Flachwasser-Sandbank — Direktflug ab Dubai.",
+  "scores": {
+    "kite": 5,
+    "family": 4,
+    "infra": 4,
+    "access": 5,
+    "toddler": 4,
+    "city": 3
+  },
+  "wind": {
+    "min": 16,
+    "max": 28,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "flat",
+    "tempC": 26,
+    "wetsuit": "Shorty",
+    "byMonth": {
+      "1": 24,
+      "2": 22,
+      "3": 23,
+      "4": 24,
+      "5": 25,
+      "6": 27,
+      "7": 29,
+      "8": 30,
+      "9": 29,
+      "10": 28,
+      "11": 26,
+      "12": 25
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 2,
+    "2": 2,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 3,
+    "11": 2,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~3 h",
+    "transfers": 0,
+    "note": "Direktflug Hurghada (HRG)",
+    "hours": 3
+  },
+  "distanceGermany": {
+    "time": "~4,5 h",
+    "transfers": 0,
+    "note": "Direktflug Hurghada (HRG)",
+    "hours": 4.5
+  },
+  "tags": [
+    "~100% Wind",
+    "Flatwater-Sandbank",
+    "Resort-Halbinsel",
+    "Direktflug"
+  ],
+  "description": "Soma Bay ist eine Resort-Halbinsel südlich von Hurghada mit einer riesigen, flachen Sandbank — ideales Stehrevier bei sehr konstantem Wind (fast ganzjährig). Direktflug nach Hurghada in ~3 h ab Dubai. Etwas ruhiger und resort-lastiger als El Gouna, dafür top Flachwasser und sehr windsicher.",
+  "flagNote": {
+    "type": "go",
+    "text": "Sehr windsicher · Flachwasser-Sandbank · Direktflug ab Dubai"
+  },
+  "airportSpot": {
+    "airport": "HRG",
+    "airportName": "Hurghada (HRG)",
+    "km": 45,
+    "min": 45,
+    "note": "Soma-Bay-Halbinsel südlich von Hurghada"
+  },
+  "coords": {
+    "lat": 26.84,
+    "lon": 33.99
+  },
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Soma-Bay-Egypt.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        69,
+        25,
+        5,
+        1
+      ],
+      "2": [
+        78,
+        34,
+        6,
+        0
+      ],
+      "3": [
+        86,
+        45,
+        10,
+        1
+      ],
+      "4": [
+        85,
+        35,
+        5,
+        0
+      ],
+      "5": [
+        83,
+        32,
+        8,
+        1
+      ],
+      "6": [
+        93,
+        39,
+        4,
+        1
+      ],
+      "7": [
+        89,
+        34,
+        6,
+        0
+      ],
+      "8": [
+        93,
+        32,
+        3,
+        0
+      ],
+      "9": [
+        92,
+        31,
+        3,
+        0
+      ],
+      "10": [
+        78,
+        34,
+        3,
+        0
+      ],
+      "11": [
+        79,
+        31,
+        1,
+        0
+      ],
+      "12": [
+        74,
+        32,
+        3,
+        1
+      ]
+    }
+  },
+  "air": {
+    "byMonth": {
+      "1": 22,
+      "2": 22,
+      "3": 25,
+      "4": 29,
+      "5": 32,
+      "6": 36,
+      "7": 36,
+      "8": 37,
+      "9": 35,
+      "10": 31,
+      "11": 27,
+      "12": 24
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
+  }
+}

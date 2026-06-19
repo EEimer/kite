@@ -1,0 +1,200 @@
+{
+  "id": "kunduchi",
+  "name": "Kunduchi",
+  "spot": "Dar es Salaam · Kunduchi Beach",
+  "region": "Küste",
+  "country": "Tansania",
+  "flag": "🇹🇿",
+  "verdict": "warn",
+  "verdictLabel": "Direktflug-Tropen",
+  "tagline": "Warmer Indik nördlich von Dar — Direktflug ab Dubai, Monsunwind und Wasserpark gleich nebenan.",
+  "scores": {
+    "kite": 4,
+    "family": 4,
+    "infra": 3,
+    "access": 5,
+    "toddler": 4,
+    "city": 3
+  },
+  "wind": {
+    "min": 13,
+    "max": 25,
+    "type": "side-onshore",
+    "reliability": 100
+  },
+  "water": {
+    "type": "lagoon",
+    "tempC": 28,
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 29,
+      "2": 30,
+      "3": 30,
+      "4": 29,
+      "5": 28,
+      "6": 28,
+      "7": 27,
+      "8": 26,
+      "9": 27,
+      "10": 28,
+      "11": 29,
+      "12": 30
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
+  },
+  "level": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 3,
+    "2": 3,
+    "3": 1,
+    "4": 0,
+    "5": 1,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 1,
+    "11": 1,
+    "12": 2
+  },
+  "distanceUAE": {
+    "time": "~5 h",
+    "transfers": 0,
+    "note": "Direktflug Dar es Salaam (DAR)",
+    "hours": 5
+  },
+  "distanceGermany": {
+    "time": "~10 h",
+    "transfers": 1,
+    "note": "via Istanbul/Addis (DAR)",
+    "hours": 10
+  },
+  "tags": [
+    "Monsunwind",
+    "warm",
+    "Direktflug",
+    "Wasserpark",
+    "Kusi/Kaskazi"
+  ],
+  "description": "Kunduchi liegt rund 25 km nördlich von Dar es Salaam — warmer Indik, breiter Strand und der Kusi-Monsun (Jun–Sep) sowie Kaskazi (Dez–Feb) bringen verlässlich Wind. Per Direktflug ab Dubai gut erreichbar; der Kunduchi Wet'n'Wild Wasserpark und Resorts machen es familientauglich. Lange Regenzeit (Mär–Mai) ausgespart.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Direktflug ab Dubai · warm · Malariagebiet"
+  },
+  "airportSpot": {
+    "airport": "DAR",
+    "airportName": "Dar es Salaam (DAR)",
+    "km": 25,
+    "min": 40,
+    "note": "Kunduchi ~25 km nördlich der Stadt"
+  },
+  "coords": {
+    "lat": -6.665,
+    "lon": 39.21
+  },
+  "windChart": {
+    "source": "WhenWhereKite (Kiter-Feedback)",
+    "url": "https://whenwherekite.com/Kunduchi-Tanzania.html",
+    "bins": [
+      "12–16",
+      "16–22",
+      "22–28",
+      ">28"
+    ],
+    "pct": {
+      "1": [
+        30,
+        40,
+        10,
+        0
+      ],
+      "2": [
+        30,
+        40,
+        10,
+        0
+      ],
+      "3": [
+        20,
+        20,
+        10,
+        0
+      ],
+      "4": [
+        20,
+        20,
+        20,
+        5
+      ],
+      "5": [
+        20,
+        50,
+        15,
+        0
+      ],
+      "6": [
+        20,
+        70,
+        20,
+        0
+      ],
+      "7": [
+        10,
+        70,
+        20,
+        0
+      ],
+      "8": [
+        5,
+        80,
+        15,
+        0
+      ],
+      "9": [
+        20,
+        70,
+        10,
+        0
+      ],
+      "10": [
+        30,
+        60,
+        10,
+        0
+      ],
+      "11": [
+        30,
+        20,
+        5,
+        0
+      ],
+      "12": [
+        45,
+        30,
+        5,
+        0
+      ]
+    }
+  },
+  "air": {
+    "byMonth": {
+      "1": 30,
+      "2": 31,
+      "3": 31,
+      "4": 29,
+      "5": 29,
+      "6": 29,
+      "7": 28,
+      "8": 28,
+      "9": 28,
+      "10": 29,
+      "11": 29,
+      "12": 30
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
+  }
+}

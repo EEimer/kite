@@ -12,7 +12,9 @@
     "kite": 2,
     "family": 4,
     "infra": 5,
-    "access": 4
+    "access": 4,
+    "toddler": 4,
+    "city": 4
   },
   "wind": {
     "min": 12,
@@ -23,7 +25,22 @@
   "water": {
     "type": "wave",
     "tempC": 18,
-    "wetsuit": "4/3 Neo"
+    "wetsuit": "4/3 Neo",
+    "byMonth": {
+      "1": 6,
+      "2": 7,
+      "3": 8,
+      "4": 10,
+      "5": 14,
+      "6": 18,
+      "7": 19,
+      "8": 20,
+      "9": 19,
+      "10": 16,
+      "11": 11,
+      "12": 8
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "intermediate",
@@ -155,5 +172,33 @@
         21
       ]
     }
+  },
+  "coords": {
+    "lat": 52.24,
+    "lon": 4.43
+  },
+  "airportSpot": {
+    "airport": "AMS",
+    "airportName": "Amsterdam-Schiphol (AMS)",
+    "km": 30,
+    "min": 40,
+    "note": "breiter Sandstrand, Promenade; Amsterdam/Den Haag nah"
+  },
+  "air": {
+    "byMonth": {
+      "1": 7,
+      "2": 9,
+      "3": 11,
+      "4": 12,
+      "5": 17,
+      "6": 20,
+      "7": 21,
+      "8": 22,
+      "9": 20,
+      "10": 16,
+      "11": 11,
+      "12": 8
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

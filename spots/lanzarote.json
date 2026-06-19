@@ -12,7 +12,9 @@
     "kite": 4,
     "family": 4,
     "infra": 4,
-    "access": 5
+    "access": 3,
+    "toddler": 4,
+    "city": 3
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 21,
-    "wetsuit": "Shorty"
+    "wetsuit": "Shorty",
+    "byMonth": {
+      "1": 20,
+      "2": 19,
+      "3": 19,
+      "4": 20,
+      "5": 21,
+      "6": 22,
+      "7": 23,
+      "8": 23,
+      "9": 23,
+      "10": 23,
+      "11": 22,
+      "12": 21
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -169,5 +186,33 @@
         13
       ]
     }
+  },
+  "coords": {
+    "lat": 29.05,
+    "lon": -13.5
+  },
+  "airportSpot": {
+    "airport": "ACE",
+    "airportName": "Lanzarote (ACE)",
+    "km": 15,
+    "min": 20,
+    "note": "Costa Teguise, ruhige Buchten am Ort"
+  },
+  "air": {
+    "byMonth": {
+      "1": 20,
+      "2": 20,
+      "3": 21,
+      "4": 22,
+      "5": 23,
+      "6": 24,
+      "7": 25,
+      "8": 26,
+      "9": 25,
+      "10": 26,
+      "11": 24,
+      "12": 21
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

@@ -12,7 +12,9 @@
     "kite": 5,
     "family": 5,
     "infra": 5,
-    "access": 2
+    "access": 1,
+    "toddler": 5,
+    "city": 5
   },
   "wind": {
     "min": 18,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 28,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 27,
+      "2": 26,
+      "3": 26,
+      "4": 27,
+      "5": 28,
+      "6": 28,
+      "7": 28,
+      "8": 28,
+      "9": 29,
+      "10": 30,
+      "11": 29,
+      "12": 28
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -170,5 +187,33 @@
         3
       ]
     }
+  },
+  "coords": {
+    "lat": 12.58,
+    "lon": -70.05
+  },
+  "airportSpot": {
+    "airport": "AUA",
+    "airportName": "Aruba (AUA)",
+    "km": 6,
+    "min": 12,
+    "note": "Fisherman’s Huts direkt an den Hotels"
+  },
+  "air": {
+    "byMonth": {
+      "1": 29,
+      "2": 29,
+      "3": 29,
+      "4": 30,
+      "5": 31,
+      "6": 31,
+      "7": 31,
+      "8": 32,
+      "9": 32,
+      "10": 32,
+      "11": 30,
+      "12": 29
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

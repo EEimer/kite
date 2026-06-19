@@ -12,7 +12,9 @@
     "kite": 3,
     "family": 3,
     "infra": 4,
-    "access": 4
+    "access": 4,
+    "toddler": 3,
+    "city": 4
   },
   "wind": {
     "min": 12,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 26,
-    "wetsuit": "Lycra"
+    "wetsuit": "Lycra",
+    "byMonth": {
+      "1": 23,
+      "2": 22,
+      "3": 22,
+      "4": 22,
+      "5": 24,
+      "6": 26,
+      "7": 29,
+      "8": 29,
+      "9": 28,
+      "10": 26,
+      "11": 25,
+      "12": 24
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -156,5 +173,33 @@
         0
       ]
     }
+  },
+  "coords": {
+    "lat": 29.55,
+    "lon": 34.95
+  },
+  "airportSpot": {
+    "airport": "ETM",
+    "airportName": "Ramon (ETM)",
+    "km": 20,
+    "min": 25,
+    "note": "Eilat-Lagune; Resort-Stadt, Wind erst nachmittags"
+  },
+  "air": {
+    "byMonth": {
+      "1": 21,
+      "2": 22,
+      "3": 25,
+      "4": 32,
+      "5": 35,
+      "6": 40,
+      "7": 41,
+      "8": 41,
+      "9": 38,
+      "10": 32,
+      "11": 27,
+      "12": 23
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }

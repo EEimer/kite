@@ -12,7 +12,9 @@
     "kite": 3,
     "family": 4,
     "infra": 3,
-    "access": 4
+    "access": 3,
+    "toddler": 4,
+    "city": 4
   },
   "wind": {
     "min": 12,
@@ -23,7 +25,22 @@
   "water": {
     "type": "flat",
     "tempC": 24,
-    "wetsuit": "Shorty"
+    "wetsuit": "Shorty",
+    "byMonth": {
+      "1": 15,
+      "2": 14,
+      "3": 14,
+      "4": 15,
+      "5": 18,
+      "6": 22,
+      "7": 26,
+      "8": 26,
+      "9": 23,
+      "10": 22,
+      "11": 19,
+      "12": 16
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
   },
   "level": [
     "beginner",
@@ -155,5 +172,33 @@
         2
       ]
     }
+  },
+  "coords": {
+    "lat": 42.57,
+    "lon": 8.76
+  },
+  "airportSpot": {
+    "airport": "CLY",
+    "airportName": "Calvi (CLY)",
+    "km": 5,
+    "min": 10,
+    "note": "geschützte Bucht von Calvi; Zitadelle, Hafen, Boutiquen"
+  },
+  "air": {
+    "byMonth": {
+      "1": 14,
+      "2": 15,
+      "3": 16,
+      "4": 18,
+      "5": 22,
+      "6": 28,
+      "7": 31,
+      "8": 30,
+      "9": 26,
+      "10": 24,
+      "11": 19,
+      "12": 16
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
   }
 }
