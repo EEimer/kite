@@ -126,6 +126,11 @@ input[type=range]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;bac
 
 /* Wind-Diagramm (Verteilung pro Monat, à la WhenWhereKite) */
 .wsplit{display:flex;height:30px;border-radius:5px;overflow:hidden;border:1px solid var(--line)}
+.wind-block{cursor:pointer}
+.wsplit-cap{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);margin-bottom:6px}
+.wsplit-cap b{color:var(--ink)}
+.wc-reset{font:inherit;color:var(--sea);background:none;border:0;cursor:pointer;padding:0}
+.wc-reset:hover{text-decoration:underline}
 .wsplit > span{display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:600;color:rgba(0,0,0,.62);min-width:0;white-space:nowrap}
 .wsplit .calm{background:repeating-linear-gradient(45deg,#fff,#fff 5px,#ece6d6 5px,#ece6d6 10px);color:var(--muted)}
 .wyear{position:relative;margin-top:14px;border-bottom:1px solid var(--line)}
@@ -499,12 +504,12 @@ function activeDist(s){ return state.dist==='uae' ? s.distanceUAE : s.distanceGe
 // Windwahrscheinlichkeit (% Windtage) für Karte/Ranking. Quelle WhenWhereKite (wo vorhanden),
 // sonst der recherchierte Wert. Bewusst NICHT die ERA5-Reanalyse für die Headline.
 function windProb(s){ return s.wind.reliability; }
-// Verteilung über die 4 kn-Bins (windChart) — gewählter Monat, sonst Jahresmittel über alle 12 Monate
-function windDist(s){
+// Verteilung über die 4 kn-Bins (windChart) — Monat m (0 = Jahresmittel über alle 12 Monate)
+function windDist(s, m){
   const e = s.windChart; if(!e) return [0,0,0,0];
-  if(state.month) return e.pct[state.month];
+  if(m) return e.pct[m];
   const all = MONTHS.map((_,i)=>i+1);
-  return e.bins.map((_,b)=>Math.round(all.reduce((a,m)=>a+e.pct[m][b],0)/12));
+  return e.bins.map((_,b)=>Math.round(all.reduce((a,mm)=>a+e.pct[mm][b],0)/12));
 }
 
 // ---------- Temperatur: „Wärme" (Luft) + Neo-Empfehlung (aus Wasser) ----------
@@ -656,9 +661,9 @@ function renderLeaderboard(list){
 // ---------- Modal ----------
 const WIND_COLS = ['var(--w-green)','var(--w-yellow)','var(--w-red)','var(--w-magenta)'];
 
-// horizontale Summenleiste: ERA5-Verteilung für den gewählten Monat (sonst Jahresmittel), stark → schwach
-function windSplitBarHTML(s){
-  const d = windDist(s);                                  // [12–16, 16–20, 20–25, 25+] in %
+// horizontale Summenleiste für Monat m (0 = Jahresmittel), stark → schwach
+function windSplitBarHTML(s, m){
+  const d = windDist(s, m);                               // [12–16, 16–20, 20–25, 25+] in %
   const calm = Math.max(0, 100 - d.reduce((a,b)=>a+b,0)); // Rest = unter 12 kn / kein Kite
   let segs = '';
   for(let k=3;k>=0;k--){ if(d[k]>0) segs += `<span style="flex:${d[k]};background:${WIND_COLS[k]}">${d[k]>=7?d[k]+'%':''}</span>`; }
@@ -666,8 +671,33 @@ function windSplitBarHTML(s){
   return `<div class="wsplit">${segs}</div>`;
 }
 
-// gestapeltes Flächendiagramm über alle 12 Monate (schwach unten → stark oben)
+// Welcher Spot ist gerade im Modal offen (für die klickbare Monatswahl im Diagramm)
+let MODAL_SPOT = null;
+// Klick irgendwo aufs Diagramm → x-Position → Monat; obere %-Leiste + Highlight lokal neu rendern
+// (ändert NICHT den globalen Monatsfilter / die Kartenliste)
+function pickWindMonth(evt){
+  const block = document.getElementById('wind-block');
+  if(!MODAL_SPOT || !block) return;
+  const chart = block.querySelector('.wyear'); if(!chart) return;
+  const r = chart.getBoundingClientRect();
+  let i = Math.round((evt.clientX - r.left) / r.width * 11);
+  i = Math.max(0, Math.min(11, i));
+  block.innerHTML = windChartInner(MODAL_SPOT, i+1);
+}
+function resetWindMonth(){
+  const block = document.getElementById('wind-block');
+  if(!MODAL_SPOT || !block) return;
+  block.innerHTML = windChartInner(MODAL_SPOT, 0);
+}
+
+// klickbarer Wrapper ums Diagramm (Startmonat = global gewählter Monat)
 function windYearHTML(s){
+  if(!s.windChart) return '';
+  return `<div id="wind-block" class="wind-block" onclick="pickWindMonth(event)">${windChartInner(s, state.month)}</div>`;
+}
+
+// gestapeltes Flächendiagramm über alle 12 Monate (schwach unten → stark oben); sel = hervorgehobener Monat (0 = Jahresmittel)
+function windChartInner(s, sel){
   const e = s.windChart; if(!e) return '';
   const srcS = e.source || '';
   const isEra5 = /ERA5/.test(srcS), isWWK = /WhenWhereKite/.test(srcS);
@@ -683,12 +713,18 @@ function windYearHTML(s){
     bands += `<polygon points="${top}${bot}" fill="${WIND_COLS[k]}"/>`;
   }
   let hi = '';
-  if(state.month){ const w = W/11*0.8, cx = x(state.month-1) - w/2; hi = `<rect x="${cx.toFixed(1)}" y="0" width="${w.toFixed(1)}" height="${H}" fill="rgba(14,27,31,.13)"/>`; }
+  if(sel){ const w = W/11*0.8, cx = x(sel-1) - w/2; hi = `<rect x="${cx.toFixed(1)}" y="0" width="${w.toFixed(1)}" height="${H}" fill="rgba(14,27,31,.13)"/>`; }
   const svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${bands}${hi}</svg>`;
-  const months = MONTHS.map((m,i)=>`<span class="${state.month===i+1?'cur':''}">${m}</span>`).join('');
+  const months = MONTHS.map((m,i)=>`<span class="${sel===i+1?'cur':''}">${m}</span>`).join('');
   const legend = WIND_COLS.map((c,k)=>`<span><i style="background:${c}"></i>${e.bins[k]} kn</span>`).join('') +
     `<span style="color:var(--muted)"><i class="calm" style="background:#ece6d6"></i>&lt; 12 kn · kein Kite</span>`;
-  const ctx = state.month ? `<b>${MONTHS[state.month-1]}</b> hervorgehoben` : 'Jahresmittel';
+  const ctx = sel ? `<b>${MONTHS[sel-1]}</b> hervorgehoben` : 'Jahresmittel';
+  // Caption über der %-Leiste: gewählter Monat + Gesamt-% kitebar, plus Reset/Hinweis
+  const total = windDist(s, sel).reduce((a,b)=>a+b,0);
+  const cap = `<div class="wsplit-cap">
+    <span><b>${sel?MONTHS[sel-1]:'Jahresmittel'}</b> · ${total}% Tage ≥ 12 kn</span>
+    <span>${sel?`<button class="wc-reset" onclick="event.stopPropagation();resetWindMonth()">↺ Jahresmittel</button>`:'Monat antippen ↓'}</span>
+  </div>`;
   // ERA5-Fallback: Warnung, wenn die Reanalyse den Spot kaum als windig sieht (lokaler Thermik-/Düsenspot)
   const peak = Math.max(...Object.values(e.pct).map(a => a.reduce((x,y)=>x+y,0)));
   const warn = (isEra5 && peak < s.wind.reliability*0.55)
@@ -698,9 +734,9 @@ function windYearHTML(s){
   const src = isEra5
     ? `Quelle: <b>${e.source}</b>, ${e.period}, ${e.hours} · ${ctx}.<br>⚠︎ Reanalyse ~25 km — <b>unterschätzt lokale Düsen-/Thermikeffekte</b> (kein eigener WhenWhereKite-Eintrag). Reale Stärke meist höher.`
     : isWWK
-    ? `Quelle: <b>WhenWhereKite</b> (Kiter-Feedback, kein Messinstrument) · ${ctx}.${e.proxy ? `<br>Hinweis: Werte von <b>${e.proxy}</b>.` : ''}<br><a href="${e.url}" target="_blank" style="color:var(--sea)">${e.url.replace('https://','')}</a>`
+    ? `Quelle: <b>WhenWhereKite</b> (Kiter-Feedback, kein Messinstrument) · ${ctx}.${e.proxy ? `<br>Hinweis: Werte von <b>${e.proxy}</b>.` : ''}<br><a href="${e.url}" target="_blank" style="color:var(--sea)" onclick="event.stopPropagation()">${e.url.replace('https://','')}</a>`
     : `Quelle: <b>${e.source}</b> · ${ctx}.${e.note ? `<br>⚠︎ ${e.note}` : ''}`;
-  return `${windSplitBarHTML(s)}
+  return `${cap}${windSplitBarHTML(s, sel)}
     <div class="wyear">${svg}<div class="wyear-months">${months}</div></div>
     <div class="wlegend">${legend}</div>
     ${warn}
@@ -715,6 +751,7 @@ function heatHTML(s){
 }
 
 function openModal(s){
+  MODAL_SPOT = s;
   const scores = SCORE_KEYS.map(k=>`
     <div class="m-score"><span class="m-score-name">${k.label}</span>
     <div class="meter-bar">${Array.from({length:5},(_,i)=>`<span class="seg ${i<s.scores[k.key]?'on':''}"></span>`).join('')}</div></div>`).join('');
