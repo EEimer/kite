@@ -351,6 +351,37 @@ const state = {
 };
 let SPOTS = [];
 
+// ---------- Filter-Zustand merken (localStorage) ----------
+const LS_KEY = 'kite-archiv-filter';
+function saveState(){
+  try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){}
+}
+function loadState(){
+  try{
+    const saved = JSON.parse(localStorage.getItem(LS_KEY) || 'null');
+    if(saved && typeof saved==='object'){
+      Object.assign(state, saved);
+      state.mins = Object.assign({kite:0,family:0,infra:0,access:0}, saved.mins||{});
+    }
+  }catch(e){}
+}
+// Zustand → Bedienelemente spiegeln (nach loadState bzw. Reset)
+function syncControls(){
+  const act = (id, sel)=>{ const c=document.getElementById(id), el=c&&c.querySelector(sel); if(el) setActive(c, el); };
+  act('month-pills', `[data-month="${state.month}"]`);
+  act('verdict-pills', `[data-verdict="${state.verdict}"]`);
+  act('dist-pills', `[data-dist="${state.dist}"]`);
+  act('temp-pills', `[data-temp="${state.minTemp}"]`);
+  act('maxdist-pills', `[data-max="${state.maxDist}"]`);
+  document.querySelectorAll('input[type=range]').forEach(r=>{
+    const v = state.mins[r.dataset.key]||0; r.value = v;
+    document.getElementById('val-'+r.dataset.key).textContent = v===0 ? 'egal' : 'ab '+'⭐'.repeat(v);
+  });
+  document.getElementById('search').value = state.search||'';
+  document.getElementById('sort').value = state.sort;
+  document.getElementById('prime-only').checked = !!state.primeOnly;
+}
+
 // ---------- Laden ----------
 // Die Spot-Daten sind direkt in der Seite eingebettet (siehe <script id="spots-data">).
 // Dadurch läuft die Seite ohne Server — einfach index.html per Doppelklick öffnen.
@@ -440,15 +471,7 @@ function resetAll(){
   state.month=0; state.verdict='all'; state.dist='uae'; state.search=''; state.sort='reliability'; state.primeOnly=false;
   state.minTemp=0; state.maxDist=0;
   state.mins={kite:0,family:0,infra:0,access:0};
-  document.querySelectorAll('input[type=range]').forEach(r=>{ r.value=0; document.getElementById('val-'+r.dataset.key).textContent='egal'; });
-  document.getElementById('search').value='';
-  document.getElementById('sort').value='reliability';
-  document.getElementById('prime-only').checked=false;
-  setActive(document.getElementById('month-pills'), document.querySelector('[data-month="0"]'));
-  setActive(document.getElementById('verdict-pills'), document.querySelector('[data-verdict="all"]'));
-  setActive(document.getElementById('dist-pills'), document.querySelector('[data-dist="uae"]'));
-  setActive(document.getElementById('temp-pills'), document.querySelector('[data-temp="0"]'));
-  setActive(document.getElementById('maxdist-pills'), document.querySelector('[data-max="0"]'));
+  syncControls();
   render();
 }
 
@@ -608,6 +631,7 @@ function cardHTML(s, i, rank){
 }
 
 function render(){
+  saveState();
   if(!SPOTS.length) return;
   const list = sortList(SPOTS.filter(passes));
   const grid = document.getElementById('cards');
@@ -754,6 +778,8 @@ document.getElementById('overlay').addEventListener('click', e=>{
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 
 buildControls();
+loadState();
+syncControls();
 load();
 </script>
 </body>

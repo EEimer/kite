@@ -243,12 +243,42 @@ let SPOTS = [];
 
 function el(id){ return document.getElementById(id); }
 
+// ---------- Filter-Zustand merken (localStorage) ----------
+const LS_KEY = 'kite-dubai-filter';
+function saveState(){
+  try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){}
+}
+function loadState(){
+  try{
+    const saved = JSON.parse(localStorage.getItem(LS_KEY) || 'null');
+    if(saved && typeof saved==='object'){
+      Object.assign(state, saved);
+      state.w = Object.assign({infra:0,toddler:0,city:0}, saved.w||{});
+    }
+  }catch(e){}
+}
+// Zustand → Bedienelemente spiegeln (nach loadState bzw. Reset)
+function syncControls(){
+  const act = (id, sel)=>{ const e=document.querySelector('#'+id+' '+sel); if(e) setActive(id, e); };
+  act('thr-pills', `[data-thr="${state.threshold}"]`);
+  act('dub-pills', `[data-strict="${state.strict?1:0}"]`);
+  act('temp-pills', `[data-temp="${state.temp}"]`);
+  act('air-pills', `[data-air="${state.airMax}"]`);
+  act('month-pills', `[data-month="${state.viewMonth}"]`);
+  document.querySelectorAll('#sliders input').forEach(r=>{
+    const v = state.w[r.dataset.key]||0; r.value = v;
+    el('val-'+r.dataset.key).textContent = v===0 ? 'aus' : '×'+v;
+  });
+}
+
 function load(){
   try{
     SPOTS = JSON.parse(el('spots-data').textContent);
     if(!Array.isArray(SPOTS) || !SPOTS.length) throw new Error('keine Spot-Daten');
     el('hm-count').textContent = SPOTS.length;
     buildControls();
+    loadState();
+    syncControls();
     render();
   }catch(e){
     el('banner').style.display='block';
@@ -373,11 +403,7 @@ function buildControls(){
   });
   el('reset').addEventListener('click', ()=>{
     state.threshold=60; state.strict=true; state.temp=''; state.airMax=0; state.w={infra:0,toddler:0,city:0};
-    document.querySelectorAll('#sliders input').forEach(r=>{ r.value=0; el('val-'+r.dataset.key).textContent='aus'; });
-    setActive('thr-pills', document.querySelector('[data-thr="60"]'));
-    setActive('dub-pills', document.querySelector('[data-strict="1"]'));
-    setActive('temp-pills', document.querySelector('#temp-pills [data-temp=""]'));
-    setActive('air-pills', document.querySelector('#air-pills [data-air="0"]'));
+    syncControls();
     render();
   });
   el('month-pills').innerHTML = `<span class="pill active" data-month="0">Alle Monate</span>` +
@@ -466,6 +492,7 @@ function cardHTML(s, m, rank){
 }
 
 function render(){
+  saveState();
   const shown = state.viewMonth ? [state.viewMonth-1] : MONTHS.map((_,i)=>i);
   const out = shown.map((idx)=>{
     const mn = MONTHS[idx];
