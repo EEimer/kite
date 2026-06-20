@@ -22,7 +22,7 @@ const COORDS = {
   kouremenos:[35.20,26.27], guincho:[38.73,-9.47], calvi:[42.57,8.76],
   nyali:[-4.04,39.73], kunduchi:[-6.665,39.21], rodrigues:[-19.755,63.41], 'cape-town':[-33.81,18.46],
   'el-gouna':[27.40,33.68], 'soma-bay':[26.84,33.99], 'ponta-preta':[16.60,-22.95], 'le-morne':[-20.46,57.31],
-  mazotos:[34.745,33.49], fromentine:[46.89,-2.18],
+  mazotos:[34.745,33.49], fromentine:[46.89,-2.18], 'ada-bojana':[41.83,19.33],
 };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));

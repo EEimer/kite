@@ -32,6 +32,7 @@ const COORDS = {
   nyali:[-4.04,39.73], kunduchi:[-6.665,39.21], rodrigues:[-19.755,63.41], 'cape-town':[-33.81,18.46],
   'el-gouna':[27.40,33.68], 'soma-bay':[26.84,33.99], 'ponta-preta':[16.60,-22.95], 'le-morne':[-20.46,57.31],
   mazotos:[34.745,33.49], fromentine:[46.89,-2.15],
+  // ada-bojana: bewusst NICHT aufgenommen — ERA5 verfehlt die lokale Maestral-Thermik (zeigt im Sommer ~1 %); windChart ist kuratiert
 };
 
 const binOf = v => v < 12 ? -1 : v < 16 ? 0 : v < 20 ? 1 : v < 25 ? 2 : 3;

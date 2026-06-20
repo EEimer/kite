@@ -134,7 +134,8 @@ Du sagst **„wann“** (Monat), die Seite rankt **„wohin“** — primär nac
 | Feld | Quelle |
 |---|---|
 | **`windChart`** (Monatsdiagramm) + **`reliability`** (WWK-Spots) | **WhenWhereKite** — echte Werte, aus dem Seitenquelltext (`sampleData1`) gezogen. **Kiter-Feedback**, kein Messinstrument, bildet aber lokale Effekte ab. **34 Spots.** |
-| **`windChart`** (Fallback) | **ERA5-Reanalyse** (Open-Meteo), Tagstunden 10–18 h, 2019–2023 — für die **10 Spots ohne WWK-Seite** (conil, kos, kouremenos, lake-como, limnos, madeira, punta-trettu, rømø, sant-pere, skåne). ⚠ unterschätzt lokale Düsen-/Thermikeffekte; das Detail zeigt dann einen Warnhinweis. |
+| **`windChart`** (Fallback) | **ERA5-Reanalyse** (Open-Meteo), Tagstunden 10–18 h, 2019–2023 — für Spots ohne WWK-Seite (conil, kos, kouremenos, lake-como, limnos, madeira, punta-trettu, rømø, sant-pere, skåne, fromentine). ⚠ unterschätzt lokale Düsen-/Thermikeffekte; das Detail zeigt dann einen Warnhinweis. |
+| **`windChart`** (kuratiert) | **Saison-Schätzung** — nur wo *weder* WWK *noch* ERA5 taugen, weil ERA5 die lokale Thermik komplett verfehlt (ada-bojana: Maestral zeigt in ERA5 ~1 %). Quelle ehrlich als „Kuratiert · Saison-Schätzung, keine Messreihe" gekennzeichnet; **nicht** in `gen-wind-era5.mjs` aufgenommen, damit ein Pipeline-Lauf sie nicht überschreibt. |
 | **`season`, Scores, `wind.min/max`, Distanzen, Texte** | eigene Recherche (`0.html`) + WhenWhereKite-Liste, **ohne Gewähr**. `season` bleibt bewusst kuratiert (WWK ist oft ganzjährig windig → wind-only-Saison wäre nutzlos). |
 
 Generatoren (laden echte Daten, schreiben `spots/*.json`, danach neu einbetten — nur Node, **kein Python**, **Internet nötig**). Reihenfolge:
