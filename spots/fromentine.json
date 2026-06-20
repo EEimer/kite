@@ -1,0 +1,227 @@
+{
+  "id": "fromentine",
+  "name": "Fromentine",
+  "spot": "Fromentine / La Barre-de-Monts · Vendée",
+  "region": "Atlantik",
+  "country": "Frankreich",
+  "flag": "🇫🇷",
+  "verdict": "warn",
+  "verdictLabel": "Sommer-Thermik & Familienküste",
+  "tagline": "Verlässliche NW-Seebrise an Nachmittagen, kühler Atlantik und Top-Familienregion am Tor zu Noirmoutier.",
+  "scores": {
+    "kite": 3,
+    "family": 4,
+    "infra": 4,
+    "access": 3,
+    "toddler": 4,
+    "city": 2
+  },
+  "wind": {
+    "min": 12,
+    "max": 25,
+    "type": "thermisch",
+    "reliability": 55
+  },
+  "water": {
+    "type": "mixed",
+    "tempC": 20,
+    "wetsuit": "Shorty / 3-2 Neo",
+    "byMonth": {
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 13,
+      "5": 16,
+      "6": 19,
+      "7": 20,
+      "8": 21,
+      "9": 19,
+      "10": 18,
+      "11": 14,
+      "12": 11
+    },
+    "tempSource": "Open-Meteo Marine (SST-Mittel 2022–2024)"
+  },
+  "level": [
+    "intermediate",
+    "advanced"
+  ],
+  "season": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 2,
+    "11": 1,
+    "12": 1
+  },
+  "distanceUAE": {
+    "time": "~10 h",
+    "transfers": 1,
+    "note": "via Paris nach Nantes (NTE) + Fahrt",
+    "hours": 10
+  },
+  "distanceGermany": {
+    "time": "~2 h + Fahrt",
+    "transfers": 0,
+    "note": "Saisonflug Nantes (NTE), dann Auto (~1 h)",
+    "hours": 3
+  },
+  "tags": [
+    "NW-Thermik",
+    "Île de Noirmoutier",
+    "Gezeiten-Strömung",
+    "Familien-Vendée"
+  ],
+  "description": "Fromentine liegt an der Vendée-Küste am „Goulet de Fromentine“ — der Meerenge zur Île de Noirmoutier. Im Sommer trägt eine verlässliche thermische NW-Seebrise die Nachmittage; Frühjahr/Herbst bringen kräftigere, aber unbeständigere Tiefdruck-Winde. Der Atlantik ist kühl (Neo auch im Sommer), und die starke Gezeitenströmung in der Meerenge macht den Hauptspot eher zu einem Intermediate-/Advanced-Revier. Drumherum: kilometerlange Sandstrände, Pinienwälder und eine der besten Familien-Ferienregionen Frankreichs.",
+  "flagNote": {
+    "type": "warn",
+    "text": "Thermik moderat & kühles Wasser · starke Strömung in der Meerenge · top für Familien"
+  },
+  "subspots": [
+    {
+      "name": "Goulet / Pont de Noirmoutier",
+      "dist": "Hauptspot",
+      "level": "Intermediate+",
+      "desc": "Meerenge mit starker Gezeitenströmung — Strömung und Tide beachten."
+    },
+    {
+      "name": "Notre-Dame-de-Monts",
+      "dist": "~10 min",
+      "level": "alle",
+      "desc": "Weite Sandstrände, Kiteschulen, mehr Platz und Welle/Chop."
+    },
+    {
+      "name": "Barbâtre (Noirmoutier)",
+      "dist": "über die Brücke",
+      "level": "alle",
+      "desc": "Flachere, geschütztere Bereiche auf der Inselseite bei passender Tide."
+    }
+  ],
+  "family": [
+    "Île de Noirmoutier & Passage du Gois (Gezeiten-Straße durchs Meer).",
+    "Kilometerlange Sandstrände & Pinienwälder der Vendée.",
+    "Radwege, Austernkultur und familienfreundliche Campings."
+  ],
+  "windChart": {
+    "source": "ERA5-Reanalyse (Open-Meteo Archiv-API)",
+    "period": "2019–2023",
+    "hours": "10–18 h lokal",
+    "lat": 46.924,
+    "lon": -2.042,
+    "note": "Reanalyse ~25 km — unterschätzt lokale Thermik-/Düseneffekte; reale Sommer-Seebrise meist verlässlicher",
+    "bins": [
+      "12–16",
+      "16–20",
+      "20–25",
+      "25+"
+    ],
+    "pct": {
+      "1": [
+        20,
+        11,
+        6,
+        1
+      ],
+      "2": [
+        23,
+        13,
+        5,
+        2
+      ],
+      "3": [
+        19,
+        13,
+        6,
+        1
+      ],
+      "4": [
+        16,
+        8,
+        2,
+        1
+      ],
+      "5": [
+        25,
+        7,
+        2,
+        0
+      ],
+      "6": [
+        14,
+        2,
+        0,
+        1
+      ],
+      "7": [
+        22,
+        5,
+        0,
+        0
+      ],
+      "8": [
+        19,
+        4,
+        1,
+        0
+      ],
+      "9": [
+        16,
+        7,
+        2,
+        0
+      ],
+      "10": [
+        23,
+        10,
+        5,
+        1
+      ],
+      "11": [
+        18,
+        14,
+        8,
+        2
+      ],
+      "12": [
+        24,
+        15,
+        8,
+        1
+      ]
+    }
+  },
+  "coords": {
+    "lat": 46.89,
+    "lon": -2.15
+  },
+  "airportSpot": {
+    "airport": "NTE",
+    "airportName": "Nantes (NTE)",
+    "km": 75,
+    "min": 70,
+    "note": "Tor zu Noirmoutier; Sommer-Seebrise nachmittags, Wasser kühl, starke Strömung"
+  },
+  "air": {
+    "byMonth": {
+      "1": 9,
+      "2": 11,
+      "3": 13,
+      "4": 15,
+      "5": 19,
+      "6": 22,
+      "7": 23,
+      "8": 24,
+      "9": 22,
+      "10": 19,
+      "11": 14,
+      "12": 11
+    },
+    "source": "Open-Meteo Archiv (Tageshöchst-Mittel 2022–2024)"
+  }
+}

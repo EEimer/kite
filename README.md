@@ -123,9 +123,10 @@ Du sagst **„wann“** (Monat), die Seite rankt **„wohin“** — primär nac
 - **Monat** — wählst du einen Monat, erscheint ein **Leaderboard** der windstärksten Spots und out-of-season-Spots fallen raus; optional „nur Prime-Monate (⭐)“. (Die große **Windwahrscheinlichkeit** auf der Karte und das Ranking sind der recherchierte Spot-Wert, kite-genau — nicht die ERA5-Reanalyse.)
 - **Einschätzung** — Empfehlung / Mit Abstrichen / Eher nein.
 - **Mindest-Score** — vier Regler (Kiten, Familie, Infrastruktur, Erreichbarkeit), `egal`–`⭐⭐⭐⭐⭐`.
-- **Min. Wassertemperatur** — `egal / ≥20° / ≥25° / ≥28°`.
+- **Wärme (Lufttemperatur)** — `egal / warm ≥23° / heiß ≥27° / ≥30°` (monatsgenau, sonst Jahresmittel). „warm" = Luft über 22°.
 - **Max. Entfernung** — `egal / ≤5 h / ≤9 h / ≤13 h`, bezogen auf den gewählten **Distanz-Bezug (UAE / Deutschland)**.
-- **Suche / Sortierung** — Freitext + Sortierung (Windwahrscheinlichkeit, Beste Übereinstimmung, Kite, Familie, Infra, Erreichbarkeit, wärmstes Wasser, A–Z).
+- **Suche / Sortierung** — Freitext + Sortierung (Windwahrscheinlichkeit, Beste Übereinstimmung, Kite, Familie, Infra, Erreichbarkeit, wärmste Luft, A–Z).
+- **Karte & Detail** zeigen statt der nackten Wassertemperatur einen **Wärme-Chip** (☀️ warm / 🧥 kühl, Luft) plus eine **Neo-Empfehlung** (`ohne Neo / Shorty / Langarm 3/2 / Langarm 4/3 / Trockenanzug`), automatisch aus der (monatsgenauen) Wassertemperatur abgeleitet.
 - **Karten** zeigen Rang (#1, #2 …) und die Windwahrscheinlichkeit groß; Klick öffnet das Detail mit dem **Wind-Diagramm** (echte Monatsverteilung, gewählter Monat hervorgehoben), Saison-Heatmap und Distanzen.
 
 ## Woher die Daten kommen (ehrlich)

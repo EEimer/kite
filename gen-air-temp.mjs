@@ -20,7 +20,7 @@ const COORDS = {
   rodrigues:[-19.755,63.41], 'le-morne':[-20.46,57.31], 'cape-town':[-33.81,18.46], essaouira:[31.49,-9.78], masirah:[20.67,58.90],
   aruba:[12.58,-70.05], eilat:[29.55,34.95], 'el-gouna':[27.40,33.68], 'soma-bay':[26.84,33.99], socotra:[12.61,53.93], leucate:[42.95,3.03],
   lanzarote:[29.05,-13.50], paros:[37.07,25.22], naxos:[37.02,25.36], lefkada:[38.72,20.65],
-  kouremenos:[35.20,26.27], guincho:[38.73,-9.47], calvi:[42.57,8.76],
+  kouremenos:[35.20,26.27], guincho:[38.73,-9.47], calvi:[42.57,8.76], fromentine:[46.89,-2.15],
 };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
