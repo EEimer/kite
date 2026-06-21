@@ -20,7 +20,7 @@
     "min": 14,
     "max": 25,
     "type": "side-onshore",
-    "reliability": 88
+    "reliability": 65
   },
   "water": {
     "type": "flat",
@@ -81,7 +81,7 @@
     "Lernspot",
     "Familie"
   ],
-  "description": "Punta Trettu im Südwesten Sardiniens ist DER Flachwasser-Klassiker zum Lernen und Freestylen: stehtiefe, knietiefe Lagune und ein bemerkenswert stetiger, fast nie böiger Wind. Der Mistral (NW) läuft von April bis September und wird nachmittags thermisch verstärkt — oft 5–10 kn mehr als vorhergesagt. Hauptsaison Juni–August mit 85–90 % kitebaren Tagen. Ländlich und einfach (nächste größere Stadt Cagliari ~1 h), dafür ideale, sichere Bedingungen für Anfänger und Familie.",
+  "description": "Punta Trettu im Südwesten Sardiniens ist DER Flachwasser-Klassiker zum Lernen und Freestylen: stehtiefe, knietiefe Lagune und ein bemerkenswert stetiger, kaum böiger Wind. Der Mistral (NW) ist im Frühjahr und Herbst am kräftigsten; im Hochsommer trägt vor allem die thermische Seebrise — schwächer, aber stetig und nachmittags meist verlässlich. Übers Jahr moderat windig (~50–65 % der Tage ≥4 Bft laut Spot-Report), also kein 90%-Sommerspot. Ländlich und einfach (nächste größere Stadt Cagliari ~1 h), dafür ideale, sichere Bedingungen für Anfänger und Familie.",
   "flagNote": {
     "type": "go",
     "text": "Flachwasser, stetiger Wind (kaum böig) · top zum Lernen"
@@ -92,89 +92,88 @@
     "Cagliari als lebendige Base mit Stadtleben."
   ],
   "windChart": {
-    "source": "Punta Trettu Kite Center (Statistik seit 2011)",
-    "url": "https://puntatrettukitecenter.com/punta-trettu-wind-statistics/",
+    "source": "Spot-Report: Tage ≥4 Bft/Monat (Stärkeform aus Reanalyse)",
     "bins": [
       "12–16",
-      "16–22",
-      "22–28",
-      ">28"
+      "16–20",
+      "20–25",
+      "25+"
     ],
     "pct": {
       "1": [
-        18,
-        14,
-        3,
-        0
+        17,
+        15,
+        9,
+        7
       ],
       "2": [
-        18,
+        34,
         14,
-        3,
-        0
+        12,
+        1
       ],
       "3": [
-        24,
-        21,
-        5,
-        0
+        28,
+        19,
+        13,
+        1
       ],
       "4": [
-        30,
-        33,
-        11,
-        1
+        38,
+        19,
+        8,
+        2
       ],
       "5": [
-        28,
         35,
-        11,
-        1
+        19,
+        5,
+        2
       ],
       "6": [
-        25,
-        41,
-        17,
-        2
+        43,
+        16,
+        1,
+        0
       ],
       "7": [
-        22,
-        45,
-        21,
-        2
+        37,
+        18,
+        0,
+        0
       ],
       "8": [
-        22,
-        45,
-        21,
-        2
+        35,
+        13,
+        4,
+        0
       ],
       "9": [
-        26,
-        33,
-        10,
+        39,
+        15,
+        2,
         1
       ],
       "10": [
-        30,
-        31,
-        8,
-        1
+        45,
+        11,
+        3,
+        2
       ],
       "11": [
-        26,
-        20,
-        4,
-        0
+        37,
+        17,
+        10,
+        3
       ],
       "12": [
-        26,
-        20,
-        4,
-        0
+        25,
+        23,
+        9,
+        4
       ]
     },
-    "note": "Monatssumme = kitebare Tage laut Kite Center; Bin-Verteilung geschätzt."
+    "note": "Monatssumme = Tage mit ≥4 Bft (≥11 kn) laut Spot-Report, in % der Monatstage (days-based wie die WWK-Spots). Verteilung auf die Stärke-Bins nach ERA5-Reanalyse. Frühjahr/Herbst (Mistral) windiger als der Hochsommer (thermisch, schwächer aber stetig)."
   },
   "coords": {
     "lat": 39.05,
